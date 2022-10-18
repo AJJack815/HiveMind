@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="Images/Logos/favicon.ico" type="image/x-icon">
+    <title>Generic Cafe</title>
+</head>
+
+<body>
+    <nav id="top" class="navbar">
+        <div class="nav">
+        <img src="Images/Logos/dark-logo.png" class="brand-logo" alt="">
+        <div class="items">
+            <div class="search">
+                <input type="text" id="search-bar" onkeyup="search_products()" name="search" placeholder="Search Product">
+                <button class="search-btn"> search</button>
+                 
+                 <script src="JS/products.js"></script>
+            </div>
+            <a href="#"> <img src="Images/buttons/user.png" alt=""></a>
+            <a href="#"> <img src="Images/buttons/cart.png" alt=""></a>
+        </div>
+    </div>
+     <ul class="link-container">
+     <li class="link-item"> <a href="index.html" class="link"> Home</a></li>
+    <li class="link-item"> <a href="#" class="link">Coffee</a></li>
+    <li class="link-item"> <a href="#" class="link"> Tea</a></li>
+    <li class="link-item"> <a href="product.html" class="link"> Food</a></li>
+    <li class="link-item"> <a href="#" class="link"> Merch</a></li>
+    </ul>
+    </nav>
+    <hr>
+    <br>
+    <h2 class="best-seller"> This Weeks Best Sellers</h2>
+    <button class="pre-btn"><img src="Images/buttons/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="Images/buttons/arrow.png" alt=""></button>
+    <section class="product-container">
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag"></span>
+                <img src="Images/Muffins/blueberry.jpg" class="product-thumb" alt="" width="1024" height="1024">
+                <button class="card-btn">Add to cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Blueberry Muffin</h2>
+                <p class="product-short-des"></p>
+                <span class="price">$3.99</span><span class="actual-price"></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag"></span>
+                <img src="Images/Coffee/ColdBrew.jpeg" class="product-thumb" alt="" width="600" height="600">
+                <button class="card-btn">Add to Cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand"> Cold Brew</h2>
+                <p class="product-short-des"></p>
+                <span class="price">$4.55</span><span class="actual-price"></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag"></span>
+                <img src="Images/Coffee/Frappe.jpeg" class="product-thumb" alt="" width="183" height="275">
+                <button class="card-btn">Add to Cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand"> Caramel Frappe</h2>
+                <p class="product-short-des"></p>
+                <span class="price">$6.99</span><span class="actual-price"></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag"></span>
+                <img src="Images/Tea/black-tea.jpeg" class="product-thumb" alt="" width="353" height="143">
+                <button class="card-btn">Add to cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Black Tea</h2>
+                <p class="product-short-des"> No Sweetening</p>
+                <span class="price">$2.99</span><span class="actual-price"></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag"></span>
+                <img src="Images/Tea/matcha.jpeg" class="product-thumb" alt="" width="224" height="224">
+                <button class="card-btn">Add to Cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Matcha Tea</h2>
+                <p class="product-short-des"></p>
+                <span class="price">$5.99</span><span class="actual-price"></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag"></span>
+                <img src="Images/Muffins/banana.jpg" class="product-thumb" alt="" width="1024" height="1024">
+                <button class="card-btn">Add to Cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Banana Nut Muffins</h2>
+                <p class="product-short-des"></p>
+                <span class="price">$2.99</span><span class="actual-price"></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag"></span>
+                <img src="Images/Muffins/chocolatechip.jpeg" class="product-thumb" alt="" width="225" height="225">
+                <button class="card-btn">Add to Cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Chocolate Chip Muffins</h2>
+                <p class="product-short-des"></p>
+                <span class="price">$3.99</span><span class="actual-price"></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag"></span>
+                <img src="Images/Coffee/Latte1.jpeg" class="product-thumb" alt="" width="225" height="225">
+                <button class="card-btn">Add to Cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Latte</h2>
+                <p class="product-short-des"></p>
+                <span class="price">$5.99</span><span class="actual-price"></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag"></span>
+                <img src="Images/Tea/sweet-tea.jpeg" class="product-thumb" alt="" width="750" height="750">
+                <button class="card-btn">Add to Cart</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Sweet Tea</h2>
+                <p class="product-short-des"></p>
+                <span class="price">$3.99</span><span class="actual-price"></span>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <br>
+    <section class="collection-container">
+        <h2> What We Sell </h2>
+        <a href="#" class="collection">
+            <img src="Images/Coffee/ColdBrew.jpeg" alt="" width="600" height="600">
+            <p class="collection-title"> <br> Coffee </p>
+        </a>
+        <a href="#" class="collection">
+            <img src="Images/Tea/matcha.jpeg" alt="" width="224" height="224">
+            <p class="collection-title"> <br> Tea </p>
+        </a>
+        <a href="#" class="collection">
+            <img src="Images/Muffins/chocolatechip.jpeg" alt="" width="600" height="600">
+            <p class="collection-title"> <br> Breakfast </p>
+        </a>
+        <a href="#" class="collection">
+            <img src="Images/black.jpeg" alt="" width="600" height="600">
+            <p class="collection-title"> <br> Mugs</p>
+        </a>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <img src="Images/Logos/light-logo.png" class="logo" alt="Light Logo">
+            <div class="footer-ul-container">
+                <ul class="category">
+                    <li class="category-title"> Coffee </li>
+                    <li><a href="#" class="footer-link"> Cold Brew </a> </li>
+                    <li> <a href="#" class="footer-link"> Caramel Frappe </a></li>
+                    <li><a href="#" class="footer-link"> Black Coffee </a> </li>
+                    <li><a href="#" class="footer-link"> Latte </a> </li>
+                    <li><a href="#" class="footer-link"> Mocha </a> </li>
+                </ul>
+                <ul class="category">
+                    <li class="category-title"> Tea</li>
+                    <li> <a href="#" class="footer-link"> Black Tea</a> </li>
+                    <li> <a href="#" class="footer-link"> Chai Tea</a> </li>
+                    <li> <a href="#" class="footer-link"> Earl Gray</a></li>
+                    <li> <a href="#" class="footer-link"> Matcha</a></li>
+                    <li> <a href="#" class="footer-link"> Sweet Tea</a></li>
+                </ul>
+                <ul class="category">
+                    <li class="category-title"> Muffins</li>
+                    <li> <a href="#" class="footer-link"> Banana Nut</a></li>
+                    <li> <a href="#" class="footer-link">Chocolate Chip</a></li>
+                    <li> <a href="#" class="footer-link"> Cinnamon </a></li>
+                    <li> <a href="#" class="footer-link"> Blueberry</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <p class="footer-title"> About Our Company</p>
+        <p class="info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id optio, aliquam, enim neque
+            numquam totam laudantium dolore voluptatum placeat odit quos. Fuga, ducimus veniam? Architecto dolor fugit
+            veritatis libero!</p>
+        <div class="footer-social-container">
+            <a href="#" class="social-link"> Facebook</a>
+            <a href="#" class="social-link"> Instagram</a>
+            <a href="#top" class="social-link"> Back To Top</a>
+        </div>
+        <p class="footer-credit"> This website was made by Arlo Jackson starting on October 11, 2022.</p>
+    </footer>
+<script src="JS/home.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+:root{
+    /* Primary colors */
+        --primary1:#E2F1CB;
+        --primary2:#D3EBAF;
+        --primary0:#B6D586;
+        --primary3:#99BE60;
+        --primary4:#7AA43A;
+    /* Secondary Colors 1 */
+        --secondary1-1:#FFE0D7;
+        --secondary1-2:#FFCCBE;
+        --secondary1-0:#E7A592;
+        --secondary1-3:#CE7F68;
+        --secondary1-4:#B2593F;
+    /* Secondary Colors 2 */
+        --secondary2-1:#B8A6C3;
+        --secondary2-2:#9B82AB;
+        --secondary2-0:#86659B;
+        --secondary2-3:#71498A;
+        --secondary2-4:#5B2F77;
+    }
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw;
+    padding-bottom: 80px;
+    background:var(--secondary2-3);
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content .logo {
+    height: 250px;
+}
+
+.footer-ul-container {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    width: 150%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title {
+    grid-column: span 2;
+    text-transform: capitalize;
+    color: var(--primary1);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.category .footer-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color:var(--secondary1-0);
+}
+
+.footer-link:hover {
+    color:var(--secondary1-1);
+}
+
+.footer-title,
+.info {
+    color: rgba(255, 255, 255, 0.75);
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.footer-title {
+    margin-top: 60px;
+    color: #FFF;
+}
+
+.footer-social-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link {
+    color: #FFF;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.social-link:nth-child(1) {
+    margin-left: 0;
+}
+
+.footer-credit {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+}

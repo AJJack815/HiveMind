@@ -1,0 +1,117 @@
+:root{
+    /* Primary colors */
+        --primary1:#E2F1CB;
+        --primary2:#D3EBAF;
+        --primary0:#B6D586;
+        --primary3:#99BE60;
+        --primary4:#7AA43A;
+    /* Secondary Colors 1 */
+        --secondary1-1:#FFE0D7;
+        --secondary1-2:#FFCCBE;
+        --secondary1-0:#E7A592;
+        --secondary1-3:#CE7F68;
+        --secondary1-4:#B2593F;
+    /* Secondary Colors 2 */
+        --secondary2-1:#B8A6C3;
+        --secondary2-2:#9B82AB;
+        --secondary2-0:#86659B;
+        --secondary2-3:#71498A;
+        --secondary2-4:#5B2F77;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100;
+    background-color: #f5f5f5;
+    z-index: 9;
+}
+
+.nav {
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+.brand-logo{
+    height: 100px;
+}
+
+
+.search {
+    width: 500px;
+    display: flex;
+}
+
+.search-box {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-btn {
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder {
+    color: #a9a9a9;
+}
+
+.nav-items a {
+    margin-left: 20px;
+}
+
+.nav-items a img {
+    width: 30px;
+}
+.link-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+}
+
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.link:hover{
+    opacity: 1;
+}
