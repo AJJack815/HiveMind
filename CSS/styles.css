@@ -24,6 +24,17 @@
     --secondary2-4:#5B2F77;
 }
 
+.hero-section{
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../Images/Logos/background-finish.jpg);
+    background-size:cover;
+    background-repeat: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .product-container {
     padding: 0 10vw;
     display: flex;
