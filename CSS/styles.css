@@ -27,7 +27,7 @@
 .hero-section{
     width: 100%;
     height: calc(100vh - 120px);
-    background-image: url('../Images/Logos/logo-header.png');
+    background-image: url('../img/Logos/logo-header.png');
     background-size: cover;
     display: flex;
     justify-content: center;
