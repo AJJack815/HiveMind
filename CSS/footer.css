@@ -108,3 +108,6 @@ footer {
     color: #fff;
     background: rgba(0, 0, 0, 0.2);
 }
+.footer-credit a{
+    color:var(--primary1)
+}

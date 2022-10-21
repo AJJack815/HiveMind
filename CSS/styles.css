@@ -39,15 +39,7 @@
     display:none;
     margin: auto;
 }
-
-.hero-section .sub-heading{
-    margin-top: 10px;
-    text-align: center;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 35px;
-    font-weight: 300;
-}.product{
+.product{
     background-color: var(--secondary1-1);
     padding-top: 5px;
 }
@@ -213,4 +205,7 @@
 .collection:nth-child(3){
     grid-column: span 2;
     margin-bottom: 10px;
+}
+#product-page .product-card{
+    width: 33%;
 }
