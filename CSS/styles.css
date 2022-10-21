@@ -3,7 +3,7 @@
 @import 'product.css';
 
 
-:root{
+:root{ 
 /* Primary colors */
     --primary1:#E2F1CB;
     --primary2:#D3EBAF;
@@ -47,12 +47,19 @@
     text-transform: capitalize;
     font-size: 35px;
     font-weight: 300;
+}.product{
+    background-color: var(--secondary1-1);
+    padding-top: 5px;
+}
+.product h2{
+    padding:3px;
 }
 .product-container {
     padding: 0 10vw;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+    height: 500px ;
 }
 
 .product-container::-webkit-scrollbar {
@@ -143,14 +150,12 @@
     font-size: 20px;
 }
 
-
 .pre-btn, .nxt-btn{
     border: none;
     width: 10vw;
-    height: 100%;
+    height: 50%;
     position: absolute;
-    top: 0;
-    display: flex;
+    top: 110vh;
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);

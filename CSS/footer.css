@@ -49,6 +49,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     list-style: none;
+    padding:10px;
 }
 
 .category-title {
