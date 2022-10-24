@@ -49,7 +49,8 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     list-style: none;
-    padding:10px;
+    margin-right: 10px;
+    margin-left:5px;
 }
 
 .category-title {
@@ -64,6 +65,7 @@ footer {
     text-decoration: none;
     text-transform: capitalize;
     color:var(--secondary1-0);
+    font-size: 13px;
 }
 
 .footer-link:hover {

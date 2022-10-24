@@ -1,6 +1,7 @@
 @import 'nav.css';
 @import 'footer.css';
 @import 'product.css';
+@import 'credit.css';
 
 
 :root{ 
@@ -38,6 +39,19 @@
     height: 150px;
     display:none;
     margin: auto;
+}
+.hero-section .sub-heading{
+    color:white;
+    font-size: 45px;
+}
+.hero-section .food{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/Product/fallon-michael-0-xIKrdFj4I-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .product{
     background-color: var(--secondary1-1);
@@ -132,9 +146,10 @@
     height: 20px;
     line-height: 20px;
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 0.85;
     text-transform: capitalize;
     margin: 5px 0;
+    color:black;
 }
 
 .price {
@@ -171,6 +186,7 @@
 .pre-btn:hover img, .nxt-btn:hover img{
     opacity: 1;
 }
+
 .sell{
     text-align: center;
 }

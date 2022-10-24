@@ -114,4 +114,5 @@
 
 .link:hover{
     opacity: 1;
+    background-color: var(--secondary2-2);
 }
