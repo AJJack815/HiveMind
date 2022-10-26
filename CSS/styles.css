@@ -45,6 +45,27 @@
     color: white;
     font-size: 45px;
 }
+.food-hero-section {
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/Logos/food-logo.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-hero-section .logo {
+    height: 150px;
+    display: none;
+    margin: auto;
+}
+
+.food-hero-section .sub-heading {
+    color: white;
+    font-size: 45px;
+    top: 30vw;
+}
 
 .product {
     background-color: var(--secondary1-1);
@@ -160,7 +181,7 @@
     width: 10vw;
     height: 50%;
     position: absolute;
-    top: 110vh;
+    top: 107vh;
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
@@ -184,6 +205,38 @@
 
 .pre-btn:hover img,
 .nxt-btn:hover img {
+    opacity: 1;
+}
+.two-pre,
+.two-nxt {
+    border: none;
+    width: 10vw;
+    height: 50%;
+    position: absolute;
+    top: 170vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.two-pre {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.two-nxt {
+    right: 0;
+}
+
+.two-pre img,
+.two-nxt img {
+    opacity: 0.2;
+}
+
+.two-pre:hover img, 
+.two-nxt:hover img {
     opacity: 1;
 }
 

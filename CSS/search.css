@@ -1,21 +1,60 @@
-.search-results{
-    width: 100%;
-    padding: 60px 0;
-}
-.heading{
-    font-size: 20px;
-    text-transform: capitalize;
-    font-weight:300;
-    margin-bottom: 40px;
-    padding: 0 10vw;
-}
-.heading span{
-    font-weight: 600;
+:root {
+    /* Primary colors */
+    --primary1: #E2F1CB;
+    --primary2: #D3EBAF;
+    --primary0: #B6D586;
+    --primary3: #99BE60;
+    --primary4: #7AA43A;
+    /* Secondary Colors 1 */
+    --secondary1-1: #FFE0D7;
+    --secondary1-2: #FFCCBE;
+    --secondary1-0: #E7A592;
+    --secondary1-3: #CE7F68;
+    --secondary1-4: #B2593F;
+    /* Secondary Colors 2 */
+    --secondary2-1: #B8A6C3;
+    --secondary2-2: #9B82AB;
+    --secondary2-0: #86659B;
+    --secondary2-3: #71498A;
+    --secondary2-4: #5B2F77;
 }
 
-.product-container{
-    display: grid;
-    grid-template-columns: repeat( 4, 1fr);
-    height:auto;
-    grid-row-gap: 40px;
+
+form{
+    background-color: var(--secondary2-4);
+    width: 300px;
+    height:44px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input {
+    all: unset;
+    font: 16px system-ui;
+    color:#FFF;
+    height: 100%;
+    width: 100%;
+    padding:6px 10px;
+}
+
+::placeholder{
+    color:white;
+    opacity: 0.7;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height:44px;
+}
+
+svg{
+    color:white;
+    fill:currentColor;
+    width:44px;
+    height:44px;
+    padding:10px;
 }
