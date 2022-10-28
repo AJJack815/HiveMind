@@ -2,28 +2,17 @@
 @import 'footer.css';
 @import 'product.css';
 @import 'credit.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
 :root {
-    /* Primary colors */
-    --primary1: #E2F1CB;
-    --primary2: #D3EBAF;
-    --primary0: #B6D586;
-    --primary3: #99BE60;
-    --primary4: #7AA43A;
-    /* Secondary Colors 1 */
-    --secondary1-1: #FFE0D7;
-    --secondary1-2: #FFCCBE;
-    --secondary1-0: #E7A592;
-    --secondary1-3: #CE7F68;
-    --secondary1-4: #B2593F;
-    /* Secondary Colors 2 */
-    --secondary2-1: #B8A6C3;
-    --secondary2-2: #9B82AB;
-    --secondary2-0: #86659B;
-    --secondary2-3: #71498A;
-    --secondary2-4: #5B2F77;
+    --light: #f29544;
+    --medium: #a67665;
+    --medium-dark: #733a2d;
+    --dark: #59332a;
+    --really-dark: #261f1d;
 }
+
 
 .hero-section {
     width: 100%;
@@ -43,8 +32,10 @@
 
 .hero-section .sub-heading {
     color: white;
-    font-size: 45px;
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
 }
+
 .food-hero-section {
     width: 100%;
     height: calc(100vh - 120px);
@@ -68,7 +59,7 @@
 }
 
 .product {
-    background-color: var(--secondary1-1);
+    background-color: var(--medium);
     padding-top: 5px;
 }
 
@@ -157,6 +148,7 @@
 
 .product-brand {
     text-transform: uppercase;
+    font-family: 'Crete Round', serif;
 }
 
 .product-short-des {
@@ -173,6 +165,7 @@
 .price {
     font-weight: 900;
     font-size: 20px;
+    font-family: 'Crete Round', serif;
 }
 
 .pre-btn,
@@ -207,6 +200,7 @@
 .nxt-btn:hover img {
     opacity: 1;
 }
+
 .two-pre,
 .two-nxt {
     border: none;
@@ -235,7 +229,7 @@
     opacity: 0.2;
 }
 
-.two-pre:hover img, 
+.two-pre:hover img,
 .two-nxt:hover img {
     opacity: 1;
 }
@@ -261,15 +255,15 @@
     object-fit: cover;
 }
 
-.collection p {
+.collection-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff;
+    color: rgb(207, 207, 207);
     font-size: 50px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .collection:nth-child(3) {

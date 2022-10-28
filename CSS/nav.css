@@ -1,23 +1,11 @@
-:root{
-    /* Primary colors */
-        --primary1:#E2F1CB;
-        --primary2:#D3EBAF;
-        --primary0:#B6D586;
-        --primary3:#99BE60;
-        --primary4:#7AA43A;
-    /* Secondary Colors 1 */
-        --secondary1-1:#FFE0D7;
-        --secondary1-2:#FFCCBE;
-        --secondary1-0:#E7A592;
-        --secondary1-3:#CE7F68;
-        --secondary1-4:#B2593F;
-    /* Secondary Colors 2 */
-        --secondary2-1:#B8A6C3;
-        --secondary2-2:#9B82AB;
-        --secondary2-0:#86659B;
-        --secondary2-3:#71498A;
-        --secondary2-4:#5B2F77;
-    }
+:root {
+    --light: #f29544;
+    --light-hover: #dc883e;
+    --medium: #a67665;
+    --medium-dark: #733a2d;
+    --dark:  #59332a;
+    --really-dark: #261f1d;
+  }
 
 * {
     margin: 0;
@@ -30,7 +18,7 @@
     top: 0;
     left: 0;
     width: 100;
-    background-color: var(--secondary2-1);
+    background-color: var(--light);
     z-index: 9;
 }
 
@@ -46,6 +34,7 @@
 }
 .brand-logo{
     height: 100px;
+    width: 150px;
 }
 
 
@@ -99,7 +88,7 @@
     padding: 10px 10vw;
     justify-content: center;
     list-style: none;
-    border-top: 1px solid var(--secondary2-4);
+    border-top: 1px solid var(--medium-dark);
 }
 
 .link{
@@ -114,5 +103,5 @@
 
 .link:hover{
     opacity: 1;
-    background-color: var(--secondary2-2);
+    background-color: var(--light-hover);
 }
