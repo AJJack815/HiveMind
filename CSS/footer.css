@@ -61,14 +61,13 @@ footer {
 
 .footer-title,
 .info {
-    color: rgba(255, 255, 255, 0.75);
+    color:var(--dark);
     margin: 20px 0;
     text-transform: capitalize;
 }
 
 .footer-title {
     margin-top: 60px;
-    color: #FFF;
 }
 
 .footer-social-container {
@@ -78,9 +77,13 @@ footer {
 }
 
 .social-link {
-    color: #FFF;
+    color: var(--really-dark);
     margin-left: 20px;
     text-transform: capitalize;
+    text-decoration: none;
+}
+.social-linl:hover{
+    background-color: #dc883e;
 }
 
 .social-link:nth-child(1) {

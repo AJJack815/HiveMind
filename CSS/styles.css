@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
+
 :root {
     --light: #f29544;
     --medium: #a67665;
@@ -13,6 +14,10 @@
     --really-dark: #261f1d;
 }
 
+body{
+    background-color: var(--medium-dark)
+
+}
 
 .hero-section {
     width: 100%;
@@ -59,7 +64,7 @@
 }
 
 .product {
-    background-color: var(--medium);
+    color:var(--light);
     padding-top: 5px;
 }
 
@@ -89,6 +94,7 @@
     width: 250px;
     height: 450px;
     margin-right: 40px;
+    position:relative ;
 }
 
 .product-image {
@@ -273,4 +279,9 @@
 
 #product-page .product-card {
     width: 33%;
+}
+hr{
+    height: 3px;
+    background-color:var(--light);
+    border: none;
 }
