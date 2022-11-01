@@ -6,10 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit-Generic Coffee</title>
-    <link rel="stylesheet" href="CSS\styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
+	<script> 
+			const productContainers = [...document.querySelectorAll('.product-container')];
+			const nxtBtn = [...document.querySelectorAll('.credit-nxt')];
+			const preBtn = [...document.querySelectorAll('.credit-pre')];
+
+			productContainers.forEach((item, i) => {
+				let containerDimenstions = item.getBoundingClientRect();
+    		    let containerWidth = containerDimenstions.width;
+
+    	nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+			})
+		preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+					})
+			})
+			
+			
+			
+		var imgArray = new Array(
+			'akhilesh-sharma-6xtK1Pn-PTI-unsplash.jpg',
+			'alina-karpenko-d8GDJalt_BE-unsplash.jpg',
+			'ann-74NChp1cn5I-unsplash.jpg',
+			'ari-spada-RCYrA-AiFSo-unsplash.jpg',
+			'fallon-michael-0-xIKrdFj4I-unsplash.jpg',
+		
+		);
+
+
+		var titleArray = new Array(
+			'Akhilesh Sharma',
+			'Alina Karpenko',
+			'Ann',
+			'Ari Spada',
+			'Fallon Micheal',
+		);
+			
+		var imgPath = "img/Product/";
+		
+		function swapImage(imgID) {
+
+			var theImage = document.getElementById('theImage');
+			var textDiv = document.getElementById('bottomText');
+
+			var newImg;
+			var textTitle;
+
+			newImg = imgArray[imgID];
+			theImage.src = imgPath + newImg;
+
+			textTitle=titleArray[imgID];
+
+      			textDiv.innerHTML = textTitle;
+		}
+			
+		function preloadImages() {		
+			for(var i = 0; i < imgArray.length; i++) {
+				var tmpImg = new Image;
+				tmpImg.src = imgPath + imgArray[i];
+			}
+		}
+		</script>
     <nav id="top" class="navbar">
         <div class="nav">
             <img src="img/Logos/dark-logo.png" class="brand-logo" alt="">
@@ -31,11 +93,14 @@
         </ul>
     </nav>
     <!-- Main Section-->
+	
     <section class="credit">
         <h1> Credit to the Photographers</h1>
         <hr>
+		
+		<section class="product-container">
         <div id="thumbs">
-            <button class="credit-pre"><img src="img/buttons/arrow.png" alt="" width="13" heoght="22"></button>
+            <button class="credit-pre"><img src="img/buttons/arrow.png" alt=""></button>
             <button class="credit-nxt"><img src="img/buttons/arrow.png" alt=""></button>
             <section class="product-container">
             <img src="img/Product/akhilesh-sharma-6xtK1Pn-PTI-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(0);" />

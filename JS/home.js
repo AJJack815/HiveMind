@@ -14,3 +14,11 @@ productContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+var modal = document.getElementById('id01');
+
+window.onclick = funtion(event) {
+  if (event.target == modal){
+    modal.style.display = "none"
+  }
+}

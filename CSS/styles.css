@@ -14,10 +14,7 @@
     --really-dark: #261f1d;
 }
 
-body{
-    background-color: var(--medium-dark)
 
-}
 
 .hero-section {
     width: 100%;
@@ -66,6 +63,8 @@ body{
 .product {
     color:var(--light);
     padding-top: 5px;
+    background-color: var(--medium-dark);
+    margin-top: 30px;
 }
 
 .product h2 {
@@ -249,6 +248,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    background-color: var(--medium)
 }
 
 .collection {
@@ -267,7 +267,9 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: rgb(207, 207, 207);
+    color: var(--medium-dark);
+    padding:5px;
+    background-color:var(--light);
     font-size: 50px;
     text-transform: uppercase;
 }
@@ -281,7 +283,14 @@ body{
     width: 33%;
 }
 hr{
-    height: 3px;
+    height: 8px;
     background-color:var(--light);
     border: none;
+    margin:0;
+    padding-bottom:0;
+}
+.footer-collection {
+    height:8px;
+    background-color: var(--medium);
+
 }

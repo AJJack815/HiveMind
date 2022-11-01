@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="img/Logos/favicon.ico" type="image/x-icon">
-    <script src="JS/home.js"></script>
+    
     <title>Hive Mind</title>
 
 
@@ -16,6 +16,8 @@
 
 <body>
     <!-- Navigation Start-->
+
+    <script src="JS/home.js"></script>
     <nav id="top" class="navbar">
         <div class="nav">
             <img src="img/Logos/dark-logo.png" class="brand-logo" alt="">
@@ -24,7 +26,46 @@
                     <input type="text" class="search-box" placeholder="Search Product">
                     <button class="search-btn"> search</button>
                 </div>
-                <a href="#"> <img src="img/buttons/user.png" alt=""></a>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-image:url(img/buttons/user.png); background-repeat: no-repeat;" class="user">   </button>
+                 <!-- Starts of the sign up form-->
+                 <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
+                    <form class="modal-content" action="/action_page.php">
+                      <div class="container">
+                        <h1>Sign Up</h1>
+                        <p>Please fill in this form to create an account.</p>
+                        <hr class="signup-form">
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                  
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                        <div class="clearfix">
+                            <button  type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button  type="submit" class="signup">Sign Up</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+                    <script>
+                        var modal = document.getElementById('id01');
+       
+                           
+                           window.onclick = function(event) {
+                               if (event.target == modal) {
+                                   modal.style.display = "none";
+                               }
+                           } 
+                           </script>
+                    <!-- End Sign up form-->
                 <a href="#"> <img src="img/buttons/cart.png" alt=""></a>
             </div>
         </div>
@@ -35,16 +76,15 @@
             <li class="link-item"> <a href="food.html" class="link"> Food</a></li>
             <li class="link-item"> <a href="#" class="link">Beans</a></li>
         </ul>
-    </nav>
+    </nav> 
+       <!-- Nav End-->
     <header class="hero-section">
         <img src="img\Logos\logo-header.png" alt="" class="logo">
         <div class="content">
             <p class="sub-heading"> Sweetest In Utah</p>
         </div>
     </header>
-    <!-- Nav End-->
-    <hr>
-    <br>
+
     <!-- Weeks Top Seller: Start-->
     <section class="product">
         <h2 class="best-seller"> This Weeks Best Sellers</h2>
@@ -164,15 +204,14 @@
                     <span class="price">$3.99</span><span class="actual-price"></span>
                 </div>
             </div>
-            <button class="pre-btn"><img src="img/buttons/arrow.png" alt="" width="13" heoght="22"></button>
+            <button class="pre-btn"><img src="img/buttons/arrow.png" alt=""></button>
             <button class="nxt-btn"><img src="img/buttons/arrow.png" alt=""></button>
 
         </section>
     </section>
     <!-- Weeks Top End-->
-    <br>
     <hr>
-    <br>
+    <hr class="footer-collection">
     <!-- Collection Start-->
     <section class="collection-container">
         <a href="coffee.html" class="collection">
@@ -195,10 +234,10 @@
             <img src="Images/cookies.jpeg" alt="">
             <p class="collection-title">Cookies <br> And Cakes</p>
         </a>
-        </a>
+    
     </section>
     <!-- Collection End-->
-    <br>
+    <hr class="footer-collection">
     <!-- Footer Start-->
     <footer>
         <div class="footer-content">
