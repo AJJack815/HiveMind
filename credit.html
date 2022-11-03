@@ -6,72 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit-Generic Coffee</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/credit.css">
 </head>
 
 <body>
-	<script> 
-			const productContainers = [...document.querySelectorAll('.product-container')];
-			const nxtBtn = [...document.querySelectorAll('.credit-nxt')];
-			const preBtn = [...document.querySelectorAll('.credit-pre')];
-
-			productContainers.forEach((item, i) => {
-				let containerDimenstions = item.getBoundingClientRect();
-    		    let containerWidth = containerDimenstions.width;
-
-    	nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-			})
-		preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-					})
-			})
-			
-			
-			
-		var imgArray = new Array(
-			'akhilesh-sharma-6xtK1Pn-PTI-unsplash.jpg',
-			'alina-karpenko-d8GDJalt_BE-unsplash.jpg',
-			'ann-74NChp1cn5I-unsplash.jpg',
-			'ari-spada-RCYrA-AiFSo-unsplash.jpg',
-			'fallon-michael-0-xIKrdFj4I-unsplash.jpg',
-		
-		);
-
-
-		var titleArray = new Array(
-			'Akhilesh Sharma',
-			'Alina Karpenko',
-			'Ann',
-			'Ari Spada',
-			'Fallon Micheal',
-		);
-			
-		var imgPath = "img/Product/";
-		
-		function swapImage(imgID) {
-
-			var theImage = document.getElementById('theImage');
-			var textDiv = document.getElementById('bottomText');
-
-			var newImg;
-			var textTitle;
-
-			newImg = imgArray[imgID];
-			theImage.src = imgPath + newImg;
-
-			textTitle=titleArray[imgID];
-
-      			textDiv.innerHTML = textTitle;
-		}
-			
-		function preloadImages() {		
-			for(var i = 0; i < imgArray.length; i++) {
-				var tmpImg = new Image;
-				tmpImg.src = imgPath + imgArray[i];
-			}
-		}
-		</script>
     <nav id="top" class="navbar">
         <div class="nav">
             <img src="img/Logos/dark-logo.png" class="brand-logo" alt="">
@@ -93,44 +31,139 @@
         </ul>
     </nav>
     <!-- Main Section-->
-	
+
     <section class="credit">
         <h1> Credit to the Photographers</h1>
         <hr>
-		
-		<section class="product-container">
-        <div id="thumbs">
-            <button class="credit-pre"><img src="img/buttons/arrow.png" alt=""></button>
-            <button class="credit-nxt"><img src="img/buttons/arrow.png" alt=""></button>
-            <section class="product-container">
-            <img src="img/Product/akhilesh-sharma-6xtK1Pn-PTI-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(0);" />
-            <img src="img/Product/alina-karpenko-d8GDJalt_BE-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(1);" />
-            <img src="img/Product/ann-74NChp1cn5I-unsplash.jpg" alt="Salad" width="200" height="200" onmouseover="swapImage(2);" />
-            <img src="img/Product/ari-spada-RCYrA-AiFSo-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(3);" />
-            <img src="img/Product/fallon-michael-0-xIKrdFj4I-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(4);">
-            <img src="img/Product/joshua-flores-5RQffqRkmWQ-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(5);">
-            <img src="img/Product/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(6);">
-            <img src="img/Product/manki-kim-L82-kkEBOd0-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(7);">
-            <img src="img/Product/oriol-portell-MZxSQPSOexI-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(8);">
-            <img src="img/Product/pablo-merchan-montes-SCbq6uKCyMY-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(9);">
-            <img src="img/Product/salar-arif-_5X6RIlUFbM-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(10);">
-            <img src="img/Product/snapbythree-my-g6e641CiHFQ-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(11);">
-            <img src="img/Product/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(12);">
-            <img src="img/Product/valeriia-miller-9kIdbW3Fwuo-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(13);">
-            <img src="img/Product/yana-bhKdRjYJ1CA-unsplash.jpg" alt="" width="200" height="200" onmouseover="swapImage(14);">
-            
-            </section>
-            <br />
-                
-        </div>
-        <div id="image">
-    
-            <img id="theImage" src="img/Product/akhilesh-sharma-6xtK1Pn-PTI-unsplash.jpg" alt=""width="550" height="500" />
-            <h3 id="bottomText"> </h3>
-        </div>
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext"> 1/21 </div>
+                <img src="img/Product/akhilesh-sharma-6xtK1Pn-PTI-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 2/21 </div>
+                <img src="img/Product/alina-karpenko-d8GDJalt_BE-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 3/21 </div>
+                <img src="img/Product/american-heritage-chocolate-DoK5qEy2L60-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 4/21 </div>
+                <img src="img/Product/ann-74NChp1cn5I-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 5/21 </div>
+                <img src="img/Product/ari-spada-RCYrA-AiFSo-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 6/21 </div>
+                <img src="img/Product/fallon-michael-0-xIKrdFj4I-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 7/21 </div>
+                <img src="img/Product/gayatri-malhotra-OKUGCTLvSw4-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 8/21 </div>
+                <img src="img/Product/joshua-flores-5RQffqRkmWQ-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 9/21 </div>
+                <img src="img/Product/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 10/21 </div>
+                <img src="img/Product/madison-kaminski-2c6_d8svbkY-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 11/21 </div>
+                <img src="img/Product/manki-kim-L82-kkEBOd0-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 12/21 </div>
+                <img src="img/Product/michael-chiara-BLy3LMYMVvE-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 13/21 </div>
+                <img src="img/Product/oriol-portell-MZxSQPSOexI-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 14/21 </div>
+                <img src="img/Product/pablo-merchan-montes-SCbq6uKCyMY-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 15/21 </div>
+                <img src="img/Product/pexels-terrance-barksdale-8837096.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 16/21 </div>
+                <img src="img/Product/salar-arif-_5X6RIlUFbM-unsplash.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">17 / 21</div>
+                <img src="img/Product/snapbythree-my-g6e641CiHFQ-unsplash.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">18 / 21</div>
+                <img src="img/Product/steven-weeks-iQq1NyJj-n8-unsplash.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">19 / 21</div>
+                <img src="img/Product/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">20 / 21</div>
+                <img src="img/Product/valeriia-miller-9kIdbW3Fwuo-unsplash.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">21 / 21</div>
+                <img src="img/Product/yana-bhKdRjYJ1CA-unsplash.jpg" style="width:100%">
+            </div>
 
 
-    </section>
+            <a class="prev" onclick="plusSlides(-1)">&#10094; </a>
+            <a class="next" onclick="plusSlides(+1)">&#10095; </a>
+
+            <div class="caption-container">
+                <p id="caption"> </p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="img/thumbnails/akhilesh-sharma165x165.jpg" alt=" Akhilesh Sharma" class="demo cursor" style="width:100%;"
+                        onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img src="img/thumbnails/alina-karpenko165x165.jpg" alt=" Alina Karpenko" class="demo cursor" onclick="currentSlide(2)" style="width:100%;">
+                </div>
+                <div class="column">
+                    <img src="img/thumbnails/american-heritage165x165.jpg" alt= "American Heritage Chocolate" class="demo cursor" onclick="currentSlide(3)" style="width:100%;">
+                </div>
+                <div class="column">
+                    <img src="img/thumbnails/ann165x165.jpg" alt=" Ann" class="demo cursor" onclick="currentSlide(4)" style="width:100%;">
+                </div>
+                <div class="column">
+                    <img src="img/thumbnails/ari-spada165x165.jpg" alt=" Ari Spada" class="demo cursor" onclick="currentSlide(5)" style="width:100%;">
+                </div>
+                <div class="column">
+                    <img src="img/thumbnails/fallon-michael165x165.jpg" alt=" Fallon Micheal" class="demo cursor" onclick="currentSlide(6)" style="width:100%;">
+                </div>
+                <div class="column">
+                    <img src="img/thumbnails/gayatri-malhotr165x165.jpg" alt="Gayatri Malhorta" class="demo cursor" onclick="currentSlide(7)" style="width:100%;">
+                </div>
+                <div class="column">
+                    <img src="img/thumbnails/joshua-flores165x165.jpg" alt="Joshua Flores" class="demo cursor" onclick="currentSlide(8)" style="width:100%;">
+                </div>
+                <div class="column">
+                    <img src="" alt="" class="demo cursor" onclick="currentSlide(9)" style="width:100%;">
+                </div>
+                <div class="column">
+                    <img src="" alt="" class="demo cursor" onclick="currentSlide(10)" style="width:100%;">
+                </div>
+            </div>
+        </div>
+        <script src="JS/script.js"></script>
 </body>
 
 </html>

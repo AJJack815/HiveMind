@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="img/Logos/favicon.ico" type="image/x-icon">
-    
+
     <title>Hive Mind</title>
 
 
@@ -24,48 +24,52 @@
                     <input type="text" class="search-box" placeholder="Search Product">
                     <button class="search-btn"> search</button>
                 </div>
-                <button onclick="document.getElementById('id01').style.display='block'" class="user"> <img src="img/buttons/user.png" alt="">   </button>
-                 <!-- Starts of the sign up form-->
-                 <div id="id01" class="modal">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
+                <button onclick="document.getElementById('id01').style.display='block'" class="user"> <img
+                        src="img/buttons/user.png" alt=""> </button>
+                <!-- Starts of the sign up form-->
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">x</span>
                     <form class="modal-content" action="/action_page.php">
-                      <div class="container">
-                        <h1>Sign Up</h1>
-                        <p>Please fill in this form to create an account.</p>
-                        <hr class="signup-form">
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                  
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                  
-                        <label for="psw-repeat"><b>Repeat Password</b></label>
-                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                  
-                        <label>
-                          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                        </label>
-                        <div class="clearfix">
-                            <button  type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                            <button  type="submit"  class="signupbtn">Sign Up</button>
-                          </div>
+                        <div class="container">
+                            <h1>Sign Up</h1>
+                            <p>Please fill in this form to create an account.</p>
+                            <hr class="signup-form">
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                                Remember me
+                            </label>
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">Cancel</button>
+                                <button type="submit" class="signupbtn">Sign Up</button>
+                            </div>
                         </div>
-                      </form>
-                    </div>
-                    <script src="home.js"></script>
-                    <script>
-                        var modal = document.getElementById('id01');
-       
-                           
-                           window.onclick = function(event) {
-                               if (event.target == modal) {
-                                   modal.style.display = "none";
-                               }
-                           } 
-                           </script>
-                    <!-- End Sign up form-->
+                    </form>
+                </div>
+                <script src="home.js"></script>
+                <script>
+                    var modal = document.getElementById('id01');
+
+
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    } 
+                </script>
+                <!-- End Sign up form-->
                 <a href="#"> <img src="img/buttons/cart.png" alt="cart png"></a>
-              </div>
+            </div>
         </div>
         <hr>
         <ul class="link-container">
@@ -75,8 +79,8 @@
             <li class="link-item"> <a href="food.html" class="link"> Food</a></li>
             <li class="link-item"> <a href="#" class="link">Beans</a></li>
         </ul>
-    </nav> 
-       <!-- Nav End-->
+    </nav>
+    <!-- Nav End-->
     <header class="hero-section">
         <img src="img\Logos\logo-header.png" alt="" class="logo">
         <div class="content">
@@ -233,7 +237,7 @@
             <img src="Images/cookies.jpeg" alt="">
             <p class="collection-title">Cookies <br> And Cakes</p>
         </a>
-    
+
     </section>
     <!-- Collection End-->
     <hr class="footer-collection">
