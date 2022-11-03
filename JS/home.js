@@ -15,13 +15,6 @@ productContainers.forEach((item, i) => {
     })
 })
 
-var modal = document.getElementById('id01');
-
-window.onclick = funtion(event) {
-  if (event.target == modal){
-    modal.style.display = "none"
-  }
-}
 
 
 var modal = document.getElementById('id01');
