@@ -75,7 +75,7 @@
             </div>
         </div>
             <div class="tab">
-                <button class="tablink" onclick="openTab(event,'Home')"> Home</button>
+                <button id="defaultOpen" class="tablink" onclick="openTab(event,'Home')"> Home</button>
                 <button class="tablink" onclick="openTab(event,'Coffee')"> Coffee</button>
                 <button class="tablink" onclick="openTab(event,'Tea')"> Tea</button>
                 <button class="tablink" onclick="openTab(event,'Food')"> Food</button>
@@ -423,6 +423,30 @@
 <div id="Beans" class="tabcontent">
     <h2> Nothing Here Yet</h2>
 </div>
+<script>
+    function openTab(evt, tabName) {
+
+  var i, tabcontent, tablinks;
+
+ 
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+
+  tablinks = document.getEl
+  ementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+  document.getElementById("defaultOpen").click();
+}
+</script>
     <hr class="footer-collection">
     <!-- Footer Start-->
     <footer>
