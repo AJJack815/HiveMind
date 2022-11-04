@@ -15,8 +15,6 @@ productContainers.forEach((item, i) => {
     })
 })
 
-
-
 var modal = document.getElementById('id01');
 
 

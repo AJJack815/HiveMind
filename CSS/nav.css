@@ -222,3 +222,38 @@ input[type=text], input[type=password] {
   height: 100px;
   width: 150px;
 }
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: var(--light);
+}
+
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  display:flex;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+
+.tab button:hover {
+  background-color: var(--light-hover);
+}
+
+
+.tab button.active {
+  background-color: var(--light-hover);
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
