@@ -7,7 +7,7 @@
     --really-dark: #261f1d;
   }
 footer {
-    position: relative;
+    position: absolute;
     width: 100%;
     padding: 40px 10vw;
     padding-bottom: 80px;

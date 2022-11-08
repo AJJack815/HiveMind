@@ -13,11 +13,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
-.tabcontent {
-  color: black;
-  padding: 100px 20px;
+body,html{
   height: 100%;
+  margin: 0;
 }
 
 input[type=text],
@@ -192,12 +190,14 @@ button:hover {
   padding: 10px 10vw;
   justify-content: center;
   list-style: none;
+  background-color:var(--light);
   border-top: 1px solid var(--medium-dark);
 }
 .link-item{
   text-transform: capitalize;
   padding: 0 10px;
   margin: 0 5px;
+  font-size:20px;
   text-decoration: none;
   color: black;
   opacity: 0.9;
@@ -251,4 +251,6 @@ button:hover {
 .brand-logo {
   height: 100px;
   width: 150px;
+  margin:0;
+  padding:0;
 }
