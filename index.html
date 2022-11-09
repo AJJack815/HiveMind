@@ -10,10 +10,6 @@
     <script src="JS/home.js"></script>
     <title>Hive Mind</title>
 
-    <meta name="rating" content="General">
-    <script src="JS/stprage.js"></script>
-    <link rel="stylesheet" href="CSS/storeage.css">
-
 
 </head>
 
@@ -34,7 +30,7 @@
                         title="Close Modal">x</span>
                     <form class="modal-content" action="/action_page.php">
                         <div class="container">
-                            <h1>Sign Up</h1>
+                            <h2>Sign Up</h2>
                             <p>Please fill in this form to create an account.</p>
                             <hr class="signup-form">
                             <label for="email"><b>Email</b></label>
@@ -70,51 +66,27 @@
                     } 
                 </script>
                 <!-- End Sign up form-->
-                <section class="header__submenu" id="submenu">
-                    <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z">
-                            </path>
-                        </svg> Your Cart</button>
-                    <div id="shopping-cart" class="shopping-cart-container">
-                        <table id="cart-content">
-                            <thead>
-                                <tr>
-                                    <th>Image</th>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                        <p class="total-container" id="total-price"></p>
-                        <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
-                        <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
-                    </div>
-                </section>
-            </div>
+                  <a class="nav-items"> <img src="img/buttons/cart.png" alt=""></a>
+                        </div>
         </section>
         <hr>
         <ul class="link-container">
             <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Home', this)"
                     id="defaultOpen">Home</button></li>
-            <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Coffee', this)"
-                    id="defaultOpen">Coffee</button></li>
-            <li class="link-item"><button class="tablink, link-item" onclick="openPage('Tea', this)"
-                    id="defaultOpen">Tea</button></li>
-            <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Food', this)"
-                    id="defaultOpen">Food</button></li>
+            <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Coffee', this)">Coffee</button>
+            </li>
+            <li class="link-item"><button class="tablink, link-item" onclick="openPage('Tea', this)">Tea</button></li>
+            <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Food', this)">Food</button>
+            </li>
         </ul>
     </nav>
     <!-- Nav End-->
 
 
-    <header id="top" class="hero-section">
-        <img src="img\Logos\logo-header.png" alt="" class="logo">
+    <header class="hero-section">
+        <img src="img/Logos/logo-header.png" alt="" class="logo">
         <div class="content">
-            <p class="sub-heading"> Sweetest In Utah</p>
+            <h4 class="sub-heading"> Sweetest In Utah</h4>
         </div>
     </header>
     <div id="Home" class="tabcontent">
@@ -126,8 +98,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="discount-tag"></span>
-                        <img src="img/Product/joshua-flores-5RQffqRkmWQ-unsplash.jpg" class="product-thumb" alt=""
-                            width="1024" height="1024">
+                        <img src="img/Product/joshua-flores-5RQffqRkmWQ-unsplash.jpg" class="product-thumb" alt="" height="110" width="165">
                         <button class="card-btn add-to-cart" data-id="1">Add to cart</button>
                     </div>
                     <div class="product-info">
@@ -140,7 +111,7 @@
                     <div class="product-image">
                         <span class="discount-tag"></span>
                         <img src="img/Product/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" class="product-thumb" alt=""
-                            width="600" height="600">
+                            width="119" height="165">
                         <button class="card-btn add-to-cart" data-id="2">Add to Cart</button>
                     </div>
                     <div class="product-info">
@@ -246,29 +217,26 @@
         <!-- Weeks Top End-->
         <hr>
         <hr class="footer-collection">
-        <!-- Collection Start-->
+        <!-- Collection Start
+        Need to redo this! I dont like the styling and how it has to be at least 5 for it to look good.-->
         <section class="collection-container">
-            <a href="coffee.html" class="collection">
+            <a href="#Coffee" class="collection tab-link">
                 <img src="img/Product/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" alt="">
-                <p class="collection-title">Coffee</p>
+            <button class="tablink collection-title" onclick="openPage('Coffee', this)">Coffee</button>
             </a>
-            <a href="tea.html" class="collection">
-                <img src="Images/Tea/sweet-tea.jpeg" alt="">
-                <p class="collection-title">Tea</p>
+            <a href="#Tea" class="collection">
+                <img src="img/thumbnails/akhilesh-sharmaSm.jpg" alt="" width="60" height="60">
+                <button class="tablink collection-title" onclick="openPage('Tea', this)">Tea</button>
             </a>
-            <a href="food.html" class="collection">
+            <a href="#Food" class="collection">
                 <img src="img/Product/ari-spada-RCYrA-AiFSo-unsplash.jpg" alt="">
-                <p class="collection-title">Foods</p>
+                <button class="tablink collection-title" onclick="openPage('Food', this)">Food</button>
             </a>
             <a href="#" class="collection">
                 <img src="img/Product/pablo-merchan-montes-SCbq6uKCyMY-unsplash.jpg" alt="">
-                <p class="collection-title">Beans</p>
+                <button class="tablink collection-title" onclick="openPage('Beans', this)">Beans</button>
+            </a><a href="#" class="collection">
             </a>
-            <a href="food.html" class="collection">
-                <img src="Images/cookies.jpeg" alt="">
-                <p class="collection-title">Cookies <br> And Cakes</p>
-            </a>
-
         </section>
         <!-- Collection End-->
     </div>
@@ -534,7 +502,6 @@
             // Show the specific tab content
             document.getElementById(pageName).style.display = "block";
 
-            // Add the specific color to the button used to open the tab content
             elmnt.style.backgroundColor = color;
         }
 
