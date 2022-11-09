@@ -70,7 +70,30 @@
                     } 
                 </script>
                 <!-- End Sign up form-->
-                <a href="cart.html"> <img src="img/buttons/cart.png" alt="cart png"></a>
+                <section class="header__submenu" id="submenu">
+                    <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z">
+                            </path>
+                        </svg> Your Cart</button>
+                    <div id="shopping-cart" class="shopping-cart-container">
+                        <table id="cart-content">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <p class="total-container" id="total-price"></p>
+                        <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
+                        <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+                    </div>
+                </section>
             </div>
         </section>
         <hr>
@@ -105,12 +128,12 @@
                         <span class="discount-tag"></span>
                         <img src="img/Product/joshua-flores-5RQffqRkmWQ-unsplash.jpg" class="product-thumb" alt=""
                             width="1024" height="1024">
-                        <button class="card-btn">Add to cart</button>
+                        <button class="card-btn add-to-cart" data-id="1">Add to cart</button>
                     </div>
                     <div class="product-info">
                         <h2 class="product-brand">Blueberry Muffin</h2>
                         <p class="product-short-des"></p>
-                        <span class="price">$3.99</span><span class="actual-price"></span>
+                        <span class="card-price">$3.99</span><span class="actual-price"></span>
                     </div>
                 </div>
                 <div class="product-card">
@@ -118,24 +141,25 @@
                         <span class="discount-tag"></span>
                         <img src="img/Product/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" class="product-thumb" alt=""
                             width="600" height="600">
-                        <button class="card-btn">Add to Cart</button>
+                        <button class="card-btn add-to-cart" data-id="2">Add to Cart</button>
                     </div>
                     <div class="product-info">
                         <h2 class="product-brand"> Cold Brew</h2>
                         <p class="product-short-des"></p>
-                        <span class="price">$4.55</span><span class="actual-price"></span>
+                        <span class="card-price">$4.55</span><span class="actual-price"></span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
                         <span class="discount-tag"></span>
                         <img src="Images/Coffee/Frappe.jpeg" class="product-thumb" alt="" width="183" height="275">
-                        <button class="card-btn">Add to Cart</button>
+                        <button class="card-btn add-to-cart" data-id="3">Add to Cart</button>
                     </div>
                     <div class="product-info">
                         <h2 class="product-brand"> Caramel Frappe</h2>
                         <p class="product-short-des"></p>
-                        <span class="price">$6.99</span><span class="actual-price"></span>
+                        <span class="card-price">$6.99</span>
+                        <span class="actual-price"></span>
                     </div>
                 </div>
                 <div class="product-card">
@@ -143,7 +167,7 @@
                         <span class="discount-tag"></span>
                         <img src="img/Product/akhilesh-sharma-6xtK1Pn-PTI-unsplash.jpg" class="product-thumb" alt=""
                             width="353" height="143">
-                        <button class="card-btn">Add to cart</button>
+                        <button class="card-btn add-to-cart" data-id="4">Add to cart</button>
                     </div>
                     <div class="product-info">
                         <h2 class="product-brand">Black Tea</h2>
@@ -298,8 +322,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="discount-tag"></span>
-                        <img src="Images/Coffee/Frappe.jpeg" class="product-thumb" alt=""
-                            width="1024" height="1024">
+                        <img src="Images/Coffee/Frappe.jpeg" class="product-thumb" alt="" width="1024" height="1024">
                         <button class="card-btn">Add to cart</button>
                     </div>
                     <div class="product-info">
