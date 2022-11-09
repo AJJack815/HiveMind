@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hivemind-Shopping Cart</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <nav id="top" class="navbar">
+        <section class="nav">
+            <img src="img/Logos/HivemindLogo.png" class="brand-logo" alt="">
+            <div class="items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="Search Product">
+                    <button class="search-btn"> search</button>
+                </div>
+                <button onclick="document.getElementById('id01').style.display='block'" class="user"> <img
+                        src="img/buttons/user.png" alt=""> </button>
+                <!-- Starts of the sign up form-->
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">x</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>Sign Up</h1>
+                            <p>Please fill in this form to create an account.</p>
+                            <hr class="signup-form">
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                                Remember me
+                            </label>
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">Cancel</button>
+                                <button type="submit" class="signupbtn">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script src="home.js"></script>
+                <script>
+                    var modal = document.getElementById('id01');
+
+
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    } 
+                </script>
+                <!-- End Sign up form-->
+                <a href="cart.html"> <img src="img/buttons/cart.png" alt="cart png"></a>
+            </div>
+        </section>
+        <hr>
+        <ul class="link-container">
+            <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Home', this)"
+                    id="defaultOpen">Home</button></li>
+            <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Coffee', this)"
+                    id="defaultOpen">Coffee</button></li>
+            <li class="link-item"><button class="tablink, link-item" onclick="openPage('Tea', this)"
+                    id="defaultOpen">Tea</button></li>
+            <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Food', this)"
+                    id="defaultOpen">Food</button></li>
+        </ul>
+    </nav>
+
+    <section class="shopping-cart">
+        <div class="title">
+            Shopping Cart 
+        </div>
+
+        <div class="item">
+            <div class="buttons">
+                <span class="delete-btn"> </span>
+                <span class="like-btn"></span>
+            </div>
+
+            <div class="image">
+                <img src="img/" alt="">
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+</html>
