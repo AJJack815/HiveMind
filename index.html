@@ -22,13 +22,13 @@
                     <input type="text" class="search-box" placeholder="Search Product">
                     <button class="search-btn"> search</button>
                 </div>
-                <button onclick="document.getElementById('id01').style.display='block'" class="user"> <img
+                <button onclick="document.getElementById('id01').style.display='block'" class="user nav-items"> <img
                         src="img/buttons/user.png" alt=""> </button>
                 <!-- Starts of the sign up form-->
                 <div id="id01" class="modal">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
                         title="Close Modal">x</span>
-                    <form class="modal-content" action="/action_page.php">
+                    <form class="modal-content" action="#">
                         <div class="container">
                             <h2>Sign Up</h2>
                             <p>Please fill in this form to create an account.</p>
@@ -66,8 +66,8 @@
                     } 
                 </script>
                 <!-- End Sign up form-->
-                  <a class="nav-items"> <img src="img/buttons/cart.png" alt=""></a>
-                        </div>
+                <a class="nav-items"> <img src="img/buttons/cart.png" alt=""></a>
+            </div>
         </section>
         <hr>
         <ul class="link-container">
@@ -98,7 +98,8 @@
                 <div class="product-card">
                     <div class="product-image">
                         <span class="discount-tag"></span>
-                        <img src="img/Product/joshua-flores-5RQffqRkmWQ-unsplash.jpg" class="product-thumb" alt="" height="110" width="165">
+                        <img src="img/Product/joshua-flores-5RQffqRkmWQ-unsplash.jpg" class="product-thumb" alt=""
+                            height="110" width="165">
                         <button class="card-btn add-to-cart" data-id="1">Add to cart</button>
                     </div>
                     <div class="product-info">
@@ -211,7 +212,24 @@
                 </div>
                 <button class="pre-btn" aria-label="Back Button"><img src="img/buttons/arrow.png" alt=""></button>
                 <button class="nxt-btn" aria-label="Next Button"><img src="img/buttons/arrow.png" alt=""></button>
-                <script src="JS/home.js"></script>
+                <script>
+                    const productContainers = [...document.querySelectorAll('.product-container')];
+                    const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+                    const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+                    productContainers.forEach((item, i) => {
+                        let containerDimenstions = item.getBoundingClientRect();
+                        let containerWidth = containerDimenstions.width;
+
+                        nxtBtn[i].addEventListener('click', () => {
+                            item.scrollLeft += containerWidth;
+                        })
+
+                        preBtn[i].addEventListener('click', () => {
+                            item.scrollLeft -= containerWidth;
+                        })
+                    })
+                </script>
             </section>
         </section>
         <!-- Weeks Top End-->
@@ -222,10 +240,10 @@
         <section class="collection-container">
             <a href="#Coffee" class="collection tab-link">
                 <img src="img/Product/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" alt="">
-            <button class="tablink collection-title" onclick="openPage('Coffee', this)">Coffee</button>
+                <button class="tablink collection-title" onclick="openPage('Coffee', this)">Coffee</button>
             </a>
             <a href="#Tea" class="collection">
-                <img src="img/thumbnails/akhilesh-sharmaSm.jpg" alt="" width="60" height="60">
+                <img src="img/thumbnails/yanaSm.jpg" alt="">
                 <button class="tablink collection-title" onclick="openPage('Tea', this)">Tea</button>
             </a>
             <a href="#Food" class="collection">
@@ -534,8 +552,8 @@
             numquam totam laudantium dolore voluptatum placeat odit quos. Fuga, ducimus veniam? Architecto dolor fugit
             veritatis libero!</p>
         <div class="footer-social-container">
-            <a href="#" class="social-link"> Facebook</a>
-            <a href="#" class="social-link"> Instagram</a>
+            <a href="error.html" class="social-link"> Facebook</a>
+            <a href="error.html" class="social-link"> Instagram</a>
             <a href="#top" class="social-link"> Back To Top</a>
         </div>
         <p class="footer-credit"> This website was made by Arlo Jackson starting on October 11, 2022. All images were

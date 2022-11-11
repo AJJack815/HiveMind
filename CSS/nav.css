@@ -35,7 +35,7 @@ input[type=password]:focus {
 }
 
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid  var(--dark);
   margin-bottom: 25px;
 }
 
@@ -91,7 +91,7 @@ button:hover {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: rgb(212, 201, 185);
   margin: 5% auto 15% auto;
   border: 1px solid #888;
   width: 80%;
@@ -101,7 +101,9 @@ button:hover {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-
+hr .signup-form{
+  color:var(--dark);
+}
 .close {
   position: absolute;
   right: 35px;
@@ -126,7 +128,6 @@ button:hover {
 .user {
   width: 50px;
   height: 50px;
-  justify-content: center;
   background-color: none;
 }
 
@@ -175,14 +176,11 @@ button:hover {
 .search-box::placeholder {
   color: #a9a9a9;
 }
-
-.nav-items a {
-  margin-left: 20px;
+.nav-items{
+  display: inline;
+  float: inline-end;
 }
 
-.nav-items a img {
-  width: 30px;
-}
 
 .link-container {
   width: 100%;
@@ -232,7 +230,7 @@ button:hover {
 .navbar {
   top: 0;
   left: 0;
-  width: 100;
+  width: 99vw;
   background-color: var(--light);
   z-index: 9;
 }
@@ -243,14 +241,13 @@ button:hover {
   justify-content: space-between;
 }
 
-.nav-items {
-  display: flex;
-  align-items: center;
-}
 
 .brand-logo {
-  height: 100px;
-  width: 150px;
+  width:160px;
+  height:154px;
   margin:0;
   padding:0;
+}
+.tablink .collection-title{
+  opacity: 1;
 }
