@@ -17,16 +17,34 @@ body,html{
   height: 100%;
   margin: 0;
 }
-
-input[type=text],
-input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+.logo{
+  height: 80px;
+  display: block;
 }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea{
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    text-transform: capitalize;
+    color: #383838;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    font-family: 'roboto', sans-serif;
+
+}
+
+::placeholder{
+    color: #383838;
+}
+
 
 input[type=text]:focus,
 input[type=password]:focus {
@@ -58,12 +76,17 @@ button:hover {
 }
 
 .signupbtn {
-  background-color: #04AA6D;
+  background-color: var(--light);
+  width: 300px;
+    height: 40px;
+    opacity:1;
 }
 
 .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
+  width: 300px;
+    height: 40px;
 }
 
 
@@ -76,7 +99,30 @@ button:hover {
 .container {
   padding: 16px;
 }
+label{
+  text-transform: capitalize;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #383838;
+}
 
+label a{
+  color: #383838;
+}
+
+.link{
+  color: #383838;
+  text-transform: capitalize;
+  text-align:left;
+  display: inline;
+  max-width: 25px;
+  
+}
+
+.link:hover{
+  background-color: none;
+}
 .modal {
   display: none;
   position: fixed;

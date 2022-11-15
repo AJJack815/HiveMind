@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="img/Logos/favicon.ico" type="image/x-icon">
-    <script src="JS/home.js"></script>
+    <script src="JS/script.js"></script>
     <title>Hive Mind</title>
 
 
@@ -30,27 +30,16 @@
                         title="Close Modal">x</span>
                     <form class="modal-content" action="#">
                         <div class="container">
-                            <h2>Sign Up</h2>
-                            <p>Please fill in this form to create an account.</p>
-                            <hr class="signup-form">
-                            <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="email" required>
-
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
-
-                            <label for="psw-repeat"><b>Repeat Password</b></label>
-                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
-                                Remember me
-                            </label>
-                            <div class="clearfix">
-                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                    class="cancelbtn">Cancel</button>
-                                <button type="submit" class="signupbtn">Sign Up</button>
+                            <img src="img/Logos/dark-logo.png" class="logo" alt="">
+                            <div>
+                                <input type="text" autocomplete="off" id="name" placeholder="name">
+                                <input type="email" autocomplete="off" id="email" placeholder="email">
+                                <input type="password" autocomplete="off" id="password" placeholder="password">
+                                <input type="text" autocomplete="off" id="number" placeholder="number">
+                             <br>
+                                <button class="signupbtn">create account</button>
                             </div>
+                            <a href="/login" class="link">already have an account? Log in here</a>
                         </div>
                     </form>
                 </div>
