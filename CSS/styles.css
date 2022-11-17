@@ -33,27 +33,6 @@
   font-family: "Archivo Black", sans-serif;
 }
 
-.food-hero-section {
-  width: 100%;
-  height: calc(100vh - 120px);
-  background-image: url("../img/Logos/food-logo.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.food-hero-section .logo {
-  height: 150px;
-  display: none;
-  margin: auto;
-}
-
-.food-hero-section .sub-heading {
-  color: white;
-  font-size: 45px;
-  top: 30vw;
-}
 .tabcontent {
   color: black;
   display: none;
