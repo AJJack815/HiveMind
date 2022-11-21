@@ -151,14 +151,13 @@
   font-size: 20px;
   font-family: "Crete Round", serif;
 }
-
-.pre-btn,
-.nxt-btn {
+.pre-btn, .nxt-btn{
   border: none;
-  width: 10vw;
+  width: 6vw;
   height: 50%;
   position: absolute;
-  top: 110vh;
+  top: 120vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
@@ -166,25 +165,22 @@
   z-index: 8;
 }
 
-.pre-btn {
+.pre-btn{
   left: 0;
   transform: rotate(180deg);
 }
 
-.nxt-btn {
+.nxt-btn{
   right: 0;
 }
 
-.pre-btn img,
-.nxt-btn img {
+.pre-btn img, .nxt-btn img{
   opacity: 0.2;
 }
 
-.pre-btn:hover img,
-.nxt-btn:hover img {
+.pre-btn:hover img, .nxt-btn:hover img{
   opacity: 1;
 }
-
 
 .sell {
   text-align: center;

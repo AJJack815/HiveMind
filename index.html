@@ -27,23 +27,26 @@
                 <!-- Starts of the sign up form-->
                 <div id="id01" class="modal">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close Modal">x</span>
+                        title="Close">x</span>
                     <form class="modal-content" action="#">
                         <div class="container">
-                            <img src="img/Logos/dark-logo.png" class="logo" alt="">
+                            <img src="img/Logos/HivemindLogo.png" class="logo" alt="">
                             <div>
+                                <h2> Sign Up</h2>
+                                <p> Please Fill out this Form to Create An Account</p>
+                                <hr>
                                 <input type="text" autocomplete="off" id="name" placeholder="name">
                                 <input type="email" autocomplete="off" id="email" placeholder="email">
                                 <input type="password" autocomplete="off" id="password" placeholder="password">
-                                <input type="text" autocomplete="off" id="number" placeholder="number">
-                             <br>
-                                <button class="signupbtn">create account</button>
+                                <br>
+                                <button class="signupbtn">Sign Up</button>
                             </div>
-                            <a href="/login" class="link">already have an account? Log in here</a>
+                            <a href="#" onclick="document.getElementById('id01').style.display='none'" class="link"
+                                title="Close Modal">already have an account? Log in here</a>
                         </div>
                     </form>
                 </div>
-                <script src="home.js"></script>
+                <script src="script.js"></script>
                 <script>
                     var modal = document.getElementById('id01');
 
@@ -60,192 +63,158 @@
         </section>
         <hr>
         <ul class="link-container">
-            <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Home', this)"
-                    id="defaultOpen">Home</button></li>
-            <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Coffee', this)">Coffee</button>
-            </li>
-            <li class="link-item"><button class="tablink, link-item" onclick="openPage('Tea', this)">Tea</button></li>
-            <li class="link-item"> <button class="tablink, link-item" onclick="openPage('Food', this)">Food</button>
-            </li>
+            <li class="link-item"> <a class="tab-link" href="index.html"> Home</a> </li>
+            <li class="link-item"> <a class="tab-link" href="#"> Coffee</a> </li>
+            <li class="link-item"> <a class="tab-link" href="#"> Tea</a></li>
+            <li class="link-item"> <a class="tab-link" href="#"> Food </a></li>
         </ul>
     </nav>
     <!-- Nav End-->
-
-
     <header class="hero-section">
         <img src="img/Logos/logo-header.png" alt="" class="logo">
         <div class="content">
             <h4 class="sub-heading"> Sweetest In Utah</h4>
         </div>
     </header>
-    <div id="Home" class="tabcontent">
-        <!-- Weeks Top Seller: Start-->
-        <section class="product">
-            <h2 class="best-seller"> This Weeks Best Sellers</h2>
-            <section class="product-container">
+    <!-- Weeks Top Seller: Start-->
+    <section class="product">
+        <h2 class="best-seller"> This Weeks Best Sellers</h2>
+        <section class="product-container">
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag"></span>
-                        <img src="img/Product/joshua-flores-5RQffqRkmWQ-unsplash.jpg" class="product-thumb" alt=""
-                            height="110" width="165">
-                        <button class="card-btn add-to-cart" data-id="1">Add to cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Blueberry Muffin</h2>
-                        <p class="product-short-des"></p>
-                        <span class="card-price">$3.99</span><span class="actual-price"></span>
-                    </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"></span>
+                    <img src="img/Product/joshua-flores-5RQffqRkmWQ-unsplash.jpg" class="product-thumb" alt=""
+                        height="110" width="165">
+                    <button class="card-btn add-to-cart" data-id="1">Add to cart</button>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag"></span>
-                        <img src="img/Product/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" class="product-thumb" alt=""
-                            width="119" height="165">
-                        <button class="card-btn add-to-cart" data-id="2">Add to Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand"> Cold Brew</h2>
-                        <p class="product-short-des"></p>
-                        <span class="card-price">$4.55</span><span class="actual-price"></span>
-                    </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Blueberry Muffin</h2>
+                    <p class="product-short-des"></p>
+                    <span class="card-price">$3.99</span><span class="actual-price"></span>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag"></span>
-                        <img src="Images/Coffee/Frappe.jpeg" class="product-thumb" alt="" width="183" height="275">
-                        <button class="card-btn add-to-cart" data-id="3">Add to Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand"> Caramel Frappe</h2>
-                        <p class="product-short-des"></p>
-                        <span class="card-price">$6.99</span>
-                        <span class="actual-price"></span>
-                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"></span>
+                    <img src="img/Product/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" class="product-thumb" alt=""
+                        width="119" height="165">
+                    <button class="card-btn add-to-cart" data-id="2">Add to Cart</button>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag"></span>
-                        <img src="img/Product/akhilesh-sharma-6xtK1Pn-PTI-unsplash.jpg" class="product-thumb" alt=""
-                            width="353" height="143">
-                        <button class="card-btn add-to-cart" data-id="4">Add to cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Black Tea</h2>
-                        <p class="product-short-des"> No Sweetening</p>
-                        <span class="price">$2.99</span><span class="actual-price"></span>
-                    </div>
+                <div class="product-info">
+                    <h2 class="product-brand"> Cold Brew</h2>
+                    <p class="product-short-des"></p>
+                    <span class="card-price">$4.55</span><span class="actual-price"></span>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag"></span>
-                        <img src="img/Product/ann-74NChp1cn5I-unsplash.jpg" class="product-thumb" alt="" width="224"
-                            height="224">
-                        <button class="card-btn">Add to Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Matcha Tea</h2>
-                        <p class="product-short-des"></p>
-                        <span class="price">$5.99</span><span class="actual-price"></span>
-                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"></span>
+                    <img src="img/Product/manki-kim-L82-kkEBOd0-unsplash.jpg" class="product-thumb" alt="" width="353"
+                        height="143">
+                    <button class="card-btn add-to-cart" data-id="4">Add to cart</button>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag"></span>
-                        <img src="Images/Muffins/banana.jpg" class="product-thumb" alt="" width="1024" height="1024">
-                        <button class="card-btn">Add to Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Banana Nut Muffins</h2>
-                        <p class="product-short-des"></p>
-                        <span class="price">$2.99</span><span class="actual-price"></span>
-                    </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Black Tea</h2>
+                    <p class="product-short-des"> No Sweetening</p>
+                    <span class="price">$2.99</span><span class="actual-price"></span>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag"></span>
-                        <img src="img/Product/michael-chiara-BLy3LMYMVvE-unsplash.jpg" class="product-thumb" alt=""
-                            width="225" height="225">
-                        <button class="card-btn">Add to Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Chocolate Chip Muffins</h2>
-                        <p class="product-short-des"></p>
-                        <span class="price">$3.99</span><span class="actual-price"></span>
-                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"></span>
+                    <img src="img/Product/ann-74NChp1cn5I-unsplash.jpg" class="product-thumb" alt="" width="224"
+                        height="224">
+                    <button class="card-btn">Add to Cart</button>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag"></span>
-                        <img src="img/Product/valeriia-miller-9kIdbW3Fwuo-unsplash.jpg" class="product-thumb" alt=""
-                            width="225" height="225">
-                        <button class="card-btn">Add to Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Latte</h2>
-                        <p class="product-short-des"></p>
-                        <span class="price">$5.99</span><span class="actual-price"></span>
-                    </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Matcha Tea</h2>
+                    <p class="product-short-des"></p>
+                    <span class="price">$5.99</span><span class="actual-price"></span>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag"></span>
-                        <img src="Images/Tea/sweet-tea.jpeg" class="product-thumb" alt="" width="750" height="750">
-                        <button class="card-btn">Add to Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Sweet Tea</h2>
-                        <p class="product-short-des"></p>
-                        <span class="price">$3.99</span><span class="actual-price"></span>
-                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"></span>
+                    <img src="img/Product/michael-chiara-BLy3LMYMVvE-unsplash.jpg" class="product-thumb" alt=""
+                        width="225" height="225">
+                    <button class="card-btn">Add to Cart</button>
                 </div>
-                <button class="pre-btn" aria-label="Back Button"><img src="img/buttons/arrow.png" alt=""></button>
-                <button class="nxt-btn" aria-label="Next Button"><img src="img/buttons/arrow.png" alt=""></button>
-                <script>
-                    const productContainers = [...document.querySelectorAll('.product-container')];
-                    const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-                    const preBtn = [...document.querySelectorAll('.pre-btn')];
+                <div class="product-info">
+                    <h2 class="product-brand">Chocolate Chip Muffins</h2>
+                    <p class="product-short-des"></p>
+                    <span class="price">$3.99</span><span class="actual-price"></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"></span>
+                    <img src="img/Product/valeriia-miller-9kIdbW3Fwuo-unsplash.jpg" class="product-thumb" alt=""
+                        width="225" height="225">
+                    <button class="card-btn">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Latte</h2>
+                    <p class="product-short-des"></p>
+                    <span class="price">$5.99</span><span class="actual-price"></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"></span>
+                    <img src="img/Product/akhilesh-sharma-6xtK1Pn-PTI-unsplash.jpg" class="product-thumb" alt=""
+                        width="750" height="750">
+                    <button class="card-btn">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Sweet Tea</h2>
+                    <p class="product-short-des"></p>
+                    <span class="price">$3.99</span><span class="actual-price"></span>
+                </div>
+            </div>
+            <button class="pre-btn"><img src="img/buttons/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="img/buttons/arrow.png" alt=""></button>
+            <script>
+                const productContainers = [...document.querySelectorAll('.product-container')];
+                const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+                const preBtn = [...document.querySelectorAll('.pre-btn')];
 
-                    productContainers.forEach((item, i) => {
-                        let containerDimenstions = item.getBoundingClientRect();
-                        let containerWidth = containerDimenstions.width;
+                productContainers.forEach((item, i) => {
+                    let containerDimenstions = item.getBoundingClientRect();
+                    let containerWidth = containerDimenstions.width;
 
-                        nxtBtn[i].addEventListener('click', () => {
-                            item.scrollLeft += containerWidth;
-                        })
-
-                        preBtn[i].addEventListener('click', () => {
-                            item.scrollLeft -= containerWidth;
-                        })
+                    nxtBtn[i].addEventListener('click', () => {
+                        item.scrollLeft += containerWidth;
                     })
-                </script>
-            </section>
+
+                    preBtn[i].addEventListener('click', () => {
+                        item.scrollLeft -= containerWidth;
+                    })
+                })
+            </script>
         </section>
-        <!-- Weeks Top End-->
-        <hr>
-        <hr class="footer-collection">
-        <!-- Collection Start
-        Need to redo this! I dont like the styling and how it has to be at least 5 for it to look good.-->
-        <section class="collection-container">
-            <a href="#Coffee" class="collection tab-link">
-                <img src="img/Product/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" alt="">
-                <button class="tablink collection-title" onclick="openPage('Coffee', this)">Coffee</button>
-            </a>
-            <a href="#Tea" class="collection">
-                <img src="img/thumbnails/yanaSm.jpg" alt="">
-                <button class="tablink collection-title" onclick="openPage('Tea', this)">Tea</button>
-            </a>
-            <a href="#Food" class="collection">
-                <img src="img/Product/ari-spada-RCYrA-AiFSo-unsplash.jpg" alt="">
-                <button class="tablink collection-title" onclick="openPage('Food', this)">Food</button>
-            </a>
-            <a href="#" class="collection">
-                <img src="img/Product/pablo-merchan-montes-SCbq6uKCyMY-unsplash.jpg" alt="">
-                <button class="tablink collection-title" onclick="openPage('Beans', this)">Beans</button>
-            </a><a href="#" class="collection">
-            </a>
-        </section>
-        <!-- Collection End-->
+    </section>
+    <!-- Weeks Top End-->
+    <hr>
+    <hr class="footer-collection">
+    <section class="collection-container">
+        <a href="coffee.html" class="collection">
+            <img src="img/Product/tabitha-turner-F0Wd4djYvSA-unsplash.jpg" alt="">
+        </a>
+        <a href="#Tea" class="collection">
+            <img src="img/thumbnails/yanaSm.jpg" alt="">
+            <button class="tablink collection-title" onclick="openPage('Tea', this)">Tea</button>
+        </a>
+        <a href="food.html" class="collection">
+            <img src="img/Product/ari-spada-RCYrA-AiFSo-unsplash.jpg" alt="">
+            <button class="tablink collection-title" onclick="openPage('Food', this)">Food</button>
+        </a>
+        <a href="#" class="collection">
+            <img src="img/Product/pablo-merchan-montes-SCbq6uKCyMY-unsplash.jpg" alt="">
+            <button class="collection-title" onclick="openPage('Beans', this)">Beans</button>
+        </a><a href="#" class="collection">
+        </a>
+    </section>
     </div>
 
     <footer>
