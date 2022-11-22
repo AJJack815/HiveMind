@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/product.css">
     <link rel="shortcut icon" href="img/Logos/favicon.ico" type="image/x-icon">
-    <script src="JS/script.js">
+    <script src="script.js">
 
         
     </script>
@@ -25,30 +25,33 @@
             <div class="items">
                 <div class="search">
                     <input type="text" class="search-box" placeholder="Search Product">
-                  <button class="search-btn"> search</button>
+                    <button class="search-btn"> search</button>
                 </div>
                 <button onclick="document.getElementById('id01').style.display='block'" class="user nav-items"> <img
                         src="img/buttons/user.png" alt=""> </button>
                 <!-- Starts of the sign up form-->
                 <div id="id01" class="modal">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close Modal">x</span>
+                        title="Close">x</span>
                     <form class="modal-content" action="#">
                         <div class="container">
-                            <img src="img/Logos/dark-logo.png" class="logo" alt="">
+                            <img src="img/Logos/HivemindLogo.png" class="logo" alt="">
                             <div>
+                                <h2> Sign Up</h2>
+                                <p> Please Fill out this Form to Create An Account</p>
+                                <hr>
                                 <input type="text" autocomplete="off" id="name" placeholder="name">
                                 <input type="email" autocomplete="off" id="email" placeholder="email">
                                 <input type="password" autocomplete="off" id="password" placeholder="password">
-                                <input type="text" autocomplete="off" id="number" placeholder="number">
                                 <br>
-                                <button class="signupbtn">create account</button>
+                                <button class="signupbtn">Sign Up</button>
                             </div>
-                            <a href="/login" class="link">already have an account? Log in here</a>
+                            <a href="#" onclick="document.getElementById('id01').style.display='none'" class="link"
+                                title="Close Modal">already have an account? Log in here</a>
                         </div>
                     </form>
                 </div>
-                <script src="home.js"></script>
+                <script src="script.js"></script>
                 <script>
                     var modal = document.getElementById('id01');
 
@@ -60,7 +63,7 @@
                     } 
                 </script>
                 <!-- End Sign up form-->
-                <a class="nav-items"> <img src="img/buttons/cart.png" alt=""></a>
+                <a href="#" class="nav-items"> <img src="img/buttons/cart.png" alt=""></a>
             </div>
         </section>
         <hr>
@@ -68,12 +71,10 @@
             <li class="link-item"> <a class="tab-link" href="index.html"> Home</a> </li>
             <li class="link-item"> <a class="tab-link" href="#"> Coffee</a> </li>
             <li class="link-item"> <a class="tab-link" href="#"> Tea</a></li>
-            <li class="link-item"> <a class="tab-link" href="#"> Food </a></li>
+            <li class="link-item"> <a class="tab-link" href="food.html"> Food </a></li>
         </ul>
     </nav>
     <!-- Nav End-->
-
-
     <header class="hero-section">
         <img src="img/Logos/logo-header.png" alt="" class="logo">
         <div class="content">
@@ -83,28 +84,28 @@
     <!-- InstanceBeginEditable name="Content" -->
     <div class="row">
    	<div class="column card">
-<img src="img/Product/alina-karpenko-d8GDJalt_BE-unsplash.jpg" alt="" style="width:100%">
+<img src="img/Product/alina-karpenko@0.33x.jpg" alt="" style="width:100%">
                 <h1>Cinnamon Muffins</h1>
                 <p class="price">$1.99</p>
                 <p>...</p>
                 <p><button>Add to Cart</button></p>
     </div>
    	<div class="column card">
-<img src="img/Product/american-heritage-chocolate-DoK5qEy2L60-unsplash.jpg" alt="" style="width:100%">
+<img src="img/Product/american-heritage@0.33x.jpg" alt="" style="width:100%">
                 <h1>Chocolate Cookies</h1>
                 <p class="price">$.99</p>
                 <p>Almonds Inside</p>
                 <p><button>Add to Cart</button></p>
     </div>
    	<div class="column card">
-<img src="img/Product/ari-spada-RCYrA-AiFSo-unsplash.jpg" alt="" style="width:100%">
+<img src="img/Product/ari-spada.jpg" alt="" style="width:100%">
                 <h1> Chocolate Muffins</h1>
                 <p class="price">$1.99</p>
                 <p>...</p>
                 <p><button>Add to Cart</button></p>
     </div>
    	<div class="column card">
-<img src="img/Product/fallon-michael-0-xIKrdFj4I-unsplash.jpg" alt="" style="width:100%">
+<img src="img/Product/fallon-michael.jpg" alt="" style="width:100%">
                 <h1>Cranberry Muffins</h1>
                 <p class="price">$1.99</p>
                 <p>...</p>
@@ -114,29 +115,29 @@
 <div class="row">
 
    	<div class="column card">
-<img src="img/Product/gayatri-malhotra-OKUGCTLvSw4-unsplash.jpg" alt="" style="width:100%">
+<img src="img/Product/gayatri-malhotra.jpg" alt="" style="width:100%">
                 <h1>Sugar Cookies</h1>
                 <p class="price">$1.99</p>
                 <p>...</p>
                 <p><button>Add to Cart</button></p>
     </div>
    	<div class="column card">
-<img src="img/Product/joshua-flores-5RQffqRkmWQ-unsplash.jpg" alt="" style="width:100%">
+<img src="img/Product/joshua-flores.jpg" alt="" style="width:100%">
                 <h1> Blueberry Muffins</h1>
                 <p class="price">$1.99</p>
                 <p>...</p>
                 <p><button>Add to Cart</button></p>
     </div>
    	<div class="column card">
-<img src="img/Product/madison-kaminski-2c6_d8svbkY-unsplash.jpg" alt="" style="width:100%">
+<img src="img/Product/madison-kaminski.jpg" alt="" style="width:100%">
                 <h1> PB Blossom</h1>
                 <p class="price">$1.99</p>
                 <p>Hersheys kisses on a peanut butter cookie</p>
                 <p><button>Add to Cart</button></p>
     </div>
    	<div class="column card">
-<img src="img/Product/michael-chiara-BLy3LMYMVvE-unsplash.jpg" alt="" style="width:100%">
-                <h1> Chocolate Chip Muffins</h1>
+<img src="img/Product/michael-chiara.jpg" alt="" style="width:100%">
+                <h1> Chocolate Chip</h1>
                 <p class="price">$1.99</p>
                 <p>...</p>
                 <p><button>Add to Cart</button></p>
@@ -144,14 +145,14 @@
 </div>
     <div class="row">
    	<div class="column card">
-<img src="img/Product/steven-weeks-iQq1NyJj-n8-unsplash.jpg" alt="" style="width:100%">
+<img src="img/Product/steven-weeks.jpg" alt="" style="width:100%">
                 <h1> Macarons</h1>
                 <p class="price">$1.99</p>
                 <p>...</p>
                 <p><button>Add to Cart</button></p>
     </div>
    	<div class="column card">
-<img src="img/Product/oriol-portell-MZxSQPSOexI-unsplash.jpg" alt="" style="width:100%">
+<img src="img/Product/oriol-portell.jpg" alt="" style="width:100%">
                 <h1>Chocolate Muffins</h1>
                 <p class="price">$1.99</p>
                 <p>Double Chocolate</p>
@@ -159,7 +160,7 @@
     </div>
    	<div class="column card">
 <img src="img/Product/pexels-terrance-barksdale-8837096.jpg" alt="" style="width:100%">
-                <h1> Oatmeal Rasian cookies</h1>
+                <h1> Oatmeal Rasian</h1>
                 <p class="price">$1.99</p>
                 <p>...</p>
                 <p><button>Add to Cart</button></p>
