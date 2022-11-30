@@ -77,11 +77,9 @@ button {
 button:hover {
   opacity: 1;
 }
-
  .tab-link  {
   height: 25px;
   width: 45px;
-  background-color: var(--light);
   color: white;
   padding: 10px 10px;
   margin: 8px 0;
@@ -89,6 +87,9 @@ button:hover {
   cursor: pointer;
   width: 100%;
   text-decoration: none;
+}
+.tab-link:hover{
+  background-color: #a76832 ;
 }
 .signupbtn {
   background-color: var(--light);
@@ -125,7 +126,7 @@ label a{
 }
 
 .link:hover{
-  background-color: none;
+  background-color:var(--light-hover);
 }
 .modal {
   display: none;
@@ -239,7 +240,7 @@ hr .signup-form{
   padding: 10px 10vw;
   justify-content: center;
   list-style: none;
-  background-color:var(--light);
+  background-color:var(--light-hover);
   border-top: 1px solid var(--medium-dark);
 }
 .link-item{
@@ -305,7 +306,7 @@ hr .signup-form{
 .hero-section {
   width: 100%;
   height: calc(100vh - 120px);
-  background-image: url("../img/Logos/logo-header.png");
+  background-image: url("../img/Logos/logo-header.avif");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -445,9 +446,9 @@ hr .signup-form{
 .pre-btn, .nxt-btn{
   border: none;
   width: 10vw;
-  height: 65%;
+  height: 60%;
   position: absolute;
-  top: 133vw;
+  top: 61vw;
   display: flex;
   justify-content: center;
   align-items: center;
