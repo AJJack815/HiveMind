@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops!</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <nav id="top" class="navbar">
+        <section class="nav">
+            <img src="img/Logos/HivemindLogo.png" class="brand-logo" alt="">
+            <div class="items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="Search Product">
+                    <button class="search-btn"> search</button>
+                </div>
+                <button onclick="document.getElementById('id01').style.display='block'" class="user nav-items"> <img
+                        src="img/buttons/user.png" alt=""> </button>
+                <!-- Starts of the sign up form-->
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close">x</span>
+                    <form class="modal-content" action="#">
+                        <div class="container">
+                            <img src="img/Logos/HivemindLogo.png" class="logo" alt="">
+                            <div>
+                                <h2> Sign Up</h2>
+                                <p> Please Fill out this Form to Create An Account</p>
+                                <hr>
+                                <input type="text" autocomplete="off" id="name" placeholder="name">
+                                <input type="email" autocomplete="off" id="email" placeholder="email">
+                                <input type="password" autocomplete="off" id="password" placeholder="password">
+                                <br>
+                                <button class="signupbtn">Sign Up</button>
+                            </div>
+                            <a href="#" onclick="document.getElementById('id01').style.display='none'" class="link"
+                                title="Close Modal">already have an account? Log in here</a>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Sign up form-->
+                <a href="#" class="nav-items"> <img src="img/buttons/cart.png" alt=""></a>
+            </div>
+        </section>
+        <hr>
+        <ul class="link-container">
+            <li class="link-item"> <a class="tab-link" href="index.html"> Home</a> </li>
+            <li class="link-item"> <a class="tab-link" href="#"> Coffee</a> </li>
+            <li class="link-item"> <a class="tab-link" href="#"> Tea</a></li>
+            <li class="link-item"> <a class="tab-link" href="food.html"> Food </a></li>
+        </ul>
+    </nav>
+
+    <section class="error">
+        <img src="#" alt="">
+        <h2> Oops!</h2>
+        <p> Theres nothing to see here! This website is unfinished!</p>
+    </section>
+</body>
+</html>

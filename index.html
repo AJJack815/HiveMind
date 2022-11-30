@@ -9,72 +9,6 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="img/Logos/favicon.ico" type="image/x-icon">
     <script src="script.js">
-
-        const f = document.getElementById('form');
-        const q = document.getElementById('query');
-        const google = 'https://www.google.com/search?q=site%3A+'
-        const site = 'https://ajjack815.github.io/FBLA-GenericCoffe/'
-
-        function submitted(event) {
-            event.preventDefault();
-            const url = google + site + '+' + q.value;
-            const win = window.open(url, '_blank');
-            win.focus();
-        }
-
-        f.addEventListener('submit', submitted);
-
-        const productContainers = [...document.querySelectorAll('.product-container')];
-        const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-        const preBtn = [...document.querySelectorAll('.pre-btn')];
-
-        productContainers.forEach((item, i) => {
-            let containerDimenstions = item.getBoundingClientRect();
-            let containerWidth = containerDimenstions.width;
-
-            nxtBtn[i].addEventListener('click', () => {
-                item.scrollLeft += containerWidth;
-            })
-
-            preBtn[i].addEventListener('click', () => {
-                item.scrollLeft -= containerWidth;
-            })
-        })
-        var modal = document.getElementById('id01');
-
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        const loader = document.querySelector('.loader');
-
-        // select inputs 
-        const submitBtn = document.querySelector('.submit-btn');
-        const name = document.querySelector('#name');
-        const email = document.querySelector('#email');
-        const password = document.querySelector('#password');
-        const number = document.querySelector('#number');
-
-        submitBtn.addEventListener('click', () => {
-            if (name.value.length < 3) {
-                showAlert('name must be 3 letters long');
-            } else if (!email.value.length) {
-                showAlert('enter your email');
-            } else if (password.value.length < 8) {
-                showAlert('password should be 8 letters long');
-            } else if (!number.value.length) {
-                showAlert('enter your phone number');
-            } else if (!Number(number.value) || number.value.length < 10) {
-                showAlert('invalid number, please enter valid one');
-            }
-            // submit form
-        }
-        )
-        if (name.value.length < 3) {
-            showAlert('name must be 3 letters long');
-        }
     </script>
     <title>Hive Mind</title>
 
@@ -141,7 +75,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag"></span>
-                    <img src="img/Product/joshua-flores.jpg" class="product-thumb" alt="" height="110" width="165">
+                    <img src="img/Product/joshua-flores.avif" class="product-thumb" alt="" height="110" width="165">
                     <button class="card-btn add-to-cart" data-id="1">Add to cart</button>
                 </div>
                 <div class="product-info">
@@ -153,7 +87,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag"></span>
-                    <img src="img/Product/tabitha-turner.jpg" class="product-thumb" alt="" width="119" height="165">
+                    <img src="img/Product/tabitha-turner.avif" class="product-thumb" alt="" width="119" height="165">
                     <button class="card-btn add-to-cart" data-id="2">Add to Cart</button>
                 </div>
                 <div class="product-info">
@@ -165,7 +99,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag"></span>
-                    <img src="img/Product/manki-kim.jpg" class="product-thumb" alt="" width="353" height="143">
+                    <img src="img/Product/manki-kim.avif" class="product-thumb" alt="" width="353" height="143">
                     <button class="card-btn add-to-cart" data-id="4">Add to cart</button>
                 </div>
                 <div class="product-info">
@@ -177,7 +111,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag"></span>
-                    <img src="img/Product/ann.jpg" class="product-thumb" alt="" width="224" height="224">
+                    <img src="img/Product/ann.avif" class="product-thumb" alt="" width="224" height="224">
                     <button class="card-btn">Add to Cart</button>
                 </div>
                 <div class="product-info">
@@ -189,7 +123,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag"></span>
-                    <img src="img/Product/michael-chiara.jpg" class="product-thumb" alt="" width="225" height="225">
+                    <img src="img/Product/michael-chiara.avif" class="product-thumb" alt="" width="225" height="225">
                     <button class="card-btn">Add to Cart</button>
                 </div>
                 <div class="product-info">
@@ -201,7 +135,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag"></span>
-                    <img src="img/Product/valeriia-miller.jpg" class="product-thumb" alt="" width="225" height="225">
+                    <img src="img/Product/valeriia-miller.avif" class="product-thumb" alt="" width="225" height="225">
                     <button class="card-btn">Add to Cart</button>
                 </div>
                 <div class="product-info">
@@ -213,7 +147,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag"></span>
-                    <img src="img/Product/akhilesh-sharma.jpg" class="product-thumb" alt="" width="750" height="750">
+                    <img src="img/Product/akhilesh-sharma.avif" class="product-thumb" alt="" width="750" height="750">
                     <button class="card-btn">Add to Cart</button>
                 </div>
                 <div class="product-info">
@@ -222,14 +156,26 @@
                     <span class="price">$3.99</span><span class="actual-price"></span>
                 </div>
             </div>
-            <button class="pre-btn"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
-                    viewBox="0 0 100 100">
-                    <path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z" />
-                </svg></button>
-            <button class="nxt-btn"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
-                    viewBox="0 0 100 100">
-                    <path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z" />
-                </svg></button>
+            <button class="pre-btn"><img src="img/buttons/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="img/buttons/arrow.png" alt=""></button>
+            <script>
+                const productContainer = [...document.querySelectorAll('.product-container')];
+                const nxtBt = [...document.querySelectorAll('.nxt-btn')];
+                const preBt = [...document.querySelectorAll('.pre-btn')];
+
+                productContainer.forEach((item, i) => {
+                    let containerDimenstions = item.getBoundingClientRect();
+                    let containerWidth = containerDimenstions.width;
+
+                    nxtBt[i].addEventListener('click', () => {
+                        item.scrollLeft += containerWidth;
+                    })
+
+                    preBt[i].addEventListener('click', () => {
+                        item.scrollLeft -= containerWidth;
+                    })
+                })
+            </script>
         </section>
     </section>
     <!-- Weeks Top End-->
@@ -237,16 +183,16 @@
     <hr class="footer-collection">
     <section class="collection-container">
         <a href="coffee.html" class="collection">
-            <img src="img/Product/tabitha-turner.jpg" alt="">
+            <img src="img/Product/tabitha-turner.avif" alt="">
         </a>
         <a href="#" class="collection">
-            <img src="img/Product/yana.jpg" alt="">
+            <img src="img/Product/yana.avif" alt="">
         </a>
         <a href="food.html" class="collection">
-            <img src="img/Product/ari-spada.jpg" alt="">
+            <img src="img/Product/ari-spada.avif" alt="">
         </a>
         <a href="#" class="collection">
-            <img src="img/Product/pablo-merchan-montes.jpg" alt="">
+            <img src="img/Product/pablo-merchan-montes.avif" alt="">
         </a>
         <a href="#" class="collection">
         </a>
@@ -258,18 +204,7 @@
             <img src="img/Logos/HivemindLogo.png" class="logo" alt="Light Logo">
             <div class="footer-ul-container">
                 <ul class="category">
-                    <li class="category-title"> <button class="category-link, link-item"
-                            onclick="openPage('Coffee', this)">Coffee</button></li>
-                </ul>
-                <br>
-                <ul class="category">
-                    <li class="category-title"> <button class="category-link, link-item"
-                            onclick="openPage('Tea', this)">Tea</button></li>
-                </ul>
-                <br>
-                <ul class="category">
-                    <li class="category-title"> <button class="category-link, link-item"
-                            onclick="openPage('Food', this)">Food</button> </li>
+                   
                 </ul>
             </div>
         </div>
