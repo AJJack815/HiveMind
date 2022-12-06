@@ -1,4 +1,7 @@
 @import "styles.css";
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Ubuntu:wght@300&display=swap');
+
 
 :root {
   --light: #f29544;
@@ -25,6 +28,10 @@
 .price {
   color: grey;
   font-size: 22px;
+  font-family: 'Crete Round';
+}
+.product-desc{
+  font-family: 'Crete Round';
 }
 
 .card button {
@@ -37,6 +44,7 @@
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  font-family: 'Archivo Black';
 }
 
 .card button:hover {

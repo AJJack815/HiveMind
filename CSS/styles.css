@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Ubuntu:wght@300&display=swap');
 
 :root {
   --light: #f29544;
@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
 }
 body,html{
   height: 100%;
@@ -40,7 +40,7 @@ textarea{
     color: #383838;
     font-size: 14px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
-    font-family: 'roboto', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
 
 }
 
@@ -87,6 +87,7 @@ button:hover {
   cursor: pointer;
   width: 100%;
   text-decoration: none;
+  font-family: 'Crete Round';
 }
 .tab-link:hover{
   background-color: #a76832 ;
@@ -252,6 +253,7 @@ hr .signup-form{
   color: black;
   opacity: 0.9;
   transition: .5s;
+  font-family: 'Ubuntu';
 }
 
 .link-item:hover{
@@ -286,6 +288,7 @@ hr .signup-form{
   width: 99vw;
   background-color: var(--light);
   z-index: 9;
+  font-family: 'Crete Round', sans-serif;
 }
 
 .nav {
@@ -333,19 +336,27 @@ hr .signup-form{
 .product {
   padding-top: 5px;
   margin-top: 30px;
-  background-color: #fcedcf;
+  background-color: #f9f4ea;
 }
-
+.product-info{
+  font-family:'Ubuntu';
+}
 .product h2 {
   padding: 3px;
+  
+  font-family:'Ubuntu';
 }
-
+.price, .product-short-des{
+  font-family:'Crete Round';
+}
 .product-container {
   padding: 0 10vw;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
   height: 500px;
+  
+  font-family:'Ubuntu';
 }
 
 .product-container::-webkit-scrollbar {
@@ -363,14 +374,15 @@ hr .signup-form{
   height: 400px;
   margin:30px;
   text-align: center;
-  font-family: arial;
   width:40%;
+  font-family:'Ubuntu';
 }
 
 
 .product-thumb {
   width: 200px;
   height: 200px;
+  font-family:'Ubuntu';
 }
 
 
@@ -383,6 +395,7 @@ hr .signup-form{
   text-align: center;
   cursor: pointer;
   width: 100%;
+  font-family: 'Archivo Black';
   font-size: 18px;
 }
 
@@ -397,10 +410,10 @@ hr .signup-form{
 
 .pre-btn, .nxt-btn{
   border: none;
-  width: 10vw;
+  width: 9vw;
   height: 60%;
   position: absolute;
-  top: 61vw;
+  top: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -553,6 +566,8 @@ footer {
   margin-left: 20px;
   text-transform: capitalize;
   text-decoration: none;
+  font-family: 'Ubuntu';
+  font-style: bold;
 }
 .social-linl:hover{
   background-color: #dc883e;
@@ -571,9 +586,11 @@ footer {
   text-align: center;
   color: #fff;
   background: rgba(0, 0, 0, 0.2);
+  font-family: 'Ubuntu';
 }
 .footer-credit a{
   color:var(--really-dark);
+  font-family: 'Crete Round';
 }
 
 
