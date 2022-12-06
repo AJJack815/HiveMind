@@ -6,46 +6,50 @@
   --light-hover: #dc883e;
   --medium: #a67665;
   --medium-dark: #733a2d;
-  --dark:  #59332a;
+  --dark: #59332a;
   --really-dark: #261f1d;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Archivo Black', sans-serif;
 }
-body,html{
+
+body,
+html {
   height: 100%;
   margin: 0;
 }
 
-.logo{
+.logo {
   height: 80px;
   display: block;
 }
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
-textarea{
-    width: 300px;
-    height: 40px;
-    padding: 20px;
-    border-radius: 5px;
-    background: #fff;
-    border: none;
-    outline: none;
-    margin: 20px 0;
-    text-transform: capitalize;
-    color: #383838;
-    font-size: 14px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
-    font-family: 'Archivo Black', sans-serif;
+textarea {
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  text-transform: capitalize;
+  color: #383838;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+  font-family: 'Archivo Black', sans-serif;
 
 }
 
-::placeholder{
-    color: #383838;
+::placeholder {
+  color: #383838;
 }
 
 
@@ -56,7 +60,7 @@ input[type=password]:focus {
 }
 
 hr {
-  border: 1px solid  var(--dark);
+  border: 1px solid var(--dark);
   margin-bottom: 25px;
 }
 
@@ -77,7 +81,8 @@ button {
 button:hover {
   opacity: 1;
 }
- .tab-link  {
+
+.tab-link {
   height: 25px;
   width: 45px;
   color: white;
@@ -89,14 +94,16 @@ button:hover {
   text-decoration: none;
   font-family: 'Crete Round';
 }
-.tab-link:hover{
-  background-color: #a76832 ;
+
+.tab-link:hover {
+  background-color: #a76832;
 }
+
 .signupbtn {
   background-color: var(--light);
   width: 300px;
-    height: 40px;
-    opacity:1;
+  height: 40px;
+  opacity: 1;
   float: left;
   width: 50%;
 }
@@ -105,7 +112,8 @@ button:hover {
   padding: 16px;
   height: 400px;
 }
-label{
+
+label {
   text-transform: capitalize;
   display: inline-block;
   margin-bottom: 10px;
@@ -113,22 +121,23 @@ label{
   color: #383838;
 }
 
-label a{
+label a {
   color: #383838;
 }
 
-.link{
+.link {
   color: #383838;
   text-transform: capitalize;
-  text-align:left;
+  text-align: left;
   display: inline;
   max-width: 25px;
-  
+
 }
 
-.link:hover{
-  background-color:var(--light-hover);
+.link:hover {
+  background-color: var(--light-hover);
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -153,9 +162,11 @@ label a{
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-hr .signup-form{
-  color:var(--dark);
+
+hr .signup-form {
+  color: var(--dark);
 }
+
 .close {
   position: absolute;
   right: 35px;
@@ -229,7 +240,8 @@ hr .signup-form{
 .search-box::placeholder {
   color: #a9a9a9;
 }
-.nav-items{
+
+.nav-items {
   display: inline;
   float: inline-end;
 }
@@ -237,18 +249,19 @@ hr .signup-form{
 
 .link-container {
   width: 100%;
-  display:flex;
+  display: flex;
   padding: 10px 10vw;
   justify-content: center;
   list-style: none;
-  background-color:var(--light-hover);
+  background-color: var(--light-hover);
   border-top: 1px solid var(--medium-dark);
 }
-.link-item{
+
+.link-item {
   text-transform: capitalize;
   padding: 0 10px;
   margin: 0 5px;
-  font-size:20px;
+  font-size: 20px;
   text-decoration: none;
   color: black;
   opacity: 0.9;
@@ -256,7 +269,7 @@ hr .signup-form{
   font-family: 'Ubuntu';
 }
 
-.link-item:hover{
+.link-item:hover {
   text-transform: capitalize;
   padding: 0 10px;
   margin: 0 5px;
@@ -265,6 +278,7 @@ hr .signup-form{
   opacity: 0.9;
   transition: .5s;
 }
+
 .link {
   text-transform: capitalize;
   padding: 0 10px;
@@ -273,7 +287,7 @@ hr .signup-form{
   color: black;
   opacity: 0.9;
   transition: .5s;
-  position:inline;
+  position: inline;
 }
 
 .link:hover {
@@ -299,10 +313,10 @@ hr .signup-form{
 
 
 .brand-logo {
-  width:160px;
-  height:154px;
-  margin:0;
-  padding:0;
+  width: 160px;
+  height: 154px;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -332,31 +346,37 @@ hr .signup-form{
   color: black;
   display: none;
 }
+
 /* This is the home page */
 .product {
   padding-top: 5px;
   margin-top: 30px;
   background-color: #f9f4ea;
 }
-.product-info{
-  font-family:'Ubuntu';
+
+.product-info {
+  font-family: 'Ubuntu';
 }
+
 .product h2 {
   padding: 3px;
-  
-  font-family:'Ubuntu';
+
+  font-family: 'Ubuntu';
 }
-.price, .product-short-des{
-  font-family:'Crete Round';
+
+.price,
+.product-short-des {
+  font-family: 'Crete Round';
 }
+
 .product-container {
   padding: 0 10vw;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
   height: 500px;
-  
-  font-family:'Ubuntu';
+
+  font-family: 'Ubuntu';
 }
 
 .product-container::-webkit-scrollbar {
@@ -372,17 +392,17 @@ hr .signup-form{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   height: 400px;
-  margin:30px;
+  margin: 30px;
   text-align: center;
-  width:40%;
-  font-family:'Ubuntu';
+  width: 40%;
+  font-family: 'Ubuntu';
 }
 
 
 .product-thumb {
   width: 200px;
   height: 200px;
-  font-family:'Ubuntu';
+  font-family: 'Ubuntu';
 }
 
 
@@ -408,7 +428,8 @@ hr .signup-form{
 }
 
 
-.pre-btn, .nxt-btn{
+.pre-btn,
+.nxt-btn {
   border: none;
   width: 9vw;
   height: 60%;
@@ -422,22 +443,25 @@ hr .signup-form{
   z-index: 8;
 }
 
-.pre-btn{
+.pre-btn {
   left: 0;
   transform: rotate(180deg);
 }
 
-.nxt-btn{
+.nxt-btn {
   right: 0;
 }
 
-.pre-btn img, .nxt-btn img{
+.pre-btn img,
+.nxt-btn img {
   opacity: 0.2;
 }
 
-.pre-btn:hover img, .nxt-btn:hover img{
+.pre-btn:hover img,
+.nxt-btn:hover img {
   opacity: 1;
 }
+
 .sell {
   text-align: center;
 }
@@ -453,7 +477,8 @@ hr .signup-form{
 .collection {
   position: relative;
 }
-.collection img{
+
+.collection img {
   height: 100%;
   width: 100%;
 }
@@ -467,8 +492,8 @@ hr .signup-form{
   color: var(--medium-dark);
   padding: 5px;
   background-color: var(--light);
-  font-size:30px;
-  margin:0;
+  font-size: 30px;
+  margin: 0;
 }
 
 .collection:nth-child(5) {
@@ -479,6 +504,7 @@ hr .signup-form{
 #product-page .product-card {
   width: 33%;
 }
+
 hr {
   height: 8px;
   background-color: var(--light);
@@ -487,16 +513,17 @@ hr {
   padding-bottom: 0;
 }
 
-.error h1{
+.error h1 {
   text-align: center;
   font-size: 30px;
 }
+
 footer {
   position: absolute;
   width: 100%;
   padding: 40px 10vw;
   padding-bottom: 80px;
-  background:var(--light-hover);
+  background: var(--light-hover);
 }
 
 .footer-content {
@@ -522,7 +549,7 @@ footer {
   grid-gap: 10px;
   list-style: none;
   margin-right: 10px;
-  margin-left:5px;
+  margin-left: 5px;
 }
 
 .category-title {
@@ -536,17 +563,17 @@ footer {
 .category .footer-link {
   text-decoration: none;
   text-transform: capitalize;
-  color:var(--dark);
+  color: var(--dark);
   font-size: 13px;
 }
 
 .footer-link:hover {
-  color:var(--really-dark);
+  color: var(--really-dark);
 }
 
 .footer-title,
 .info {
-  color:var(--dark);
+  color: var(--dark);
   margin: 20px 0;
   text-transform: capitalize;
 }
@@ -569,7 +596,8 @@ footer {
   font-family: 'Ubuntu';
   font-style: bold;
 }
-.social-linl:hover{
+
+.social-linl:hover {
   background-color: #dc883e;
 }
 
@@ -588,8 +616,9 @@ footer {
   background: rgba(0, 0, 0, 0.2);
   font-family: 'Ubuntu';
 }
-.footer-credit a{
-  color:var(--really-dark);
+
+.footer-credit a {
+  color: var(--really-dark);
   font-family: 'Crete Round';
 }
 
@@ -607,7 +636,8 @@ footer {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -629,8 +659,9 @@ footer {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -665,7 +696,8 @@ footer {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -676,6 +708,11 @@ footer {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
