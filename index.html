@@ -21,8 +21,27 @@
             <img src="img/Logos/HivemindLogo.avif" class="brand-logo" alt="">
             <div class="items">
                 <div class="search">
-                    <input type="text" class="search-box" placeholder="Search Product">
-                    <button class="search-btn"> search</button>
+                    <input id="searchbar" onkeyup="search_coffee(), search_tea(), search_food()" type="text" name="search"
+                    placeholder="Search">
+                  <ul id="list">
+                    <li class="coffee"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Black Coffee</a></li>
+                    <li class="coffee">Cold Brew</li>
+                    <li class="coffee"> Latte</li>
+                    <li class="tea">Matcha Tea</li>
+                    <li class="tea">Sweet Tea</li>
+                    <li class="tea"> Black Tea</li>
+                    <li class="food">Cinnamon Muffis</li>
+                    <li class="food"> Chocolate Cookies</li>
+                    <li class="food">Chocolate Muffins</li>
+                    <li class="food">Cranberry Muffins</li>
+                    <li class="food">Sugar Cookies</li>
+                    <li class="food"> Blueberry Muffins</li>
+                    <li class="food"> Pb Blossoms</li>
+                    <li class="food">Chocolate Chip</li>
+                    <li class="food">Macarons</li>
+                    <li class="food">Double Chocolate Muffins</li>
+                    <li class="food">Oatmeal Raisin Cookies</li>
+                  </ul>
                 </div>
                 <button onclick="document.getElementById('id01').style.display='block'" class="user nav-items"> <img
                         src="img/buttons/user.png" alt="Profile"> </button>
@@ -255,7 +274,7 @@
         <a href="#" class="collection">
         </a>
     </div>
-
+<script src="eCommerceAssets\script.js"></script>
     <footer>
         <div class="footer-content">
             <img src="img/Logos/HivemindLogo.avif" class="logo" alt="Light Logo">

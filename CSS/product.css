@@ -9,8 +9,10 @@
   --medium-dark: #733a2d;
   --dark: #59332a;
   --really-dark: #261f1d;
+} 
+h1{
+  font-family: 'Ubuntu';
 }
-
 
 
 .card {
