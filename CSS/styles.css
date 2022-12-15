@@ -716,3 +716,15 @@ footer {
     opacity: 1
   }
 }
+input[type=text]:focus {
+  width: 70%;
+}
+
+#list {
+  font-size: .9em;
+  display:none;
+}
+
+.coffee .tea .food {
+  list-style: none;
+}
