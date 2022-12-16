@@ -15,35 +15,93 @@
 <body>
 
   <header>
-    <!-- This is the header content. It contains Logo and links -->
-    <div id="logo"><img src="../img/Logos/HivemindLogo.avif" alt="sample logo" width="100" width="94">
-      <!-- Company Logo text -->
-    </div>
-    <div id="headerLinks"><a href="#" title="Login/Register">Login/Register</a><a href="#" title="Cart">Cart</a></div>
-  </header>
+	  <nav id="top" class="navbar">
+        <section class="nav">
+            <img src="../img/Logos/HivemindLogo.avif" class="brand-logo" alt="">
+            <div class="items">
+                <div class="search">
+                    <input id="searchbar" onkeyup="search_coffee(), search_tea(), search_food()" type="text" name="search"
+                    placeholder="Search">
+                  <ul id="list">
+                    <li class="coffee"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Black Coffee</a></li>
+                    <li class="coffee">Cold Brew</li>
+                    <li class="coffee"> Latte</li>
+                    <li class="tea">Matcha Tea</li>
+                    <li class="tea">Sweet Tea</li>
+                    <li class="tea"> Black Tea</li>
+                    <li class="food">Cinnamon Muffis</li>
+                    <li class="food"> Chocolate Cookies</li>
+                    <li class="food">Chocolate Muffins</li>
+                    <li class="food">Cranberry Muffins</li>
+                    <li class="food">Sugar Cookies</li>
+                    <li class="food"> Blueberry Muffins</li>
+                    <li class="food"> Pb Blossoms</li>
+                    <li class="food">Chocolate Chip</li>
+                    <li class="food">Macarons</li>
+                    <li class="food">Double Chocolate Muffins</li>
+                    <li class="food">Oatmeal Raisin Cookies</li>
+                  </ul>
+                </div>
+                <button onclick="document.getElementById('id01').style.display='block'" class="user nav-items"> <img
+                        src="../img/buttons/user.png" alt="Profile"> </button>
+                <!-- Starts of the sign up form-->
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close">x</span>
+                    <form class="modal-content" action="#">
+                        <div class="container">
+                            <img src="../img/Logos/HivemindLogo.avif" class="logo" alt="">
+                            <div>
+                                <h2> Sign Up</h2>
+                                <p> Please Fill out this Form to Create An Account</p>
+                                <hr>
+                                <input type="text" autocomplete="off" id="name" placeholder="name">
+                                <input type="email" autocomplete="off" id="email" placeholder="email">
+                                <input type="password" autocomplete="off" id="password" placeholder="password">
+                                <br>
+                                <button class="signupbtn">Sign Up</button>
+                            </div>
+                            <a href="#" onclick="document.getElementById('id01').style.display='none'" class="link"
+                                title="Close Modal">already have an account? Log in here</a>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Sign up form-->
+                <a href="error.html" class="nav-items"> <img src="../img/buttons/cart.png" alt="Cart"></a>
+            </div>
+        </section>
+        <ul class="link-container">
+            <li class="link-item"> <a class="tab-link" href="index.html"> Home</a> </li>
+            <li class="link-item"> <a class="tab-link" href="coffee.html"> Coffee</a> </li>
+            <li class="link-item"> <a class="tab-link" href="tea.html"> Tea</a></li>
+            <li class="link-item"> <a class="tab-link" href="food.html"> Food </a></li>
+        </ul>
+    </nav>
+	</header>
 
   <div id="content">
     <section class="sidebar">
-      <input id="searchbar" onkeyup="search_coffee(), search_tea(), search_food()" type="text" name="search"
+      <input id="searchbar" onkeyup="search_coffee(), search_tea(), search_food() " type="text" name="search"
         placeholder="Search">
+		<button onClick="TestsFunction()">Tests</button>
       <ul id="list">
         <li class="coffee"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Black Coffee</a></li>
-        <li class="coffee">Cold Brew</li>
-        <li class="coffee"> Latte</li>
-        <li class="tea">Matcha Tea</li>
-        <li class="tea">Sweet Tea</li>
-        <li class="tea"> Black Tea</li>
-        <li class="food">Cinnamon Muffis</li>
-        <li class="food"> Chocolate Cookies</li>
-        <li class="food">Chocolate Muffins</li>
-        <li class="food">Cranberry Muffins</li>
-        <li class="food">Sugar Cookies</li>
-        <li class="food"> Blueberry Muffins</li>
-        <li class="food"> Pb Blossoms</li>
-        <li class="food">Chocolate Chip</li>
-        <li class="food">Macarons</li>
-        <li class="food">Double Chocolate Muffins</li>
-        <li class="food">Oatmeal Raisin Cookies</li>
+        <li class="coffee"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Cold Brew</a></li>
+        <li class="coffee"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Latte</a></li>
+        <li class="tea"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Matcha Tea</a></li>
+        <li class="tea"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Sweet Tea</a></li>
+        <li class="tea"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Black Tea</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Cinnamon Muffis</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Chocolate Cookies</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Chocolate Muffins</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Cranberry Muffins</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Sugar Cookies</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Blueberry Muffins</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Pb Blossoms</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Chocolate Chip</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Macarons</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Double Chocolate Muffins</a></li>
+        <li class="food"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Oatmeal Raisin Cookies</a></li>
       </ul>
       <div id="menubar">
         <nav class="menu">
@@ -154,7 +212,7 @@
     </section>
   </div>
   <script src="script.js"></script>
-  <footer>
+  <footer class="footer">
     <div class="abput" style="float: left; width: 30%;">
       <h2> About Us</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>

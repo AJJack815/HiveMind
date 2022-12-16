@@ -1,3 +1,4 @@
+
 function search_coffee() {
     let input = document.getElementById('searchbar').value
     input = input.toLowerCase();
@@ -39,4 +40,11 @@ function search_food() {
             x[i].style.display = "list-item";
         }
     }
+
 }
+
+ function TestsFunction() {
+     var T = document.getElementById("list");
+     T.style.display = "block"; 
+ }
+

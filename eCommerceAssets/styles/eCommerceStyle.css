@@ -17,43 +17,302 @@ a:hover {
     background-color: var(--light-hover);
 }
 
-/*header*/
-header {
-    font-family: 'Montserrat', sans-serif;
-    color: rgba(146, 146, 146, 1.00);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
+.logo {
+  height: 80px;
+  display: block;
 }
 
-/* Logo placeholder*/
-#logo {
-    float: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 139px;
-    text-align: center;
-    color: rgba(255, 255, 255, 1.00);
-    background-color: rgba(190, 190, 190, 1.00);
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  text-transform: capitalize;
+  color: #383838;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+  font-family: 'Archivo Black', sans-serif;
+
 }
 
-/* div for Links in header */
-#headerLinks {
-    float: left;
-    width: calc(100% - 139px);
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgba(255, 255, 255, 1.00);
+::placeholder {
+  color: #383838;
 }
 
-/* Links in header */
-#headerLinks a {
-    text-decoration: none;
-    color: rgba(146, 146, 146, 1.00);
-    padding-left: 66px;
-    font-size: 14px;
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
 }
+
+hr {
+  border: 1px solid var(--dark);
+  margin-bottom: 25px;
+}
+
+button {
+  height: 32px;
+  width: 45px;
+  background-color: var(--light);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.tab-link {
+  height: 25px;
+  width: 45px;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  font-family: 'Crete Round';
+}
+
+.tab-link:hover {
+  background-color: #a76832;
+}
+
+.signupbtn {
+  background-color: var(--light);
+  width: 300px;
+  height: 40px;
+  opacity: 1;
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+  height: 400px;
+}
+
+label {
+  text-transform: capitalize;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #383838;
+}
+
+label a {
+  color: #383838;
+}
+
+.link {
+  color: #383838;
+  text-transform: capitalize;
+  text-align: left;
+  display: inline;
+  max-width: 25px;
+
+}
+
+.link:hover {
+  background-color: var(--light-hover);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200%;
+  overflow: auto;
+  background-color: transparent;
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: rgb(212, 201, 185);
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.signup-form {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+hr .signup-form {
+  color: var(--dark);
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.user {
+  width: 50px;
+  height: 50px;
+  background-color: none;
+}
+
+@media screen and (max-width: 300px) {
+
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+
+.search {
+  width: 500px;
+  display: flex;
+}
+
+.search-box {
+  width: 90vw;
+  height: 40px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #d1d1d1;
+  text-transform: capitalize;
+  background: white;
+  color: #a9a9a9;
+  outline: none;
+}
+
+.search-btn {
+  width: 20%;
+  margin-top: 2.2vh;
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #383838;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder {
+  color: #a9a9a9;
+}
+
+.nav-items {
+  display: inline;
+  float: inline-end;
+}
+
+
+.link-container {
+  width: 100%;
+  display: flex;
+  padding: 10px 10vw;
+  justify-content: center;
+  list-style: none;
+  background-color: var(--light-hover);
+  border-top: 1px solid var(--medium-dark);
+}
+
+.link-item {
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  transition: .5s;
+  font-family: 'Ubuntu';
+}
+
+.link-item:hover {
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  transition: .5s;
+}
+
+.link {
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  transition: .5s;
+  position: inline;
+}
+
+.link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+
+.navbar {
+  top: 0;
+  left: 0;
+  width: 99vw;
+  background-color: var(--light);
+  z-index: 9;
+  font-family: 'Crete Round', sans-serif;
+}
+
+.nav {
+  padding: 10px 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.brand-logo {
+  width: 160px;
+  height: 154px;
+  margin: 0;
+  padding: 0;
+}
+
 
 /* Main content of the site */
 #content {
@@ -169,23 +428,23 @@ header {
 }
 
 /* footer */
-#mainWrapper footer {
-    clear: both;
-    overflow: auto;
-    background-color: var(--light);
-    font-family: 'source-sans-pro', sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 1.8;
-    padding-top: 22px;
-    padding-left: 22px;
-    text-align: center;
-    padding-bottom: 22px;
-    padding-right: 22px;
+ footer {
+	clear: both;
+	overflow: auto;
+	background-color: rgba(242,149,68,1.00);
+	font-family: 'source-sans-pro', sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
 }
 
 /*Each footer content */
-#mainWrapper footer div {
+ footer div {
     width: 27%;
     float: left;
     padding-left: 4%;
@@ -195,7 +454,7 @@ header {
 }
 
 /* Links in footer */
-footer div a {
+ div a {
     color: rgba(146, 146, 146, 1.00);
     display: block;
     text-decoration: none;
@@ -354,7 +613,7 @@ footer .footerlinks {
     }
 
     /* Container for each footer divisions */
-    #mainWrapper footer div {
+footer div {
         width: 44%;
         text-align: justify;
         font-size: 15px;
@@ -369,20 +628,9 @@ footer .footerlinks {
     }
 
     /* Footer region */
-    #mainWrapper footer {
+ footer {
         padding-left: 16px;
         overflow: hidden;
-    }
-
-    /* Links in header */
-    header #headerLinks a {
-        padding-left: 0px;
-        padding-right: 30px;
-    }
-
-    /* Offer- Text banner */
-    #mainWrapper #offer {
-        padding-left: 22%;
     }
 
     /* Paragraphs in footer */
@@ -408,26 +656,27 @@ footer .footerlinks {
         text-align: center;
     }
 
-    /* Links in header */
-    header #headerLinks a {
-        text-align: center;
-        padding-right: 15px;
-        padding-left: 0px;
-    }
+.header a {
+	color: white;
+	padding-left: 66px;
+	padding-right: 66px;
+	font-size: 14px;
+	text-decoration: none;
+	float: left;
+    width: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
 
-    /*Offer - Text Banner */
-    #mainWrapper #offer {
-        padding-left: 0px;
-        text-align: center;
-    }
 
-    /* Menubar in sidebar */
     #content .sidebar #menubar {
         position: relative;
         left: -8%;
         text-align: center;
     }
-
+	.footer{
+		background-color:rgb(242, 149, 68);
+	}
     /*Menu headings in sidebar */
     #menubar .menu h2 {
         width: 100%;
@@ -444,7 +693,7 @@ footer .footerlinks {
         left: -2%;
     }
 
-    #mainWrapper footer div {
+ footer div {
         width: 100%;
         margin-left: -16px;
         text-align: justify;
@@ -459,12 +708,12 @@ footer .footerlinks {
     }
 
     /* Container for links in footer */
-    #mainWrapper footer .footerlinks {
+footer .footerlinks {
         padding-left: 8%;
     }
 
-    /* Main content which excludes the sidebar */
-    #mainwrapper #content .mainContent {
+ 
+ #content .mainContent {
         margin-top: -81px;
         text-align: center;
         width: 100%;
@@ -492,6 +741,7 @@ input[type=text]:focus {
 
 #list {
     font-size: .9em;
+    display: none;
 }
 
 .coffee .tea .food {
