@@ -20,9 +20,9 @@
             <img src="../img/Logos/HivemindLogo.avif" class="brand-logo" alt="">
             <div class="items">
                 <div class="search">
-                    <input class="searchbar" onkeyup="search_coffee(), search_tea(), search_food()" type="text" name="search"
-                   placeholder="Search"> <button class="srh-btn" onclick="TestsFunction()"> <img src="../img/buttons/icons8-search-50.png" alt="" width="35" height="35"></button>
-                  <ul class="list">
+                    <input id="searchbar" onkeyup="search_coffee(), search_tea(), search_food()" type="text" name="search"
+                    placeholder="Search">
+                  <ul id="list">
                     <li class="coffee"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Black Coffee</a></li>
                     <li class="coffee">Cold Brew</li>
                     <li class="coffee"> Latte</li>
@@ -81,10 +81,10 @@
 
   <div id="content">
     <section class="sidebar">
-      <input class="searchbar" onkeyup="search_coffee(), search_tea(), search_food() " type="text" name="search"
+      <input id="searchbar" onkeyup="search_coffee(), search_tea(), search_food() " type="text" name="search"
         placeholder="Search">
-		<button class="srh-btn" onClick="TestsFunction()">Tests</button>
-      <ul class="list">
+		<button onClick="TestsFunction()">Tests</button>
+      <ul id="list">
         <li class="coffee"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Black Coffee</a></li>
         <li class="coffee"> <a href="#" style="text-decoration: none; background: none; color: inherit;">Cold Brew</a></li>
         <li class="coffee"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Latte</a></li>
@@ -105,18 +105,19 @@
       </ul>
       <div id="menubar">
         <nav class="menu">
-			<h2>
+          <h2>
             <!-- Title for menuset 1 --> Drinks
           </h2>
           <hr>
           <ul>
             <!-- List of links under menuset 1 -->
             <li><a href="#" title="Link">Black Coffee</a></li>
-            <li><a href="#" title="Link">Black Tea</a></li>
-            <li><a href="#" title="Link">Cold Brew</a></li>
-            <li><a href="#" title="Link">Latte</a></li>
-            <li><a href="#" title="Link">Matcha Tea</a></li>
-            <li><a href="#" title="Link">Sweet Tea</a></li>
+            <li><a href="#" title="Link">Link 2</a></li>
+            <li><a href="#" title="Link">Link 3</a></li>
+            <li class="notimp">
+              <!-- notimp class is applied to remove this link from the tablet and phone views --><a href="#"
+                title="Link">Link 4</a>
+            </li>
           </ul>
         </nav>
         <nav class="menu">
@@ -226,13 +227,8 @@
       <p><a href="#" title="Link">Food</a></p>
       <p><a href="#" title="Link">Beans</a></p>
     </div>
-	  <div>
-	  <p class="footer-credit"> This website was made by Arlo Jackson starting on October 11, 2022. All images were
-            found on <dfn
-                title="The photos on Unsplash are free to use and can be used for most commercial, personal projects, and for editorial use. You do not need to ask permission from or provide credit to the photographer or Unsplash, although it is appreciated when possible.">
-		  Unsplash,</dfn> <a href="credit.html">here is credit</a> to them all. </p>
-	  </div>
   </footer>
+  </div>
 </body>
 
 </html>

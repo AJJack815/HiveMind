@@ -58,24 +58,22 @@ hr {
   margin-bottom: 25px;
 }
 
-.srh-btn {
-  height: 50px;
-  width: 65px;
-  background-color: darkslategray;
+button {
+  height: 32px;
+  width: 45px;
+  background-color: var(--light);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
+  width: 100%;
   opacity: 0.9;
-	border-radius: 5px;
 
 }
-.srh-btn img{
-	align-content: center;
-}
-.srh-btn:hover {
-    opacity: 1;
+
+button:hover {
+  opacity: 1;
 }
 
 .tab-link {
@@ -723,7 +721,7 @@ footer .footerlinks {
     }
 }
 
-.searchbar {
+#searchbar {
     margin-left: 15%;
     padding: 15px;
     border-radius: 8px;
@@ -741,7 +739,7 @@ input[type=text]:focus {
     width: 70%;
 }
 
-.list {
+#list {
     font-size: .9em;
     display: none;
 }
