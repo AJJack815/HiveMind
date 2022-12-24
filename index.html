@@ -1,313 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fake site for FBLA Region and State">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="shortcut icon" href="img/Logos/favicon.ico" type="image/x-icon">
-    <script src="script.js">
-    </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fake site for FBLA Region and State" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="img/Logos/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="script.js"></script>
     <title>Hive Mind</title>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <nav id="top" class="navbar">
-        <section class="nav">
-            <img src="img/Logos/HivemindLogo.avif" class="brand-logo" alt="">
-            <div class="items">
-                <div class="search">
-                    <input id="searchbar" onkeyup="search_coffee(), search_tea(), search_food()" type="text" name="search"
-                    placeholder="Search">
-                  <ul id="list">
-                    <li class="coffee"> <a href="#" style="text-decoration: none; background: none; color: inherit;"> Black Coffee</a></li>
-                    <li class="coffee">Cold Brew</li>
-                    <li class="coffee"> Latte</li>
-                    <li class="tea">Matcha Tea</li>
-                    <li class="tea">Sweet Tea</li>
-                    <li class="tea"> Black Tea</li>
-                    <li class="food">Cinnamon Muffis</li>
-                    <li class="food"> Chocolate Cookies</li>
-                    <li class="food">Chocolate Muffins</li>
-                    <li class="food">Cranberry Muffins</li>
-                    <li class="food">Sugar Cookies</li>
-                    <li class="food"> Blueberry Muffins</li>
-                    <li class="food"> Pb Blossoms</li>
-                    <li class="food">Chocolate Chip</li>
-                    <li class="food">Macarons</li>
-                    <li class="food">Double Chocolate Muffins</li>
-                    <li class="food">Oatmeal Raisin Cookies</li>
-                  </ul>
+      <section class="nav">
+        <img src="img/Logos/HivemindLogo.avif" class="brand-logo" alt="" />
+        <div class="items">
+          <div class="search">
+            <input
+              id="searchbar"
+              onkeyup="search_coffee(), search_tea(), search_food()"
+              type="text"
+              name="search"
+              placeholder="Search"
+            />
+            <button class="search-btn" onClick="TestsFunction()">Search</button>
+            <ul id="list">
+              <li class="coffee">
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    background: none;
+                    color: inherit;
+                  "
+                >
+                  Black Coffee</a
+                >
+              </li>
+              <li class="coffee">Cold Brew</li>
+              <li class="coffee">Latte</li>
+              <li class="tea">Matcha Tea</li>
+              <li class="tea">Sweet Tea</li>
+              <li class="tea">Black Tea</li>
+              <li class="food">Cinnamon Muffis</li>
+              <li class="food">Chocolate Cookies</li>
+              <li class="food">Chocolate Muffins</li>
+              <li class="food">Cranberry Muffins</li>
+              <li class="food">Sugar Cookies</li>
+              <li class="food">Blueberry Muffins</li>
+              <li class="food">Pb Blossoms</li>
+              <li class="food">Chocolate Chip</li>
+              <li class="food">Macarons</li>
+              <li class="food">Double Chocolate Muffins</li>
+              <li class="food">Oatmeal Raisin Cookies</li>
+            </ul>
+          </div>
+          <button
+            onclick="document.getElementById('id01').style.display='block'"
+            class="user nav-items"
+          >
+            <img src="img/buttons/user.png" alt="Profile" />
+          </button>
+          <!-- Starts of the sign up form-->
+          <div id="id01" class="modal">
+            <span
+              onclick="document.getElementById('id01').style.display='none'"
+              class="close"
+              title="Close"
+              >x</span
+            >
+            <form class="modal-content" action="#">
+              <div class="container">
+                <img src="img/Logos/HivemindLogo.avif" class="logo" alt="" />
+                <div>
+                  <h2>Sign Up</h2>
+                  <p>Please Fill out this Form to Create An Account</p>
+                  <hr />
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    id="name"
+                    placeholder="name"
+                  />
+                  <input
+                    type="email"
+                    autocomplete="off"
+                    id="email"
+                    placeholder="email"
+                  />
+                  <input
+                    type="password"
+                    autocomplete="off"
+                    id="password"
+                    placeholder="password"
+                  />
+                  <br />
+                  <button class="signupbtn">Sign Up</button>
                 </div>
-                <button onclick="document.getElementById('id01').style.display='block'" class="user nav-items"> <img
-                        src="img/buttons/user.png" alt="Profile"> </button>
-                <!-- Starts of the sign up form-->
-                <div id="id01" class="modal">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close">x</span>
-                    <form class="modal-content" action="#">
-                        <div class="container">
-                            <img src="img/Logos/HivemindLogo.avif" class="logo" alt="">
-                            <div>
-                                <h2> Sign Up</h2>
-                                <p> Please Fill out this Form to Create An Account</p>
-                                <hr>
-                                <input type="text" autocomplete="off" id="name" placeholder="name">
-                                <input type="email" autocomplete="off" id="email" placeholder="email">
-                                <input type="password" autocomplete="off" id="password" placeholder="password">
-                                <br>
-                                <button class="signupbtn">Sign Up</button>
-                            </div>
-                            <a href="#" onclick="document.getElementById('id01').style.display='none'" class="link"
-                                title="Close Modal">already have an account? Log in here</a>
-                        </div>
-                    </form>
-                </div>
-                <!-- End Sign up form-->
-                <a href="error.html" class="nav-items"> <img src="img/buttons/cart.png" alt="Cart"></a>
-            </div>
-        </section>
-        <hr>
-        <ul class="link-container">
-            <li class="link-item"> <a class="tab-link" href="index.html"> Home</a> </li>
-            <li class="link-item"> <a class="tab-link" href="coffee.html"> Coffee</a> </li>
-            <li class="link-item"> <a class="tab-link" href="tea.html"> Tea</a></li>
-            <li class="link-item"> <a class="tab-link" href="food.html"> Food </a></li>
-        </ul>
+                <a
+                  href="#"
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="link"
+                  title="Close Modal"
+                  >already have an account? Log in here</a
+                >
+              </div>
+            </form>
+          </div>
+          <!-- End Sign up form-->
+          <a href="error.html" class="nav-items">
+            <img src="img/buttons/cart.png" alt="Cart"
+          /></a>
+        </div>
+      </section>
+      <hr />
+      <ul class="link-container">
+        <li class="link-item">
+          <a class="tab-link" href="index.html"> Home</a>
+        </li>
+        <li class="link-item">
+          <a class="tab-link" href="coffee.html"> Coffee</a>
+        </li>
+        <li class="link-item"><a class="tab-link" href="tea.html"> Tea</a></li>
+        <li class="link-item">
+          <a class="tab-link" href="food.html"> Food </a>
+        </li>
+      </ul>
     </nav>
     <!-- Nav End-->
     <header class="hero-section">
-        <img src="img/Logos/logo-header.avif" alt="" class="logo">
-        <div class="content">
-            <h4 class="sub-heading"> Sweetest In Utah</h4>
-        </div>
+      <img src="img/Logos/logo-header.avif" alt="" class="logo" />
+      <div class="content">
+        <h4 class="sub-heading">Sweetest In Utah</h4>
+      </div>
     </header>
     <!-- Weeks Top Seller: Start-->
     <section class="product">
-        <h2 style="text-align: center; font-size:xx-large ;"> Best Sellers</h2>
-        <section class="product-container">
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag"></span>
-                    <img src="img/Product/tabitha-turner.avif" class="product-thumb" alt="" width="119" height="165">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand"> Cold Brew</h2>
-                    <span class="price">$4.55</span>
-                    <p class="product-short-des">...</p>
-                    <br>
-                    <br>
-                    <br>
-                    <button class="card-btn">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag"></span>
-                    <img src="img/Product/manki-kim.avif" class="product-thumb" alt="" width="353" height="143">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Black Tea</h2>
-                    <span class="price">$2.99</span>
-                    <p class="product-short-des"> No Sweetening</p>
-                    <br>
-                    <br>
-                    <br>
-                    <button class="card-btn">Add to cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag"></span>
-                    <img src="img/Product/ann.avif" class="product-thumb" alt="" width="224" height="224">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Matcha Tea</h2>
-                    <span class="price">$5.99</span>
-                    <p class="product-short-des">...</p>
-                    <br>
-                    <br>
-                    <br>
-                    <button class="card-btn">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag"></span>
-                    <img src="img/Product/michael-chiara.avif" class="product-thumb" alt="" width="225" height="225">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Chocolate Chip Muffins</h2>
-                    <span class="price">$3.99</span>
-                    <p class="product-short-des">...</p>
-                    <br>
-                    <button class="card-btn">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag"></span>
-                    <img src="img/Product/valeriia-miller.avif" class="product-thumb" alt="" width="225" height="225">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Latte</h2>
-                    <span class="price">$5.99</span>
-                    <p class="product-short-des">...</p>
-                    <br>
-                    <br>
-                    <br>
-                    <button class="card-btn">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag"></span>
-                    <img src="img/Product/akhilesh-sharma.avif" class="product-thumb" alt="" width="750" height="750">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Sweet Tea</h2>
-                    <span class="price">$3.99</span>
-                    <p class="product-short-des">Black Tea with cubes of sugar, and honey.</p>
-                    <br>
-                    <br>
-                    <button class="card-btn">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="img/Product/american-heritage@0.33x.avif" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Chocolate Cookies</h2>
-                    <span class="price">$0.99</span>
-                    <p class="product-short-des"> Almonds inside</p>
-                    <br>
-                    <button class="card-btn">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="img/Product/madison-kaminski.avif" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">PB Blossom</h2>
-                    <span class="price">$1.99</span>
-                    <p class="product-short-des"> Chocolate Drops on a Peanut Butter Cookie</p>
-                    <br>
-                    <button class="card-btn">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="img/Product/pexels-terrance-barksdale-8837096.avif" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Oatmeal Raisin Cookies</h2>
-                    <span class="price">$1.99</span>
-                    <p class="product-short-des"> ...</p>
-                    <br>
-                    <button class="card-btn">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="img/Product/fallon-michael.avif" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Cranberry Muffins</h2>
-                    <span class="price">$1.99</span>
-                    <p class="product-short-des"> ...</p>
-                    <br>
-                    <button class="card-btn">Add to Cart</button>
-                </div>
-            </div>
-            <button class="pre-btn"><img src="img/buttons/arrow.png" alt="Back Button"></button>
-            <button class="nxt-btn"><img src="img/buttons/arrow.png" alt="Next Button"></button>
-            <script>
-                const productContainer = [...document.querySelectorAll('.product-container')];
-                const nxtBt = [...document.querySelectorAll('.nxt-btn')];
-                const preBt = [...document.querySelectorAll('.pre-btn')];
-
-                productContainer.forEach((item, i) => {
-                    let containerDimenstions = item.getBoundingClientRect();
-                    let containerWidth = containerDimenstions.width;
-
-                    nxtBt[i].addEventListener('click', () => {
-                        item.scrollLeft += containerWidth;
-                    })
-
-                    preBt[i].addEventListener('click', () => {
-                        item.scrollLeft -= containerWidth;
-                    })
-                })
-            </script>
-        </section>
+      <h2 style="text-align: center; font-size: xx-large">Best Sellers</h2>
+      <section class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag"></span>
+            <img
+              src="img/Product/tabitha-turner.avif"
+              class="product-thumb"
+              alt=""
+              width="119"
+              height="165"
+            />
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Cold Brew</h2>
+            <span class="price">$4.55</span>
+            <p class="product-short-des">...</p>
+            <br />
+            <br />
+            <br />
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag"></span>
+            <img
+              src="img/Product/manki-kim.avif"
+              class="product-thumb"
+              alt=""
+              width="353"
+              height="143"
+            />
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Black Tea</h2>
+            <span class="price">$2.99</span>
+            <p class="product-short-des">No Sweetening</p>
+            <br />
+            <br />
+            <br />
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag"></span>
+            <img
+              src="img/Product/ann.avif"
+              class="product-thumb"
+              alt=""
+              width="224"
+              height="224"
+            />
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Matcha Tea</h2>
+            <span class="price">$5.99</span>
+            <p class="product-short-des">...</p>
+            <br />
+            <br />
+            <br />
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag"></span>
+            <img
+              src="img/Product/michael-chiara.avif"
+              class="product-thumb"
+              alt=""
+              width="225"
+              height="225"
+            />
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Chocolate Chip Muffins</h2>
+            <span class="price">$3.99</span>
+            <p class="product-short-des">...</p>
+            <br />
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag"></span>
+            <img
+              src="img/Product/valeriia-miller.avif"
+              class="product-thumb"
+              alt=""
+              width="225"
+              height="225"
+            />
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Latte</h2>
+            <span class="price">$5.99</span>
+            <p class="product-short-des">...</p>
+            <br />
+            <br />
+            <br />
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag"></span>
+            <img
+              src="img/Product/akhilesh-sharma.avif"
+              class="product-thumb"
+              alt=""
+              width="750"
+              height="750"
+            />
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Sweet Tea</h2>
+            <span class="price">$3.99</span>
+            <p class="product-short-des">
+              Black Tea with cubes of sugar, and honey.
+            </p>
+            <br />
+            <br />
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="img/Product/american-heritage@0.33x.avif"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Chocolate Cookies</h2>
+            <span class="price">$0.99</span>
+            <p class="product-short-des">Almonds inside</p>
+            <br />
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="img/Product/madison-kaminski.avif"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">PB Blossom</h2>
+            <span class="price">$1.99</span>
+            <p class="product-short-des">
+              Chocolate Drops on a Peanut Butter Cookie
+            </p>
+            <br />
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="img/Product/pexels-terrance-barksdale-8837096.avif"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Oatmeal Raisin Cookies</h2>
+            <span class="price">$1.99</span>
+            <p class="product-short-des">...</p>
+            <br />
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="img/Product/fallon-michael.avif"
+              class="product-thumb"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Cranberry Muffins</h2>
+            <span class="price">$1.99</span>
+            <p class="product-short-des">...</p>
+            <br />
+            <button class="card-btn">Add to Cart</button>
+          </div>
+        </div>
+        <button class="pre-btn">
+          <img src="img/buttons/arrow.png" alt="Back Button" />
+        </button>
+        <button class="nxt-btn">
+          <img src="img/buttons/arrow.png" alt="Next Button" />
+        </button>
+      </section>
     </section>
     <!-- Weeks Top End-->
-    <hr>
-    <hr class="footer-collection">
+    <hr />
+    <hr class="footer-collection" />
     <div class="collection-container">
-        <a href="coffee.html" class="collection">
-            <dfn title="Coffee">
-                <img src="img/Product/tabitha-turner.avif" alt="Coffee"></dfn>
-        </a>
-        <a href="tea.html" class="collection">
-            <dfn title="Tea">
-                <img src="img/Product/yana.avif" alt="Tea"></dfn>
-        </a>
-        <a href="food.html" class="collection">
-            <dfn title="Food">
-                <img src="img/Product/ari-spada.avif" alt="Food"></dfn>
-        </a>
-        <a href="error.html" class="collection">
-            <dfn title="Beans">
-                <img src="img/Product/pablo-merchan-montes.avif" alt="Beans"></dfn>
-        </a>
-        <a href="#" class="collection">
-        </a>
+      <a href="coffee.html" class="collection">
+        <dfn title="Coffee">
+          <img src="img/Product/tabitha-turner.avif" alt="Coffee"
+        /></dfn>
+      </a>
+      <a href="tea.html" class="collection">
+        <dfn title="Tea"> <img src="img/Product/yana.avif" alt="Tea" /></dfn>
+      </a>
+      <a href="food.html" class="collection">
+        <dfn title="Food">
+          <img src="img/Product/ari-spada.avif" alt="Food"
+        /></dfn>
+      </a>
+      <a href="error.html" class="collection">
+        <dfn title="Beans">
+          <img src="img/Product/pablo-merchan-montes.avif" alt="Beans"
+        /></dfn>
+      </a>
+      <a href="#" class="collection"> </a>
     </div>
-<script src="eCommerceAssets\script.js"></script>
     <footer>
-        <div class="footer-content">
-            <img src="img/Logos/HivemindLogo.avif" class="logo" alt="Light Logo">
-            <div class="footer-ul-container">
-                <ul class="category">
-
-                </ul>
-            </div>
+      <div class="footer-content">
+        <img src="img/Logos/HivemindLogo.avif" class="logo" alt="Light Logo" />
+        <div class="footer-ul-container">
+          <ul class="category"></ul>
         </div>
+      </div>
 
-        <p class="footer-title"> About Our Company</p>
-        <p class="info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id optio, aliquam, enim neque
-            numquam totam laudantium dolore voluptatum placeat odit quos. Fuga, ducimus veniam? Architecto dolor fugit
-            veritatis libero! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque id inventore non beatae
-            excepturi harum, cupiditate facilis! Quis minima, explicabo ad, corrupti autem commodi officia aperiam ab,
-            quos quisquam hic.</p>
-        <div class="footer-social-container">
-            <a href="error.html" class="social-link"> Facebook</a>
-            <a href="error.html" class="social-link"> Instagram</a>
-            <a href="#top" class="social-link"> Back To Top</a>
-        </div>
-        <p class="footer-credit"> This website was made by Arlo Jackson starting on October 11, 2022. All images were
-            found on <dfn
-                title="The photos on Unsplash are free to use and can be used for most commercial, personal projects, and for editorial use. You do not need to ask permission from or provide credit to the photographer or Unsplash, although it is appreciated when possible.">
-                Unsplash,</dfn> <a href="credit.html">here is credit</a> to them all.
-        </p>
-        <br>
-        <br>
-
+      <p class="footer-title">About Our Company</p>
+      <p class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id
+        optio, aliquam, enim neque numquam totam laudantium dolore voluptatum
+        placeat odit quos. Fuga, ducimus veniam? Architecto dolor fugit
+        veritatis libero! Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Neque id inventore non beatae excepturi harum, cupiditate facilis!
+        Quis minima, explicabo ad, corrupti autem commodi officia aperiam ab,
+        quos quisquam hic.
+      </p>
+      <div class="footer-social-container">
+        <a href="error.html" class="social-link"> Facebook</a>
+        <a href="error.html" class="social-link"> Instagram</a>
+        <a href="#top" class="social-link"> Back To Top</a>
+      </div>
+      <p class="footer-credit">
+        This website was made by Arlo Jackson starting on October 11, 2022. All
+        images were found on
+        <dfn
+          title="The photos on Unsplash are free to use and can be used for most commercial, personal projects, and for editorial use. You do not need to ask permission from or provide credit to the photographer or Unsplash, although it is appreciated when possible."
+        >
+          Unsplash,</dfn
+        >
+        <a href="credit.html">here is credit</a> to them all.
+      </p>
+      <br />
+      <br />
     </footer>
     <!--footer End-->
 
+    <script src="eCommerceAssets\script.js">
+      const productContainer = [...document.querySelectorAll('.product-container')];
+      const nxtBt = [...document.querySelectorAll('.nxt-btn')];
+      const preBt = [...document.querySelectorAll('.pre-btn')];
 
-</body>
+      productContainer.forEach((item, i) => {
+          let containerDimenstions = item.getBoundingClientRect();
+          let containerWidth = containerDimenstions.width;
 
+          nxtBt[i].addEventListener('click', () => {
+              item.scrollLeft += containerWidth;
+          })
+
+          preBt[i].addEventListener('click', () => {
+              item.scrollLeft -= containerWidth;
+          })
+      })
+    </script>
+  </body>
 </html>
