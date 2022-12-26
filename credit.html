@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="CSS/footer.css">
     <link
       rel="shortcut icon"
       href="img/Logos/favicon.ico"
       type="image/x-icon"
     />
+
+    <style>
+      body {
+        background-color: rgb(248, 228, 206);
+      }
+    </style>
   </head>
 
   <body>
@@ -102,10 +109,7 @@
     </nav>
     <!-- Nav End-->
     <br />
-    <div
-      class="multiple-items"
-      data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'
-    >
+    <div class="center" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
       <img
         src="img/Product/akhilesh-sharma.avif"
         alt=""
@@ -226,36 +230,38 @@
 
       <img src="img/Product/yana.avif" alt="" width="872" height="245" />
     </div>
-
-    <button type="button" class="slick-prev">Previous</button>
-    <button type="button" class="slick-next">Next</button>
-
-    <footer>
-      <div class="footer-content">
-        <img src="img/Logos/HivemindLogo.avif" class="logo" alt="Light Logo" />
-        <div class="footer-ul-container"></div>
-      </div>
-
-      <p class="footer-title">About Our Company</p>
-      <p class="info">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id
-        optio, aliquam, enim neque numquam totam laudantium dolore voluptatum
-        placeat odit quos. Fuga, ducimus veniam? Architecto dolor fugit
-        veritatis libero!
-      </p>
-      <div class="footer-social-container">
-        <a href="error.html" class="social-link"> Facebook</a>
-        <a href="error.html" class="social-link"> Instagram</a>
-        <a href="#top" class="social-link"> Back To Top</a>
-      </div>
-      <p class="footer-credit">
-        This website was made by Arlo Jackson starting on October 11, 2022. All
-        images were found on Unsplash,
-        <a href="credit.html">here is credit</a> to them all.
-      </p>
-      <br />
-      <br />
-    </footer>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="about" style="float: left; width: 30%;">
+          <h2> About Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
+        </div>
+        <div class="contact" style="float: left; width: 30%;">
+          <h2> Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
+        </div>
+        <div class="footerlinks">
+          <p><a href="#" title="Link">Coffee </a></p>
+          <p><a href="#" title="Link">Tea</a></p>
+          <p><a href="#" title="Link">Food</a></p>
+          <p><a href="#" title="Link">Beans</a></p>
+        </div>
+        <br />
+        <br />
+        <hr>
+        <p class="footer-credit">
+          This website was made by Arlo Jackson starting on October 11, 2022. All
+          images were found on
+          <dfn
+            title="The photos on Unsplash are free to use and can be used for most commercial, personal projects, and for editorial use. You do not need to ask permission from or provide credit to the photographer or Unsplash, although it is appreciated when possible."
+          >
+            Unsplash,</dfn
+          >
+          <a href="credit.html">here is credit</a> to them all.
+        </p>
+        <br />
+      </footer>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -267,10 +273,46 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
       $(document).on("ready", function () {
-        $(".multiple-items").slick({
-          infinite: true,
+        $(".center").slick({
+          centerMode: true,
+          centerPadding: "60px",
           slidesToShow: 3,
-          slidesToScroll: 3,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: true,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: true,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+      const productContainer = [...document.querySelectorAll(".center")];
+      const nxtBt = [...document.querySelectorAll(".nxt-btn")];
+      const preBt = [...document.querySelectorAll(".pre-btn")];
+
+      productContainer.forEach((item, i) => {
+        let containerDimenstions = item.getBoundingClientRect();
+        let containerWidth = containerDimenstions.width;
+
+        nxtBt[i].addEventListener("click", () => {
+          item.scrollLeft += containerWidth;
+        });
+
+        preBt[i].addEventListener("click", () => {
+          item.scrollLeft -= containerWidth;
         });
       });
     </script>

@@ -1,0 +1,102 @@
+footer {
+	clear: both;
+	overflow: auto;
+	background-color: rgba(242,149,68,1.00);
+	font-family: 'source-sans-pro', sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+}
+
+/*Each footer content */
+ footer div {
+    width: 27%;
+    float: left;
+    padding-left: 4%;
+    padding-right: 2%;
+    color: rgba(255, 255, 255, 1.00);
+    text-align: justify;
+}
+
+/* Links in footer */
+ div a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer .footerlinks {
+    margin-top: -15px;
+    width: 80px;
+    float: right;
+	padding-left: 8%;
+	margin-right: 8%;
+	letter-spacing: 0.10em;
+}
+#mainWrapper footer .footerlinks {
+	float: none;
+	width: 100%;
+	position: relative;
+	top: 17px;
+	clear: both;
+	text-align: center;
+	left: 0%;
+	padding-bottom: 19px;
+}
+
+footer div {
+	width: 44%;
+	text-align: justify;
+	font-size: 15px;
+}
+
+/* Links in footer */
+.footerlinks p a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: inline;
+	padding-right: 35px;
+}
+
+/* Footer region */
+footer {
+	padding-left: 16px;
+	overflow: hidden;
+}
+
+/* Paragraphs in footer */
+footer .footerlinks p {
+	display: inline;
+}
+
+.footer{
+	background-color:rgb(242, 149, 68);
+}
+
+footer div {
+	width: 100%;
+	margin-left: -16px;
+	text-align: justify;
+	padding-bottom: 16px;
+	overflow: -moz-hidden-unscrollable;
+}
+
+.footer-credit {
+	width: 100%;
+	padding: 10px;
+	top: 150px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-bottom: 5px;
+	text-align: center;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.2);
+	font-family: 'Ubuntu';
+  }
