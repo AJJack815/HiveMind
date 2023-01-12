@@ -1,0 +1,730 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Ubuntu:wght@300&display=swap');
+
+:root {
+  --light: #f29544;
+  --light-hover: #dc883e;
+  --medium: #a67665;
+  --medium-dark: #733a2d;
+  --dark: #59332a;
+  --really-dark: #261f1d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.logo {
+  height: 80px;
+  display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  text-transform: capitalize;
+  color: #383838;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+  font-family: 'Archivo Black', sans-serif;
+
+}
+
+::placeholder {
+  color: #383838;
+}
+
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid var(--dark);
+  margin-bottom: 25px;
+}
+
+button {
+  height: 32px;
+  width: 45px;
+  background-color: var(--light);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.tab-link {
+  height: 25px;
+  width: 45px;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  font-family: 'Crete Round';
+}
+
+.tab-link:hover {
+  background-color: #a76832;
+}
+
+.signupbtn {
+  background-color: var(--light);
+  width: 300px;
+  height: 40px;
+  opacity: 1;
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+  height: 400px;
+}
+
+label {
+  text-transform: capitalize;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #383838;
+}
+
+label a {
+  color: #383838;
+}
+
+.link {
+  color: #383838;
+  text-transform: capitalize;
+  text-align: left;
+  display: inline;
+  max-width: 25px;
+
+}
+
+.link:hover {
+  background-color: var(--light-hover);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200%;
+  overflow: auto;
+  background-color: transparent;
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: rgb(212, 201, 185);
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.signup-form {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+hr .signup-form {
+  color: var(--dark);
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.user {
+  width: 50px;
+  height: 50px;
+  background-color: none;
+}
+
+@media screen and (max-width: 300px) {
+
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+
+.search {
+  width: 500px;
+  display: flex;
+}
+
+.search-box {
+  width: 90vw;
+  height: 40px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #d1d1d1;
+  text-transform: capitalize;
+  background: white;
+  color: #a9a9a9;
+  outline: none;
+}
+
+.search-btn {
+  width: 20%;
+  margin-top: 2.2vh;
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #383838;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder {
+  color: #a9a9a9;
+}
+
+.nav-items {
+  display: inline;
+  float: inline-end;
+}
+
+
+.link-container {
+  width: 100%;
+  display: flex;
+  padding: 10px 10vw;
+  justify-content: center;
+  list-style: none;
+  background-color: var(--light-hover);
+  border-top: 1px solid var(--medium-dark);
+}
+
+.link-item {
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  transition: .5s;
+  font-family: 'Ubuntu';
+}
+
+.link-item:hover {
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  transition: .5s;
+}
+
+.link {
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  transition: .5s;
+  position: inline;
+}
+
+.link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+
+.navbar {
+  top: 0;
+  left: 0;
+  width: 99vw;
+  background-color: var(--light);
+  z-index: 9;
+  font-family: 'Crete Round', sans-serif;
+}
+
+.nav {
+  padding: 10px 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.brand-logo {
+  width: 160px;
+  height: 154px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.hero-section {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-image: url("../img/Logos/logo-header.avif");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .logo {
+  height: 150px;
+  display: none;
+  margin: auto;
+}
+
+.hero-section .sub-heading {
+  color: white;
+  font-size: 40px;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.tabcontent {
+  color: black;
+  display: none;
+}
+
+/* This is the home page */
+.product {
+  padding-top: 5px;
+  margin-top: 30px;
+  background-color: #f9f4ea;
+}
+
+.product-info {
+  font-family: 'Ubuntu';
+}
+
+.product h2 {
+  padding: 3px;
+
+  font-family: 'Ubuntu';
+}
+
+.price,
+.product-short-des {
+  font-family: 'Crete Round';
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  height: 500px;
+
+  font-family: 'Ubuntu';
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.best-seller {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.product-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: 400px;
+  margin: 30px;
+  text-align: center;
+  width: 40%;
+  font-family: 'Ubuntu';
+}
+
+
+.product-thumb {
+  width: 200px;
+  height: 200px;
+  font-family: 'Ubuntu';
+}
+
+
+.card-btn {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: var(--really-dark);
+  background-color: var(--light);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Archivo Black';
+  font-size: 18px;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: var(--light-hover);
+}
+
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 9vw;
+  height: 60%;
+  position: absolute;
+  top: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.sell {
+  text-align: center;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(60px 60px);
+  grid-gap: 10px;
+  background-color: var(--medium);
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  height: 100%;
+  width: 100%;
+}
+
+.collection-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--medium-dark);
+  padding: 5px;
+  background-color: var(--light);
+  font-size: 30px;
+  margin: 0;
+}
+
+.collection:nth-child(5) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+#product-page .product-card {
+  width: 33%;
+}
+
+hr {
+  height: 8px;
+  background-color: var(--light);
+  border: none;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.error h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  padding: 40px 10vw;
+  padding-bottom: 80px;
+  background: var(--light-hover);
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-content .logo {
+  height: 250px;
+}
+
+.footer-ul-container {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  width: 150%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  list-style: none;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.category-title {
+  grid-column: span 2;
+  text-transform: capitalize;
+  color: var(--medium-dark);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.category .footer-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--dark);
+  font-size: 13px;
+}
+
+.footer-link:hover {
+  color: var(--really-dark);
+}
+
+.footer-title,
+.info {
+  color: var(--dark);
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.footer-title {
+  margin-top: 60px;
+}
+
+.footer-social-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+  color: var(--really-dark);
+  margin-left: 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  font-style: bold;
+}
+
+.social-linl:hover {
+  background-color: #dc883e;
+}
+
+.social-link:nth-child(1) {
+  margin-left: 0;
+}
+
+.footer-credit {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  font-family: 'Ubuntu';
+}
+
+.footer-credit a {
+  color: var(--really-dark);
+  font-family: 'Crete Round';
+}
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+input[type=text]:focus {
+  width: 70%;
+}
+
+#list {
+  font-size: .9em;
+  display:none;
+}
+
+.coffee .tea .food {
+  list-style: none;
+}
