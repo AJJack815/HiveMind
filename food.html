@@ -5,6 +5,7 @@
     <title>HiveMind-Food</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.min.css">
     <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
     <script>
       var __adobewebfontsappname__ = "dreamweaver";
@@ -16,135 +17,58 @@
   </head>
 
   <body>
-    <header>
-      <nav id="top" class="navbar">
-        <section class="nav">
-          <img src="/img/Logos/HivemindLogo.avif" class="brand-logo" alt="" />
-          <div class="items">
-            <div class="search">
-              <input
-                id="searchbar"
-                onkeyup="search_coffee(), search_tea(), search_food()"
-                type="text"
-                name="search"
-                placeholder="Search"
-              />
-              <ul id="list">
-                <li class="food">Cinnamon Muffins</li>
-                <li class="food">Chocolate Cookies</li>
-                <li class="food">Chocolate Muffins</li>
-                <li class="food">Cranberry Muffins</li>
-                <li class="food">Sugar Cookies</li>
-                <li class="food">Blueberry Muffins</li>
-                <li class="food">Pb Blossoms</li>
-                <li class="food">Chocolate Chip</li>
-                <li class="food">Macrons</li>
-                <li class="food">Double Chocolate Muffins</li>
-                <li class="food">Oatmeal Raisin Cookies</li>
-              </ul>
-            </div>
-            <button
-              onclick="document.getElementById('id01').style.display='block'"
-              class="user nav-items"
-            >
-              <img src="/img/buttons/user.png" alt="Profile" />
+       <!-- Navbar Start -->
+       <div class="container-fluid p-0 nav-bar">
+        <nav class=" navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">HiveMind</h1>
+            </a>
+            
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Starts of the sign up form-->
-            <div id="id01" class="modal">
-              <span
-                onclick="document.getElementById('id01').style.display='none'"
-                class="close"
-                title="Close"
-                >x</span
-              >
-              <form class="modal-content" action="#">
-                <div class="container">
-                  <img
-                    src="/img/Logos/HivemindLogo.avif"
-                    class="logo"
-                    alt=""
-                  />
-                  <div>
-                    <h2>Sign Up</h2>
-                    <p>Please Fill out this Form to Create An Account</p>
-                    <hr />
-                    <input
-                      type="text"
-                      autocomplete="off"
-                      id="name"
-                      placeholder="name"
-                    />
-                    <input
-                      type="email"
-                      autocomplete="off"
-                      id="email"
-                      placeholder="email"
-                    />
-                    <input
-                      type="password"
-                      autocomplete="off"
-                      id="password"
-                      placeholder="password"
-                    />
-                    <br />
-                    <button class="signupbtn">Sign Up</button>
-                  </div>
-                  <a
-                    href="#"
-                    onclick="document.getElementById('id01').style.display='none'"
-                    class="link"
-                    title="Close Modal"
-                    >already have an account? Log in here</a
-                  >
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a> 
+                     <a href="testimonial.html" class="nav-item nav-link">Testimonial</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle  active" data-toggle="dropdown">Menu</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="tea.html" class="dropdown-item">Tea</a>
+                            <a href="coffee.html" class="dropdown-item"> Coffee</a>
+                            <a href="food.html" class="dropdown-item"> Food</a>
+                            
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                
                 </div>
-              </form>
             </div>
-            <!-- End Sign up form-->
-            <a href="error.html" class="nav-items">
-              <img src="/img/buttons/cart.png" alt="Cart"
-            /></a>
-          </div>
-        </section>
-        <ul class="link-container">
-          <li class="link-item">
-            <a class="tab-link" href="index.html"> Home</a>
-          </li>
-          <li class="link-item">
-            <a class="tab-link" href="coffee.html"> Coffee</a>
-          </li>
-          <li class="link-item">
-            <a class="tab-link" href="tea.html"> Tea</a>
-          </li>
-          <li class="link-item">
-            <a class="tab-link" href="food.html"> Food </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        </nav>
+    </div>
+    <div class="container-fluid p-0 mb-5">
+      <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img class="w-100" src="img/Logos/logo-header.avif" alt="Image">
+              </div>
+  </div>
 
     <div id="content">
       <section class="sidebar">
-        <input
-          id="searchbar"
-          onkeyup="search_coffee(), search_tea(), search_food() "
-          type="text"
-          name="search"
-          placeholder="Search"
-        />
-        <button onClick="TestsFunction()">Tests</button>
         <ul id="list">
          
           <li class="food">
             <a
               href="#"
-              style="text-decoration: none; background: none; color: inherit"
               >Cinnamon Muffin</a
             >
           </li>
           <li class="food">
             <a
               href="#"
-              style="text-decoration: none; background: none; color: inherit"
             >
               Chocolate Cookies</a
             >
@@ -152,28 +76,24 @@
           <li class="food">
             <a
               href="#"
-              style="text-decoration: none; background: none; color: inherit"
               >Chocolate Muffins</a
             >
           </li>
           <li class="food">
             <a
               href="#"
-              style="text-decoration: none; background: none; color: inherit"
               >Cranberry Muffins</a
             >
           </li>
           <li class="food">
             <a
               href="#"
-              style="text-decoration: none; background: none; color: inherit"
               >Sugar Cookies</a
             >
           </li>
           <li class="food">
             <a
               href="#"
-              style="text-decoration: none; background: none; color: inherit"
             >
               Blueberry Muffins</a
             >
@@ -181,7 +101,6 @@
           <li class="food">
             <a
               href="#"
-              style="text-decoration: none; background: none; color: inherit"
             >
               Pb Blossoms</a
             >
@@ -189,21 +108,18 @@
           <li class="food">
             <a
               href="#"
-              style="text-decoration: none; background: none; color: inherit"
               >Chocolate Chip</a
             >
           </li>
           <li class="food">
             <a
               href="#"
-              style="text-decoration: none; background: none; color: inherit"
               >Macrons</a
             >
           </li>
           <li class="food">
             <a
               href="#"
-              style="text-decoration: none; background: none; color: inherit"
               >Double Chocolate Muffins</a
             >
           </li>
@@ -258,7 +174,7 @@
           <!-- One-->
           <article class="productInfo">
             <div> 
-              <img src="#" alt="">
+              <img src="img/Product/" alt="">
             </div>
             <p class="price"> </p>
             <p class="productContent"> Cinnamon Muffin</p>
@@ -357,7 +273,7 @@
         </div>
       </section>
   
-    <script src="script.js"></script>
+    
     <footer class="footer">
       <div class="abput" style="float: left; width: 30%">
         <h2>About Us</h2>
@@ -380,5 +296,6 @@
         <p><a href="#" title="Link">Beans</a></p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

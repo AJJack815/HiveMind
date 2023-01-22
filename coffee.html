@@ -1,89 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fake site for FBLA Region and State-Utah">
-    <link rel="stylesheet" href="CSS/product.css">
-    <link rel="shortcut icon" href="img/Logos/favicon.ico" type="image/x-icon">
-    <title>Hive Mind-Coffee</title>
-    <script src="script.js">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HM-Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css" />
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>
+      var __adobewebfontsappname__ = "dreamweaver";
     </script>
+    <script
+      src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js"
+      type="text/javascript"
+    ></script>
+  </head>
 
-</head>
-
-<body>
-    <nav id="top" class="navbar">
+  <body>
+    <header>
+      <nav id="top" class="navbar">
         <section class="nav">
-            <img src="img/Logos/HivemindLogo.avif" class="brand-logo" alt="">
-            <div class="items">
-                <div class="search">
-                    <input type="text" class="search-box" placeholder="Search Product">
-                    <button class="search-btn"> search</button>
-                </div>
-                <button onclick="document.getElementById('id01').style.display='block'" class="user nav-items"> <img
-                        src="img/buttons/user.png" alt=""> </button>
-                <!-- Starts of the sign up form-->
-                <div id="id01" class="modal">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close">x</span>
-                    <form class="modal-content" action="#">
-                        <div class="container">
-                            <img src="img/Logos/HivemindLogo.avif" class="logo" alt="">
-                            <div>
-                                <h2> Sign Up</h2>
-                                <p> Please Fill out this Form to Create An Account</p>
-                                <hr>
-                                <input type="text" autocomplete="off" id="name" placeholder="name">
-                                <input type="email" autocomplete="off" id="email" placeholder="email">
-                                <input type="password" autocomplete="off" id="password" placeholder="password">
-                                <br>
-                                <button class="signupbtn">Sign Up</button>
-                            </div>
-                            <a href="#" onclick="document.getElementById('id01').style.display='none'" class="link"
-                                title="Close Modal">already have an account? Log in here</a>
-                        </div>
-                    </form>
-                </div>
-                <script src="script.js"></script>
-                <script>
-                    var modal = document.getElementById('id01');
-
-
-                    window.onclick = function (event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    } 
-                </script>
-                <!-- End Sign up form-->
-                <a href="#" class="nav-items"> <img src="img/buttons/cart.png" alt=""></a>
+          <img src="/img/Logos/HivemindLogo.avif" class="brand-logo" alt="" />
+          <div class="items">
+            <div class="search">
+              <input
+                id="searchbar"
+                onkeyup="search_coffee(), search_tea(), search_food()"
+                type="text"
+                name="search"
+                placeholder="Search"
+              />
+              <ul id="list">
+                <li class="coffee">Cinnamon Muffins</li>
+                <li class="coffee">Chocolate Cookies</li>
+                <li class="coffee">Chocolate Muffins</li>
+              </ul>
             </div>
+            <button
+              onclick="document.getElementById('id01').style.display='block'"
+              class="user nav-items"
+            >
+              <img src="/img/buttons/user.png" alt="Profile" />
+            </button>
+            <!-- Starts of the sign up form-->
+            <div id="id01" class="modal">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="close"
+                title="Close"
+                >x</span
+              >
+              <form class="modal-content" action="#">
+                <div class="container">
+                  <img
+                    src="/img/Logos/HivemindLogo.avif"
+                    class="logo"
+                    alt=""
+                  />
+                  <div>
+                    <h2>Sign Up</h2>
+                    <p>Please Fill out this Form to Create An Account</p>
+                    <hr />
+                    <input
+                      type="text"
+                      autocomplete="off"
+                      id="name"
+                      placeholder="name"
+                    />
+                    <input
+                      type="email"
+                      autocomplete="off"
+                      id="email"
+                      placeholder="email"
+                    />
+                    <input
+                      type="password"
+                      autocomplete="off"
+                      id="password"
+                      placeholder="password"
+                    />
+                    <br />
+                    <button class="signupbtn">Sign Up</button>
+                  </div>
+                  <a
+                    href="#"
+                    onclick="document.getElementById('id01').style.display='none'"
+                    class="link"
+                    title="Close Modal"
+                    >already have an account? Log in here</a
+                  >
+                </div>
+              </form>
+            </div>
+            <!-- End Sign up form-->
+            <a href="error.html" class="nav-items">
+              <img src="/img/buttons/cart.png" alt="Cart"
+            /></a>
+          </div>
         </section>
-        <hr>
         <ul class="link-container">
-            <li class="link-item"> <a class="tab-link" href="index.html"> Home</a> </li>
-            <li class="link-item"> <a class="tab-link" href="coffee.html"> Coffee</a> </li>
-            <li class="link-item"> <a class="tab-link" href="tea.html"> Tea</a></li>
-            <li class="link-item"> <a class="tab-link" href="food.html"> Food </a></li>
+          <li class="link-item">
+            <a class="tab-link" href="index.html"> Home</a>
+          </li>
+          <li class="link-item">
+            <a class="tab-link" href="coffee.html"> Coffee</a>
+          </li>
+          <li class="link-item">
+            <a class="tab-link" href="tea.html"> Tea</a>
+          </li>
+          <li class="link-item">
+            <a class="tab-link" href="food.html"> Food </a>
+          </li>
         </ul>
-    </nav>
-    <!-- Nav End-->
-    <!-- InstanceBeginEditable name="Content" -->
-    <section class="mainContent">
+      </nav>
+    </header>
+
+    <div id="content">
+      <section class="sidebar">
+        <input
+          id="searchbar"
+          onkeyup="search_coffee(), search_tea(), search_food() "
+          type="text"
+          name="search"
+          placeholder="Search"
+        />
+        <button onClick="TestsFunction()">Tests</button>
+        <ul id="list">
+         
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+              >Cinnamon Muffin</a
+            >
+          </li>
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+            >
+              Chocolate Cookies</a
+            >
+          </li>
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+              >Chocolate Muffins</a
+            >
+          </li>
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+              >Cranberry Muffins</a
+            >
+          </li>
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+              >Sugar Cookies</a
+            >
+          </li>
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+            >
+              Blueberry Muffins</a
+            >
+          </li>
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+            >
+              Pb Blossoms</a
+            >
+          </li>
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+              >Chocolate Chip</a
+            >
+          </li>
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+              >Macrons</a
+            >
+          </li>
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+              >Double Chocolate Muffins</a
+            >
+          </li>
+          <li class="food">
+            <a
+              href="#"
+              style="text-decoration: none; background: none; color: inherit"
+              >Oatmeal Raisin Cookies</a
+            >
+          </li>
+        </ul>
+        <div id="menubar">
+          
+          <nav class="menu">
+            <h2>Food</h2>
+            <!-- Title for menuset 2 -->
+            <hr />
+            <ul>
+              <!--List of links under menuset 2 -->
+              <li><a href="#" title="Link"> Cinnamon Muffins</a></li>
+              <li><a href="#" title="Link">Chocolate Cookies</a></li>
+              <li><a href="#" title="Link">Chocolate Muffins</a></li>
+              <li class="notimp">
+                <!-- notimp class is applied to remove this link from the tablet and phone views --><a
+                  href="#"
+                  title="Link"
+                >
+                  Cranberry Muffins</a
+                >
+              </li>
+
+              <li class="notimp">
+                <a href="#" title="Link"> Sugar Cookies</a>
+              </li>
+              <li class="notimp">
+                <a href="#" title="Link"> Blueberry Muffins</a>
+              </li>
+              <li class="notimp"><a href="#" title="Link"> PB Blossoms</a></li>
+              <li class="notimp">
+                <a href="#" title="Link"> Chocolate Chip</a>
+              </li>
+              <li class="notimp"><a href="#" title="Link"> Macarons</a></li>
+              <li class="notimp">
+                <a href="#" title="Link"> Double Choloate Muffins</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="mainContent">
         <div class="productRow"> 
           <!-- One-->
-          1. Black Coffee - 1.99
-            2. Latte - 5.99
-            3. Cold Brew - 4.55
           <article class="productInfo">
             <div> 
               <img src="#" alt="">
             </div>
-            <p class="price"> $1.99 </p>
-            <p class="productContent"> Black Coffee</p>
+            <p class="price"> </p>
+            <p class="productContent"> Cinnamon Muffin</p>
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
           <!-- Two -->
@@ -91,8 +261,8 @@
             <div> 
               <img src="#" alt="">
             </div>
-            <p class="price"> $5.99 </p>
-            <p class="productContent"> Latte</p>
+            <p class="price"> </p>
+            <p class="productContent"> Chocolate Cookies</p>
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
           <!-- Three-->
@@ -100,45 +270,35 @@
             <div> 
               <img src="#" alt="">
             </div>
-            <p class="price"> $4.55 </p>
-            <p class="productContent"> Cold Brew</p>
+            <p class="price"> </p>
+            <p class="productContent"> Chocolate Muffins</p>
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
         </div>
-       </section>
-    <footer>
-        <div class="footer-content">
-            <img src="img/Logos/HivemindLogo.avif" class="logo" alt="Light Logo">
-            <div class="footer-ul-container">
-                <ul class="category">
-
-                </ul>
-            </div>
-        </div>
-
-        <p class="footer-title"> About Our Company</p>
-        <p class="info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id optio, aliquam, enim neque
-            numquam totam laudantium dolore voluptatum placeat odit quos. Fuga, ducimus veniam? Architecto dolor fugit
-            veritatis libero!</p>
-        <div class="footer-social-container">
-            <a href="error.html" class="social-link"> Facebook</a>
-            <a href="error.html" class="social-link"> Instagram</a>
-            <a href="#top" class="social-link"> Back To Top</a>
-        </div>
-        <p class="footer-credit"> This website was made by Arlo Jackson starting on October 11, 2022. All images were
-            found on<dfn
-                title="The photos on Unsplash are free to use and can be used for most commercial, personal projects, and for editorial use. You do not need to ask permission from or provide credit to the photographer or Unsplash, although it is appreciated when possible.">
-                Unsplash,</dfn> <a href="credit.html">here is credit</a> to them all.
+      </section>
+  
+    <script src="script.js"></script>
+    <footer class="footer">
+      <div class="abput" style="float: left; width: 30%">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius
+          sem neque. Integer ornare.
         </p>
-        <br>
-        <br>
-
+      </div>
+      <div class="contact" style="float: left; width: 30%">
+        <h2>Contact Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius
+          sem neque. Integer ornare.
+        </p>
+      </div>
+      <div class="footerlinks">
+        <p><a href="#" title="Link">Coffee </a></p>
+        <p><a href="#" title="Link">Tea</a></p>
+        <p><a href="#" title="Link">Food</a></p>
+        <p><a href="#" title="Link">Beans</a></p>
+      </div>
     </footer>
-    <!--footer End-->
-
-
-</body>
-
-<!-- InstanceEnd -->
-
+  </body>
 </html>
