@@ -2,9 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>HM-Coffee</title>
+    <title>Hive-Coffee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="eCommerceAssets/styles/eCommerceStyle.css">
+    <link rel="stylesheet" href="CSS/styles.css">
     <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
     <script>
       var __adobewebfontsappname__ = "dreamweaver";
@@ -16,230 +19,81 @@
   </head>
 
   <body>
-    <header>
-      <nav id="top" class="navbar">
-        <section class="nav">
-          <img src="/img/Logos/HivemindLogo.avif" class="brand-logo" alt="" />
-          <div class="items">
-            <div class="search">
-              <input
-                id="searchbar"
-                onkeyup="search_coffee(), search_tea(), search_food()"
-                type="text"
-                name="search"
-                placeholder="Search"
-              />
-              <ul id="list">
-                <li class="coffee">Cinnamon Muffins</li>
-                <li class="coffee">Chocolate Cookies</li>
-                <li class="coffee">Chocolate Muffins</li>
-              </ul>
-            </div>
-            <button
-              onclick="document.getElementById('id01').style.display='block'"
-              class="user nav-items"
-            >
-              <img src="/img/buttons/user.png" alt="Profile" />
+       <!-- Navbar Start -->
+       <div class="container-fluid p-0 nav-bar">
+        <nav class=" navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">HiveMind</h1>
+            </a>
+            
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Starts of the sign up form-->
-            <div id="id01" class="modal">
-              <span
-                onclick="document.getElementById('id01').style.display='none'"
-                class="close"
-                title="Close"
-                >x</span
-              >
-              <form class="modal-content" action="#">
-                <div class="container">
-                  <img
-                    src="/img/Logos/HivemindLogo.avif"
-                    class="logo"
-                    alt=""
-                  />
-                  <div>
-                    <h2>Sign Up</h2>
-                    <p>Please Fill out this Form to Create An Account</p>
-                    <hr />
-                    <input
-                      type="text"
-                      autocomplete="off"
-                      id="name"
-                      placeholder="name"
-                    />
-                    <input
-                      type="email"
-                      autocomplete="off"
-                      id="email"
-                      placeholder="email"
-                    />
-                    <input
-                      type="password"
-                      autocomplete="off"
-                      id="password"
-                      placeholder="password"
-                    />
-                    <br />
-                    <button class="signupbtn">Sign Up</button>
-                  </div>
-                  <a
-                    href="#"
-                    onclick="document.getElementById('id01').style.display='none'"
-                    class="link"
-                    title="Close Modal"
-                    >already have an account? Log in here</a
-                  >
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a> 
+                     <a href="testimonial.html" class="nav-item nav-link">Testimonial</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Menu</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="tea.html" class="dropdown-item">Tea</a>
+                            <a href="coffee.html" class="dropdown-item active"> Coffee</a>
+                            <a href="food.html" class="dropdown-item "> Food</a>
+                            
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                
                 </div>
-              </form>
             </div>
-            <!-- End Sign up form-->
-            <a href="error.html" class="nav-items">
-              <img src="/img/buttons/cart.png" alt="Cart"
-            /></a>
-          </div>
-        </section>
-        <ul class="link-container">
-          <li class="link-item">
-            <a class="tab-link" href="index.html"> Home</a>
-          </li>
-          <li class="link-item">
-            <a class="tab-link" href="coffee.html"> Coffee</a>
-          </li>
-          <li class="link-item">
-            <a class="tab-link" href="tea.html"> Tea</a>
-          </li>
-          <li class="link-item">
-            <a class="tab-link" href="food.html"> Food </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+        </nav>
+    </div>
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/Product/pablo-merchan-montes.webp" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    </div>
+                </div>
+            </div>
     <div id="content">
       <section class="sidebar">
-        <input
-          id="searchbar"
-          onkeyup="search_coffee(), search_tea(), search_food() "
-          type="text"
-          name="search"
-          placeholder="Search"
-        />
-        <button onClick="TestsFunction()">Tests</button>
-        <ul id="list">
-         
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-              >Cinnamon Muffin</a
-            >
-          </li>
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-            >
-              Chocolate Cookies</a
-            >
-          </li>
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-              >Chocolate Muffins</a
-            >
-          </li>
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-              >Cranberry Muffins</a
-            >
-          </li>
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-              >Sugar Cookies</a
-            >
-          </li>
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-            >
-              Blueberry Muffins</a
-            >
-          </li>
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-            >
-              Pb Blossoms</a
-            >
-          </li>
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-              >Chocolate Chip</a
-            >
-          </li>
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-              >Macrons</a
-            >
-          </li>
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-              >Double Chocolate Muffins</a
-            >
-          </li>
-          <li class="food">
-            <a
-              href="#"
-              style="text-decoration: none; background: none; color: inherit"
-              >Oatmeal Raisin Cookies</a
-            >
-          </li>
-        </ul>
         <div id="menubar">
           
           <nav class="menu">
-            <h2>Food</h2>
+            <h2>Coffee</h2>
             <!-- Title for menuset 2 -->
             <hr />
             <ul>
               <!--List of links under menuset 2 -->
-              <li><a href="#" title="Link"> Cinnamon Muffins</a></li>
-              <li><a href="#" title="Link">Chocolate Cookies</a></li>
-              <li><a href="#" title="Link">Chocolate Muffins</a></li>
+              <li><a href="#1" title="Link"> 1</a></li>
+              <li><a href="#2" title="Link">2</a></li>
+              <li><a href="#3" title="Link">3</a></li>
               <li class="notimp">
                 <!-- notimp class is applied to remove this link from the tablet and phone views --><a
-                  href="#"
+                  href="#4"
                   title="Link"
                 >
-                  Cranberry Muffins</a
+                  4</a
                 >
               </li>
 
               <li class="notimp">
-                <a href="#" title="Link"> Sugar Cookies</a>
+                <a href="#5" title="Link"> 5</a>
               </li>
               <li class="notimp">
-                <a href="#" title="Link"> Blueberry Muffins</a>
+                <a href="#6" title="Link"> 6</a>
               </li>
-              <li class="notimp"><a href="#" title="Link"> PB Blossoms</a></li>
+              <li class="notimp"><a href="#7" title="Link"> 7</a></li>
               <li class="notimp">
-                <a href="#" title="Link"> Chocolate Chip</a>
+                <a href="#8" title="Link"> 8</a>
               </li>
-              <li class="notimp"><a href="#" title="Link"> Macarons</a></li>
+              <li class="notimp"><a href="#9" title="Link"> 9</a></li>
               <li class="notimp">
-                <a href="#" title="Link"> Double Choloate Muffins</a>
+                <a href="#ten" title="Link"> 10</a>
               </li>
             </ul>
           </nav>
@@ -249,56 +103,186 @@
         <div class="productRow"> 
           <!-- One-->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="1"> 
+              <img src="img/Product/" alt="">
             </div>
-            <p class="price"> </p>
-            <p class="productContent"> Cinnamon Muffin</p>
+            <br>
+            <p class="price"> $1.99 </p>
+            <p  class="productContent"> Matcha Tea</p>
+            <br>
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
           <!-- Two -->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="2"> 
+              <img src="img/Product/" alt="">
             </div>
-            <p class="price"> </p>
-            <p class="productContent"> Chocolate Cookies</p>
+            <br>
+            <p class="price"> $0.99</p>
+            <p  class="productContent"> Sweet Tea</p>
+            <br />
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
           <!-- Three-->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="3"> 
+              <img src="img/Product/" alt="">
             </div>
-            <p class="price"> </p>
-            <p class="productContent"> Chocolate Muffins</p>
+            <br>
+            <p class="price">$1.99 </p>
+            <p class="productContent"> Black Tea </p>
+            <br />
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
         </div>
+       
+        <!-- Row Two-->
+        <div class="productRow"> 
+          <!-- One-->
+          <article class="productInfo">
+            <div id="4"> 
+              <img src="img/Product/" alt="">
+            </div>
+            <br>
+            <p class="price"> $1.99 </p>
+            <p  class="productContent">  Chamomile</p>
+            <br />
+            <input type="button" name="buy" value="Add to Cart" class="buyButton">
+          </article>
+          <!-- Two -->
+          <article class="productInfo">
+            <div id="5"> 
+              <img src="img/Product/" alt="">
+            </div>
+            <br>
+            <p class="price">$1.99 </p>
+            <p class="productContent"> Bubble Tea</p>
+            <br />
+            <input type="button" name="buy" value="Add to Cart" class="buyButton">
+          </article>
+          <!-- Three-->
+          <article class="productInfo">
+            <div id="6"> 
+              <img src="img/Product/" alt="">
+            </div>
+            <br>
+            <p class="price">$1.99 </p>
+            <p class="productContent">Green Tea</p>
+            <br />
+            <input type="button" name="buy" value="Add to Cart" class="buyButton">
+          </article>
+        </div>
+        <!-- Row Three -->
+        <div class="productRow"> 
+          <!-- One-->
+          <article class="productInfo">
+            <div id="7"> 
+              <img src="img/Product/" alt="">
+            </div>
+            <br>
+            <p class="price"> $1.50 </p>
+            <p class="productContent">Earl Gray</p>
+            <br />
+            <input type="button" name="buy" value="Add to Cart" class="buyButton">
+          </article>
+          <!-- Two -->
+          <article class="productInfo">
+            <div id="8"> 
+              <img src="img/Product/" alt="">
+            </div>
+            <br>
+            <p class="price"> $0.99</p>
+            <p class="productContent">Ginger Tea</p>
+            <br />
+            <input type="button" name="buy" value="Add to Cart" class="buyButton">
+          </article>
+          <!-- Three-->
+          <article class="productInfo">
+            <div id="9"> 
+              <img src="img/Product/" alt="">
+            </div>
+            <br>
+            <p class="price"> $3 </p>
+            <p class="productContent">Hibiscus Tea</p>
+            <br />
+            <input type="button" name="buy" value="Add to Cart" class="buyButton">
+          </article>
+        </div>
+        <div class="productRow"> 
+          <!-- One-->
+          <article class="productInfo">
+            <div id="ten"> 
+              <img src="img/Product/" alt="">
+            </div>
+            <br>
+            <p class="price"> $1.99</p>
+            <p class="productContent"> English Tea</p>
+            <br />
+            <input type="button" value="Add to Cart" class="buyButton">
+          </article>
+        </div>
+        <br>
       </section>
   
-    <script src="script.js"></script>
-    <footer class="footer">
-      <div class="abput" style="float: left; width: 30%">
-        <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius
-          sem neque. Integer ornare.
-        </p>
-      </div>
-      <div class="contact" style="float: left; width: 30%">
-        <h2>Contact Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius
-          sem neque. Integer ornare.
-        </p>
-      </div>
-      <div class="footerlinks">
-        <p><a href="#" title="Link">Coffee </a></p>
-        <p><a href="#" title="Link">Tea</a></p>
-        <p><a href="#" title="Link">Food</a></p>
-        <p><a href="#" title="Link">Beans</a></p>
-      </div>
+    
+      <footer>
+        <div class="footer-content">
+            <h2 class="display-1 text-white m-0">HIVEMIND</h2>
+            <div class="footer-ul-container">
+                <ul class="category">
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <!-- About Us -->
+                <h3> About Our Company </h3>
+                <p class="footer-info">In 2018 we wanted to open up a cafe where people could come to relax, and
+                    enjoy a wide variety of food and drinks.
+                    We didn't have the resources back then, so as we saved up for a building we worked
+                    tirelessly to get our products perfected. Sometimes we felt live giving up, and then we came
+                    across another thing to tell us not to. At the end of 2019 we finally opened up, until the
+                    pandemic hit, business was great. The pandemic nearly wiped out our entire business.</p>
+            </div>
+            <div class="column">
+                <!-- Contact Info -->
+                <h3> Contact Us!</h3>
+            </div>
+            <div class="column">
+                <h3> Locations</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <a href="error.html" class="column"> Facebook</a>
+            <a href="error.html" class="column"> Instagram</a>
+            <a href="#top" class="column"> Back To Top</a>
+        </div>
+
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
+            style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">HiveMind</a>. All
+                Rights Reserved.</a></p>
+        </div>
+
     </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
   </body>
 </html>

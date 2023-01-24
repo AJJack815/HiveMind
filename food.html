@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>HiveMind-Food</title>
+    <title>Hive-Food</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.min.css">
@@ -36,11 +36,11 @@
                     <a href="about.html" class="nav-item nav-link">About</a> 
                      <a href="testimonial.html" class="nav-item nav-link">Testimonial</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle  active" data-toggle="dropdown">Menu</a>
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Menu</a>
                         <div class="dropdown-menu text-capitalize">
                             <a href="tea.html" class="dropdown-item">Tea</a>
                             <a href="coffee.html" class="dropdown-item"> Coffee</a>
-                            <a href="food.html" class="dropdown-item"> Food</a>
+                            <a href="food.html" class="dropdown-item active"> Food</a>
                             
                         </div>
                     </div>
@@ -68,12 +68,12 @@
             <hr />
             <ul>
               <!--List of links under menuset 2 -->
-              <li><a href="#" title="Link"> Cinnamon Muffins</a></li>
-              <li><a href="#" title="Link">Chocolate Cookies</a></li>
-              <li><a href="#" title="Link">Chocolate Muffins</a></li>
+              <li><a href="#Cinna" title="Link"> Cinnamon Muffins</a></li>
+              <li><a href="#ChocoChip" title="Link">Chocolate Cookies</a></li>
+              <li><a href="#ChocoMuff" title="Link">Chocolate Muffins</a></li>
               <li class="notimp">
                 <!-- notimp class is applied to remove this link from the tablet and phone views --><a
-                  href="#"
+                  href="#CranMuff"
                   title="Link"
                 >
                   Cranberry Muffins</a
@@ -81,18 +81,18 @@
               </li>
 
               <li class="notimp">
-                <a href="#" title="Link"> Sugar Cookies</a>
+                <a href="#SugCook" title="Link"> Sugar Cookies</a>
               </li>
               <li class="notimp">
-                <a href="#" title="Link"> Blueberry Muffins</a>
+                <a href="#BlueMuff" title="Link"> Blueberry Muffins</a>
               </li>
-              <li class="notimp"><a href="#" title="Link"> PB Blossoms</a></li>
+              <li class="notimp"><a href="#PB" title="Link"> PB Blossoms</a></li>
               <li class="notimp">
-                <a href="#" title="Link"> Chocolate Chip</a>
+                <a href="#ChocoChipMuff" title="Link"> Chocolate Chip</a>
               </li>
-              <li class="notimp"><a href="#" title="Link"> Macarons</a></li>
+              <li class="notimp"><a href="#Macarons" title="Link"> Macarons</a></li>
               <li class="notimp">
-                <a href="#" title="Link"> Double Choloate Muffins</a>
+                <a href="#DoubChocoMuff" title="Link"> Double Choloate Muffins</a>
               </li>
             </ul>
           </nav>
@@ -102,29 +102,35 @@
         <div class="productRow"> 
           <!-- One-->
           <article class="productInfo">
-            <div> 
-              <img src="img/Product/" alt="">
+            <div id="Cinna"> 
+              <img src="img/Product/alina-karpenko.webp" alt="">
             </div>
-            <p class="price"> </p>
-            <p class="productContent"> Cinnamon Muffin</p>
+            <br>
+            <p class="price"> $1.99 </p>
+            <p  class="productContent"> Cinnamon Muffin</p>
+            <br>
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
           <!-- Two -->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="ChocoChip"> 
+              <img src="img/Product/american-heritage.webp" alt="">
             </div>
-            <p class="price"> </p>
-            <p class="productContent"> Chocolate Cookies</p>
+            <br>
+            <p class="price"> $0.99</p>
+            <p  class="productContent"> Chocolate Cookies</p>
+            <br />
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
           <!-- Three-->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="ChocoMuff"> 
+              <img src="img/Product/ari-spada.webp" alt="">
             </div>
-            <p class="price"> </p>
+            <br>
+            <p class="price">$1.99 </p>
             <p class="productContent"> Chocolate Muffins</p>
+            <br />
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
         </div>
@@ -133,29 +139,35 @@
         <div class="productRow"> 
           <!-- One-->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="CranMuff"> 
+              <img src="img/Product/fallon-michael.webp" alt="">
             </div>
-            <p class="price"> </p>
-            <p class="productContent"> Cranberry Muffins</p>
+            <br>
+            <p class="price"> $1.99 </p>
+            <p  class="productContent"> Cranberry Muffins</p>
+            <br />
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
           <!-- Two -->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="SugCook"> 
+              <img src="img/Product/project-290.webp" alt="">
             </div>
-            <p class="price"> </p>
+            <br>
+            <p class="price">$1.99 </p>
             <p class="productContent"> Sugar Cookies</p>
+            <br />
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
           <!-- Three-->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="BlueMuff"> 
+              <img src="img/Product/joshua-flores.webp" alt="">
             </div>
-            <p class="price"> </p>
+            <br>
+            <p class="price">$1.99 </p>
             <p class="productContent"> Blueberry Muffins</p>
+            <br />
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
         </div>
@@ -163,40 +175,48 @@
         <div class="productRow"> 
           <!-- One-->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="PB"> 
+              <img src="img/Product/madison-kaminski.webp" alt="">
             </div>
-            <p class="price"> </p>
+            <br>
+            <p class="price"> $1.50 </p>
             <p class="productContent"> PB Blossoms</p>
+            <br />
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
           <!-- Two -->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="ChocoChipMuff"> 
+              <img src="img/Product/michael-chiara.webp" alt="">
             </div>
-            <p class="price"> </p>
-            <p class="productContent"> Chocolate Chip</p>
+            <br>
+            <p class="price"> $0.99</p>
+            <p class="productContent"> Chocolate Chip Muffins</p>
+            <br />
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
           <!-- Three-->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="Macarons"> 
+              <img src="img/Product/heather-barnes.webp" alt="">
             </div>
-            <p class="price"> </p>
+            <br>
+            <p class="price"> $3 </p>
             <p class="productContent"> Macarons</p>
+            <br />
             <input type="button" name="buy" value="Add to Cart" class="buyButton">
           </article>
         </div>
         <div class="productRow"> 
           <!-- One-->
           <article class="productInfo">
-            <div> 
-              <img src="#" alt="">
+            <div id="DoubChocoMuff"> 
+              <img src="img/Product/oriol-portell.webp" alt="">
             </div>
-            <p class="price"> </p>
-            <p class="productContent"> Double Chocolate</p>
+            <br>
+            <p class="price"> $1.99</p>
+            <p class="productContent"> Double Chocolate Muffins</p>
+            <br />
             <input type="button" value="Add to Cart" class="buyButton">
           </article>
         </div>
@@ -248,5 +268,20 @@
 
     </footer>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
   </body>
 </html>

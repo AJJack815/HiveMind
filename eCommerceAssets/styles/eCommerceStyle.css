@@ -51,11 +51,6 @@ input[type=password]:focus {
   outline: none;
 }
 
-hr {
-  border: 1px solid var(--dark);
-  margin-bottom: 25px;
-}
-
 button {
   height: 32px;
   width: 45px;
@@ -74,48 +69,6 @@ button:hover {
   opacity: 1;
 }
 
-.tab-link {
-  height: 25px;
-  width: 45px;
-  color: white;
-  padding: 10px 10px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  text-decoration: none;
-  font-family: 'Crete Round';
-}
-
-.tab-link:hover {
-  background-color: #a76832;
-}
-
-.signupbtn {
-  background-color: var(--light);
-  width: 300px;
-  height: 40px;
-  opacity: 1;
-  float: left;
-  width: 50%;
-}
-
-.container {
-  padding: 16px;
-  height: 400px;
-}
-
-label {
-  text-transform: capitalize;
-  display: inline-block;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #383838;
-}
-
-label a {
-  color: #383838;
-}
 
 .link {
   color: #383838;
@@ -373,7 +326,7 @@ hr .signup-form {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 5px;
   padding-top: 9px;
-  min-height: 500px;
+  min-height: 390px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
@@ -389,7 +342,7 @@ hr .signup-form {
     float: left;
     padding-left: 5%;
     padding-right: 5%;
-    width: 22%;
+    width: 32%;
 }
 
 /* Prices of a products in catalog */
@@ -405,7 +358,7 @@ hr .signup-form {
 .productRow .productInfo .productContent {
     position: relative;
     top: -37px;
-    font-size: 14px;
+    font-size: 20px;
     font-family: source-sans-pro, sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -418,11 +371,11 @@ hr .signup-form {
     position: relative;
     top: -48px;
     width: 84%;
-    background-color: rgba(208, 207, 207, 1.00);
-    height: 35px;
+    background-color:#da9f5b ;
+    height: 40px;
     color: rgba(255, 255, 255, 1.00);
     border-style: none;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     margin-top: 8px;
 }
@@ -444,23 +397,7 @@ hr .signup-form {
 }
 
 /*Each footer content */
- footer div {
-    width: 27%;
-    float: left;
-    padding-left: 4%;
-    padding-right: 2%;
-    color: rgba(255, 255, 255, 1.00);
-    text-align: justify;
-}
-
-/* Links in footer */
- div a {
-    color: rgba(146, 146, 146, 1.00);
-    display: block;
-    text-decoration: none;
-    text-align: center;
-}
-
+ 
 /* Product's images in catalog */
 .productInfo div img {
     width: 100%;
@@ -493,12 +430,6 @@ hr .signup-form {
     margin-bottom: 29px;
 }
 
-/* Container for links in footer */
-footer .footerlinks {
-    margin-top: -15px;
-    width: 80px;
-    float: right;
-}
 
 /* Media query for tablets */
 @media screen and (max-width:700px) {
@@ -573,11 +504,6 @@ footer .footerlinks {
         padding-top: 0px;
     }
 
-    /* offer banners content */
-    #mainWrapper #offer p {
-        font-size: small;
-    }
-
     /* main content region of page */
       #content .mainContent {
         overflow: hidden;
@@ -599,7 +525,7 @@ footer .footerlinks {
 
     /* Content holders in catalog view */
     .productRow .productInfo .productContent {
-        font-size: 16px;
+        font-size: 30px;
     }
 
     /* Buy buttons in catalog view */
@@ -608,42 +534,11 @@ footer .footerlinks {
     }
 
     /* Container for links in footer */
-    #mainWrapper footer .footerlinks {
-        float: none;
-        width: 100%;
-        position: relative;
-        top: 17px;
-        clear: both;
-        text-align: center;
-        left: 0%;
-        padding-bottom: 19px;
-    }
-
+   
     /* Container for each footer divisions */
-footer div {
-        width: 44%;
-        text-align: justify;
-        font-size: 15px;
-    }
 
     /* Links in footer */
-    .footerlinks p a {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        display: inline;
-        padding-right: 35px;
-    }
-
-    /* Footer region */
- footer {
-        padding-left: 16px;
-        overflow: hidden;
-    }
-
-    /* Paragraphs in footer */
-    footer .footerlinks p {
-        display: inline;
-    }
+    
 }
 
 /*media query for small screen devices */
@@ -681,9 +576,7 @@ footer div {
         left: -8%;
         text-align: center;
     }
-	.footer{
-		background-color:rgb(242, 149, 68);
-	}
+	
     /*Menu headings in sidebar */
     #menubar .menu h2 {
         width: 100%;
@@ -700,7 +593,7 @@ footer div {
         left: -2%;
     }
 
- footer div {
+ div {
         width: 100%;
         margin-left: -16px;
         text-align: justify;
@@ -715,11 +608,7 @@ footer div {
     }
 
     /* Container for links in footer */
-footer .footerlinks {
-        padding-left: 8%;
-    }
 
- 
  #content .mainContent {
         margin-top: -81px;
         text-align: center;
