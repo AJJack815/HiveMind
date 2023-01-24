@@ -30,6 +30,15 @@ productContainers.forEach((item, i) => {
     })
 })
 
+const coffee = ["Black", "ColdBrew", "Latte"];
+const tea =["Sweet", "Black", "Matcha"];
+const muffins=["Cinnamon", "Chocolate", "DoubleChoco", "Cranberry", "Blueberry"];
+const cookies=["ChocoChip", "Chocolate", "PBBlossom", "OatmealRaisin", "Sugar", "Macarons"];
+document.getElementsByClassName("food").innerHTML = muffins.toString();
+document.getElementsByClassName("food").innerHTML = cookies.toString();
+document.getElementsByClassName("coffee").innerHTML =coffee.toString();
+document.getElementsByClassName("tea").innerHTML = tea.toString();
+
 
 
 var modal = document.getElementById('id01');

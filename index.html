@@ -1,426 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Fake site for FBLA Region and State" />
-    <link rel="stylesheet" href="CSS/styles.css" />
+
+<head>
+    <meta charset="utf-8">
+    <title>HiveMind</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-      rel="shortcut icon"
-      href="img/Logos/favicon.ico"
-      type="image/x-icon"
-    />
-    <script src="script.js"></script>
-    <title>Hive Mind</title>
-  </head>
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
-  <body>
-    <nav id="top" class="navbar">
-      <section class="nav">
-        <img src="img/Logos/HivemindLogo.avif" class="brand-logo" alt="" />
-        <div class="items">
-          <div class="search">
-            <input
-              id="searchbar"
-              onkeyup="search_coffee(), search_tea(), search_food()"
-              type="text"
-              name="search"
-              placeholder="Search"
-            />
-            <button class="search-btn" onClick="TestsFunction()">Search</button>
-            <ul id="list">
-              <li class="coffee">
-                <a
-                  href="#"
-                  style="
-                    text-decoration: none;
-                    background: none;
-                    color: inherit;
-                  "
-                >
-                  Black Coffee</a
-                >
-              </li>
-              <li class="coffee">Cold Brew</li>
-              <li class="coffee">Latte</li>
-              <li class="tea">Matcha Tea</li>
-              <li class="tea">Sweet Tea</li>
-              <li class="tea">Black Tea</li>
-              <li class="food">Cinnamon Muffis</li>
-              <li class="food">Chocolate Cookies</li>
-              <li class="food">Chocolate Muffins</li>
-              <li class="food">Cranberry Muffins</li>
-              <li class="food">Sugar Cookies</li>
-              <li class="food">Blueberry Muffins</li>
-              <li class="food">Pb Blossoms</li>
-              <li class="food">Chocolate Chip</li>
-              <li class="food">Macarons</li>
-              <li class="food">Double Chocolate Muffins</li>
-              <li class="food">Oatmeal Raisin Cookies</li>
-            </ul>
-          </div>
-          <button
-            onclick="document.getElementById('id01').style.display='block'"
-            class="user nav-items"
-          >
-            <img src="img/buttons/user.png" alt="Profile" />
-          </button>
-          <!-- Starts of the sign up form-->
-          <div id="id01" class="modal">
-            <span
-              onclick="document.getElementById('id01').style.display='none'"
-              class="close"
-              title="Close"
-              >x</span
-            >
-            <form class="modal-content" action="#">
-              <div class="container">
-                <img src="img/Logos/HivemindLogo.avif" class="logo" alt="" />
-                <div>
-                  <h2>Sign Up</h2>
-                  <p>Please Fill out this Form to Create An Account</p>
-                  <hr />
-                  <input
-                    type="text"
-                    autocomplete="off"
-                    id="name"
-                    placeholder="name"
-                  />
-                  <input
-                    type="email"
-                    autocomplete="off"
-                    id="email"
-                    placeholder="email"
-                  />
-                  <input
-                    type="password"
-                    autocomplete="off"
-                    id="password"
-                    placeholder="password"
-                  />
-                  <br />
-                  <button class="signupbtn">Sign Up</button>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class=" navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">HiveMind</h1>
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="testimonial.html" class="nav-item nav-link">Testimonial</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Menu</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="tea.html" class="dropdown-item">Tea</a>
+                            <a href="coffee.html" class="dropdown-item"> Coffee</a>
+                            <a href="food.html" class="dropdown-item"> Food</a>
+
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+
                 </div>
-                <a
-                  href="#"
-                  onclick="document.getElementById('id01').style.display='none'"
-                  class="link"
-                  title="Close Modal"
-                  >already have an account? Log in here</a
-                >
-              </div>
-            </form>
-          </div>
-          <!-- End Sign up form-->
-          <a href="error.html" class="nav-items">
-            <img src="img/buttons/cart.png" alt="Cart"
-          /></a>
-        </div>
-      </section>
-      <hr />
-      <ul class="link-container">
-        <li class="link-item">
-          <a class="tab-link" href="index.html"> Home</a>
-        </li>
-        <li class="link-item">
-          <a class="tab-link" href="coffee.html"> Coffee</a>
-        </li>
-        <li class="link-item"><a class="tab-link" href="tea.html"> Tea</a></li>
-        <li class="link-item">
-          <a class="tab-link" href="food.html"> Food </a>
-        </li>
-      </ul>
-    </nav>
-    <!-- Nav End-->
-    <header class="hero-section">
-      <img src="img/Logos/logo-header.avif" alt="" class="logo" />
-      <div class="content">
-        <h4 class="sub-heading">Sweetest In Utah</h4>
-      </div>
-    </header>
-    <!-- Weeks Top Seller: Start-->
-    <section class="product">
-      <h2 style="text-align: center; font-size: xx-large">Best Sellers</h2>
-      <section class="product-container">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag"></span>
-            <img
-              src="img/Product/tabitha-turner.avif"
-              class="product-thumb"
-              alt=""
-              width="119"
-              height="165"
-            />
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Cold Brew</h2>
-            <span class="price">$4.55</span>
-            <p class="product-short-des">...</p>
-            <br />
-            <br />
-            <br />
-            <button class="card-btn">Add to Cart</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag"></span>
-            <img
-              src="img/Product/manki-kim.avif"
-              class="product-thumb"
-              alt=""
-              width="353"
-              height="143"
-            />
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Black Tea</h2>
-            <span class="price">$2.99</span>
-            <p class="product-short-des">No Sweetening</p>
-            <br />
-            <br />
-            <br />
-            <button class="card-btn">Add to cart</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag"></span>
-            <img
-              src="img/Product/ann.avif"
-              class="product-thumb"
-              alt=""
-              width="224"
-              height="224"
-            />
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Matcha Tea</h2>
-            <span class="price">$5.99</span>
-            <p class="product-short-des">...</p>
-            <br />
-            <br />
-            <br />
-            <button class="card-btn">Add to Cart</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag"></span>
-            <img
-              src="img/Product/michael-chiara.avif"
-              class="product-thumb"
-              alt=""
-              width="225"
-              height="225"
-            />
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Chocolate Chip Muffins</h2>
-            <span class="price">$3.99</span>
-            <p class="product-short-des">...</p>
-            <br />
-            <button class="card-btn">Add to Cart</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag"></span>
-            <img
-              src="img/Product/valeriia-miller.avif"
-              class="product-thumb"
-              alt=""
-              width="225"
-              height="225"
-            />
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Latte</h2>
-            <span class="price">$5.99</span>
-            <p class="product-short-des">...</p>
-            <br />
-            <br />
-            <br />
-            <button class="card-btn">Add to Cart</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag"></span>
-            <img
-              src="img/Product/akhilesh-sharma.avif"
-              class="product-thumb"
-              alt=""
-              width="750"
-              height="750"
-            />
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Sweet Tea</h2>
-            <span class="price">$3.99</span>
-            <p class="product-short-des">
-              Black Tea with cubes of sugar, and honey.
-            </p>
-            <br />
-            <br />
-            <button class="card-btn">Add to Cart</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img
-              src="img/Product/american-heritage@0.33x.avif"
-              class="product-thumb"
-              alt=""
-            />
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Chocolate Cookies</h2>
-            <span class="price">$0.99</span>
-            <p class="product-short-des">Almonds inside</p>
-            <br />
-            <button class="card-btn">Add to Cart</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img
-              src="img/Product/madison-kaminski.avif"
-              class="product-thumb"
-              alt=""
-            />
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">PB Blossom</h2>
-            <span class="price">$1.99</span>
-            <p class="product-short-des">
-              Chocolate Drops on a Peanut Butter Cookie
-            </p>
-            <br />
-            <button class="card-btn">Add to Cart</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img
-              src="img/Product/pexels-terrance-barksdale-8837096.avif"
-              class="product-thumb"
-              alt=""
-            />
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Oatmeal Raisin Cookies</h2>
-            <span class="price">$1.99</span>
-            <p class="product-short-des">...</p>
-            <br />
-            <button class="card-btn">Add to Cart</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img
-              src="img/Product/fallon-michael.avif"
-              class="product-thumb"
-              alt=""
-            />
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Cranberry Muffins</h2>
-            <span class="price">$1.99</span>
-            <p class="product-short-des">...</p>
-            <br />
-            <button class="card-btn">Add to Cart</button>
-          </div>
-        </div>
-        <button class="pre-btn">
-          <img src="img/buttons/arrow.png" alt="Back Button" />
-        </button>
-        <button class="nxt-btn">
-          <img src="img/buttons/arrow.png" alt="Next Button" />
-        </button>
-      </section>
-    </section>
-    <!-- Weeks Top End-->
-    <hr />
-    <hr class="footer-collection" />
-    <div class="collection-container">
-      <a href="coffee.html" class="collection">
-        <dfn title="Coffee">
-          <img src="img/Product/tabitha-turner.avif" alt="Coffee"
-        /></dfn>
-      </a>
-      <a href="tea.html" class="collection">
-        <dfn title="Tea"> <img src="img/Product/yana.avif" alt="Tea" /></dfn>
-      </a>
-      <a href="food.html" class="collection">
-        <dfn title="Food">
-          <img src="img/Product/ari-spada.avif" alt="Food"
-        /></dfn>
-      </a>
-      <a href="error.html" class="collection">
-        <dfn title="Beans">
-          <img src="img/Product/pablo-merchan-montes.avif" alt="Beans"
-        /></dfn>
-      </a>
-      <a href="#" class="collection"> </a>
+            </div>
+        </nav>
     </div>
-    <footer>
-      <div class="footer-content">
-        <img src="img/Logos/HivemindLogo.avif" class="logo" alt="Light Logo" />
-        <div class="footer-ul-container">
-          <ul class="category"></ul>
-        </div>
-      </div>
+    <!-- Navbar End -->
 
-      <p class="footer-title">About Our Company</p>
-      <p class="info">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id
-        optio, aliquam, enim neque numquam totam laudantium dolore voluptatum
-        placeat odit quos. Fuga, ducimus veniam? Architecto dolor fugit
-        veritatis libero! Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Neque id inventore non beatae excepturi harum, cupiditate facilis!
-        Quis minima, explicabo ad, corrupti autem commodi officia aperiam ab,
-        quos quisquam hic.
-      </p>
-      <div class="footer-social-container">
-        <a href="error.html" class="social-link"> Facebook</a>
-        <a href="error.html" class="social-link"> Instagram</a>
-        <a href="#top" class="social-link"> Back To Top</a>
-      </div>
-      <p class="footer-credit">
-        This website was made by Arlo Jackson starting on October 11, 2022. All
-        images were found on
-        <dfn
-          title="The photos on Unsplash are free to use and can be used for most commercial, personal projects, and for editorial use. You do not need to ask permission from or provide credit to the photographer or Unsplash, although it is appreciated when possible."
-        >
-          Unsplash,</dfn
-        >
-        <a href="credit.html">here is credit</a> to them all.
-      </p>
-      <br />
-      <br />
-    </footer>
-    <!--footer End-->
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/Product/pablo-merchan-montes.webp" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h1 class="display-1 text-white m-0">HiveMind</h1>
+                        <h2 class="text-primary font-weight-medium m-0">We Have Been Serving</h2>
+                        <h2 class="text-white m-0">* SINCE 2020 *</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel End -->
 
-    <script src="eCommerceAssets\script.js">
-      const productContainer = [...document.querySelectorAll('.product-container')];
-      const nxtBt = [...document.querySelectorAll('.nxt-btn')];
-      const preBt = [...document.querySelectorAll('.pre-btn')];
 
-      productContainer.forEach((item, i) => {
-          let containerDimenstions = item.getBoundingClientRect();
-          let containerWidth = containerDimenstions.width;
+            <!-- About Start -->
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="section-title">
+                        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h4>
+                        <h1 class="display-4">Serving Since 2020</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 py-0 py-lg-5">
+                            <h1 class="mb-3">Our Story</h1>
+                            <h5 class="mb-3">In 2018 we wanted to open up a cafe...</h5>
+                            <p>We didn't have the resources back then, so as we saved up for a building we worked
+                                tirelessly to get our products perfected. Sometimes we felt live giving up, and then we
+                                came across another thing to tell us not to. At the end of 2019 we finally opened up,
+                                until the pandemic hit, business was great. The pandemic nearly wiped out our entire
+                                business. </p>
+                        </div>
+                        <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100" src="img/img/about.png"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 py-0 py-lg-5">
+                            <h1 class="mb-3">Our Vision</h1>
+                            <p>We want to create a relaxing, accepting cafe with a wide variety of products. We locally
+                                source a lot of our products, and if we cant we make sure they can be got from
+                                sustainable
+                                businesses.</p>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Sustainability
+                            </h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Wide Variety
+                            </h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Locally Souced
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
 
-          nxtBt[i].addEventListener('click', () => {
-              item.scrollLeft += containerWidth;
-          })
 
-          preBt[i].addEventListener('click', () => {
-              item.scrollLeft -= containerWidth;
-          })
-      })
-    </script>
-  </body>
+            <!-- Service Start -->
+            <div class="container-fluid pt-5">
+                <div class="container">
+                    <div class="section-title">
+                        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h4>
+                        <h1 class="display-4">Fresh Beans, and Food</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="img/service-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="img/service-2.jpg" alt="">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4><i class="fa fa-coffee service-icon"></i>Fresh Coffee Beans</h4>
+                                    <p class="m-0">We get our coffee beans fresh everynight, and in the morning when we open we make ground down the 
+                                        coffee beans to be able to make your coffee.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="img/service-3.jpg" alt="">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4><i class="fa fa-award service-icon"></i>Best Quality Coffee</h4>
+                                    <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et
+                                        lorem dolor sed est sit
+                                        invidunt, dolore tempor diam ipsum takima erat tempor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+
+
+            <!-- Menu Start -->
+            <div class="container-fluid pt-5">
+                <div class="container">
+                    <div class="section-title">
+                        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menu & Pricing</h4>
+                        <h1 class="display-4">Competitive Pricing</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="mb-5">Food</h1>
+                            <div class="row align-items-center mb-5">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/Product/project-290.webp" alt="">
+                                    <h5 class="menu-price">$1.99</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Sugar Cookies</h4>
+                                    <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et
+                                        lorem dolor</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-5">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/Product/oriol-portell.webp" alt="">
+                                    <h5 class="menu-price">$1.99</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Double Chocolate Muffins</h4>
+                                    <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et
+                                        lorem dolor</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-5">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/Product/heather-barnes.webp" alt="">
+                                    <h5 class="menu-price">$3</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Macarons</h4>
+                                    <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et
+                                        lorem dolor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="mb-5">Cold Coffee</h1>
+                            <div class="row align-items-center mb-5">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
+                                    <h5 class="menu-price">$5</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Matcha Tea</h4>
+                                    <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et
+                                        lorem dolor</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-5">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
+                                    <h5 class="menu-price">$7</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Sweet Tea</h4>
+                                    <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et
+                                        lorem dolor</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-5">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
+                                    <h5 class="menu-price">$9</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>English Tea</h4>
+                                    <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et
+                                        lorem dolor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="mb-5"> Coffee</h1>
+                            <div class="row align-items-center mb-5">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
+                                    <h5 class="menu-price">$5</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Black Coffee</h4>
+                                    <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et
+                                        lorem dolor</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-5">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
+                                    <h5 class="menu-price">$7</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Chocolete Coffee</h4>
+                                    <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et
+                                        lorem dolor</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-5">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
+                                    <h5 class="menu-price">$9</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Coffee With Milk</h4>
+                                    <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et
+                                        lorem dolor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu End -->
+
+
+            <!-- Testimonial Start -->
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="section-title">
+                        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
+                        <h1 class="display-4">Our Clients Say</h1>
+                    </div>
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid" src="img/img/testimonial-1.jpg" alt="">
+                                <div class="ml-3">
+                                    <h4>Client Name</h4>
+                                </div>
+                            </div>
+                            <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita
+                                lorem. Dolor tempor ipsum sanct clita</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid" src="img/img/testimonial-2.jpg" alt="">
+                                <div class="ml-3">
+                                    <h4>Client Name</h4>
+                                </div>
+                            </div>
+                            <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita
+                                lorem. Dolor tempor ipsum sanct clita</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid" src="img/img/testimonial-3.jpg" alt="">
+                                <div class="ml-3">
+                                    <h4>Client Name</h4>
+                                </div>
+                            </div>
+                            <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita
+                                lorem. Dolor tempor ipsum sanct clita</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial End -->
+
+
+            <footer>
+                <div class="footer-content">
+                    <h2 class="display-1 text-white m-0">HIVEMIND</h2>
+                    <div class="footer-ul-container">
+                        <ul class="category">
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <!-- About Us -->
+                        <h3> About Our Company </h3>
+                        <p class="footer-info">In 2018 we wanted to open up a cafe where people could come to relax, and
+                            enjoy a wide variety of food and drinks.
+                            We didn't have the resources back then, so as we saved up for a building we worked
+                            tirelessly to get our products perfected. Sometimes we felt live giving up, and then we came
+                            across another thing to tell us not to. At the end of 2019 we finally opened up, until the
+                            pandemic hit, business was great. The pandemic nearly wiped out our entire business.</p>
+                    </div>
+                    <div class="column">
+                        <!-- Contact Info -->
+                        <h3> Contact Us!</h3>
+                    </div>
+                    <div class="column">
+                        <h3> Locations</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <a href="error.html" class="column"> Facebook</a>
+                    <a href="error.html" class="column"> Instagram</a>
+                    <a href="#top" class="column"> Back To Top</a>
+                </div>
+
+                <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
+                    style="border-color: rgba(256, 256, 256, .1) !important;">
+                    <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">HiveMind</a>. All
+                        Rights Reserved.</a></p>
+                </div>
+
+            </footer>
+            <!-- Footer End -->
+
+
+            <!-- JavaScript Libraries -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="lib/tempusdominus/js/moment.min.js"></script>
+            <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+            <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+            <!-- Contact Javascript File -->
+            <script src="mail/jqBootstrapValidation.min.js"></script>
+            <script src="mail/contact.js"></script>
+
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
+</body>
+
 </html>
